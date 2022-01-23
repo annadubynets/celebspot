@@ -1,0 +1,23 @@
+{
+  "name": "celebspot",
+  "version": "1.0.0",
+  "description": "Celebspot Markup project",
+  "scripts": {
+    "generate-fonts": "icon-font-generator --height=1000 --name cs-icons -p cs-icons --csspath css/cs-icons.css  font-icons/*.svg -o fonts",
+    "dev": "sass css/style.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annadubynets/celebspot.git"
+  },
+  "author": "Ivan Dubynets, Anna Dubynets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annadubynets/celebspot/issues"
+  },
+  "homepage": "https://github.com/annadubynets/celebspot#readme",
+  "devDependencies": {
+    "icon-font-generator": "^2.1.11",
+    "sass": "^1.49.0"
+  }
+}
