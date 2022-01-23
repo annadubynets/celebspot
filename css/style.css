@@ -1,0 +1,5202 @@
+@charset "UTF-8";
+@import "./owl.carousel.min.css";
+@import "./owl.theme.default.min.css";
+@import "fonts.css";
+body {
+  font-family: "Poppins";
+  background-color: #090919;
+}
+
+main {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 0;
+  color: #2D2942;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.375rem;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 1.125rem;
+  color: #2D2942;
+}
+
+.subscription-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #FF4A65;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+}
+
+.text-secondary {
+  color: #191626 !important;
+}
+
+.text-muted {
+  color: #9E9E9E !important;
+}
+
+.text-pink {
+  color: #F54B64;
+}
+
+.text-primary {
+  color: #2D2942 !important;
+}
+
+.text-danger {
+  color: #FF3038 !important;
+}
+
+.bg-primary {
+  background: #2D2942 !important;
+}
+
+.bg-light {
+  background: #F7F8F9 !important;
+}
+
+.bg-pink {
+  background: #FF4A65 !important;
+}
+
+.bg-gradient-pink {
+  background: linear-gradient(180deg, #F2F2FF 0%, #F2F2FF 100%) !important;
+}
+
+.bg-gradient-transparent {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(242, 242, 255, 0.9) 100%) !important;
+}
+
+@media (min-width: 576px) {
+  .subtitle {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3.563rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .pt-22px {
+    padding-top: 90px !important;
+  }
+
+  .row-cols-5 > * {
+    flex: 0 0 auto;
+    width: 10%;
+  }
+}
+.btn {
+  font-weight: 500;
+  border-radius: 27px;
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-primary {
+  font-size: 16px;
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #FF3A49 0%, #FF545B 100%);
+  border: 2.03254px solid #FF3038;
+  box-shadow: 0px 2.71006px 2.71006px rgba(0, 0, 0, 0.25), inset 0px 2.71006px 13.5503px rgba(0, 0, 0, 0.14);
+  border-radius: 18.2929px;
+  padding: 8px 30px;
+}
+.btn-primary.col-to-action {
+  font-size: 20px;
+  padding: 13px 60px;
+}
+@media (max-width: 414px) {
+  .btn-primary.col-to-action {
+    padding: 13px 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .btn-primary {
+    font-size: 20px;
+    padding: 17px 46px;
+    border-radius: 42px;
+  }
+}
+
+.btn-info {
+  font-size: 20px;
+  color: #302D6C;
+  background: linear-gradient(90deg, #F6F5FF 0%, #D7E0FF 100%);
+  border: 3px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 20px rgba(0, 0, 0, 0.14);
+  border-radius: 27px;
+  padding: 13px 30px;
+}
+.btn-info:hover, .btn-info:focus {
+  color: #FFFFFF;
+  background: #7965F5;
+  border: 3px solid #FFFFFF;
+}
+@media (min-width: 1200px) {
+  .btn-info {
+    padding: 18px 30px;
+    border-radius: 42px;
+  }
+}
+
+.btn-secondary {
+  font-size: 16px;
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #898989 0%, #A9A9A9 100%);
+  border: 2.05755px solid #9C9C9C;
+  box-shadow: 0px 2.7434px 2.7434px rgba(0, 0, 0, 0.25), inset 0px 2.7434px 13.717px rgba(0, 0, 0, 0.14);
+  border-radius: 18.5179px;
+  padding: 8px 30px;
+}
+@media (min-width: 1200px) {
+  .btn-secondary {
+    font-size: 20px;
+    padding: 18px 30px;
+    border-radius: 42px;
+  }
+}
+
+.modal .btn {
+  font-size: 16px;
+}
+@media (min-width: 1200px) {
+  .modal .btn {
+    font-size: 22px;
+  }
+}
+.modal .btn-primary {
+  padding: 9px 30px;
+}
+.modal .btn-secondary {
+  padding: 9px 30px;
+}
+
+.btn-link {
+  font-weight: 500;
+  font-size: 12px;
+  color: #F54B64;
+}
+
+.btn-light {
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+  background: #2D2942;
+  border-color: transparent;
+  border-radius: 7px;
+  padding: 16px 26px;
+}
+
+.navbar {
+  background: #191626;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-toggler .icon-close {
+  display: none;
+}
+.navbar-toggler .icon-menu {
+  display: inline;
+}
+.navbar-toggler[aria-expanded=true] .icon-close {
+  display: inline;
+}
+.navbar-toggler[aria-expanded=true] .icon-menu {
+  display: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.top-mobile-menu.show, .top-mobile-menu.collapsing {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 5px 0px;
+  z-index: 4;
+}
+.top-mobile-menu .navbar-nav .nav-link {
+  color: #2D2942;
+  padding: 10px 24px;
+}
+.top-mobile-menu .navbar-nav .nav-link:active, .top-mobile-menu .navbar-nav .nav-link.active {
+  color: #FFFFFF;
+  background: #2D2D75;
+}
+
+.footer-navbar {
+  background: #FFFFFF;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1);
+  padding: 7px 0 11px 0;
+}
+.footer-navbar .nav-link {
+  min-width: 40px;
+  font-weight: 500;
+  font-size: 10px;
+  color: #191626;
+  padding: 0;
+  position: relative;
+}
+@media (max-width: 320px) {
+  .footer-navbar .nav-link span {
+    font-size: 22px;
+  }
+}
+.footer-navbar .nav-link.active {
+  font-weight: 800;
+}
+.footer-navbar .nav-link.active span {
+  transform: translateY(-9px) scale(1.1);
+  color: white;
+  background: linear-gradient(180deg, #FA3F81 0%, #EE5B88 100%);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -50px;
+  margin-left: -25px;
+  left: 50%;
+}
+@media (max-width: 320px) {
+  .footer-navbar .nav-link.active span {
+    transform: translateY(-9px) scale(1.05);
+    width: 40px;
+    height: 40px;
+    top: -40px;
+    margin-left: -20px;
+  }
+}
+.footer-navbar .nav-link.active::after {
+  content: "";
+  display: block;
+  height: 9px;
+  width: 64px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -32px;
+  background: #FF4A65;
+  border-radius: 10px;
+  top: 17px;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  font-weight: 500;
+  font-size: 0.813rem !important;
+  color: #FFFFFF;
+  padding: 24px;
+  border-radius: 0.438rem;
+}
+.accordion-button span {
+  font-size: 16px !important;
+  padding-top: 6px;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button::after {
+  font-family: "icomoon";
+  content: "";
+  color: #2D2942;
+  font-size: 10px;
+  background-image: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #F54B64;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  margin-top: -7px;
+}
+
+.accordion-item {
+  background: #2D2942;
+  border-radius: 0.438rem;
+  border: none;
+}
+.accordion-item:first-of-type {
+  border-top-left-radius: 0.438rem;
+  border-top-right-radius: 0.438rem;
+}
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 0.438rem;
+  border-bottom-left-radius: 0.438rem;
+}
+.accordion-item.accordion-collapse.collapse.show {
+  background: #2D2942;
+}
+
+.accordion-body {
+  color: #FFFFFF;
+  font-size: 0.813rem;
+  padding: 0 24px 15px 24px;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.rounded-1 {
+  border-radius: 1.375rem !important;
+}
+
+.rounded-2 {
+  border-radius: 1.125 !important;
+}
+
+.rounded-3 {
+  border-radius: 0.688rem !important;
+}
+
+.rounded-4 {
+  border-radius: 0.438rem !important;
+}
+
+.rounded, .choose-level-control .level-img, .choose-level-control {
+  border-radius: 1.438 !important;
+}
+
+.rounded-start {
+  border-bottom-left-radius: 0.625rem !important;
+  border-top-left-radius: 0.625rem !important;
+}
+
+.rounded-end {
+  border-bottom-right-radius: 0.625rem !important;
+  border-top-right-radius: 0.625rem !important;
+}
+
+.shadow-lg, .choose-level-control {
+  box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.5) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25) !important;
+}
+
+.shadow, .simple-popover {
+  box-shadow: 0px 4.174px 4.174px rgba(0, 0, 0, 0.25) !important;
+}
+
+.font-size-8px {
+  font-size: 8px;
+}
+
+.font-size-10px {
+  font-size: 10px !important;
+}
+
+.font-size-11px {
+  font-size: 11px;
+}
+
+.font-size-12px {
+  font-size: 12px;
+}
+
+.font-size-13px {
+  font-size: 13px;
+}
+
+.font-size-14px {
+  font-size: 14px;
+}
+
+.font-size-16px {
+  font-size: 16px;
+}
+
+.font-size-24px {
+  font-size: 24px;
+}
+
+.font-size-30px {
+  font-size: 30px;
+}
+
+.font-size-36px {
+  font-size: 36px;
+}
+
+.font-size-44px {
+  font-size: 44px;
+}
+
+.pt-22px {
+  padding-top: 22px;
+}
+
+.pt-60px {
+  padding-top: 60px;
+}
+
+.pt-140px {
+  padding-top: 140px;
+}
+
+.pt-160px {
+  padding-top: 160px;
+}
+
+.pb-35px {
+  padding-bottom: 35px;
+}
+
+.pb-60px {
+  padding-bottom: 60px;
+}
+
+.pb-140px {
+  padding-bottom: 140px;
+}
+
+.pb-160px {
+  padding-bottom: 160px;
+}
+
+.mt-100px {
+  margin-top: -100px;
+}
+
+.mb-32px {
+  margin-bottom: 32px;
+}
+
+.mb-47px {
+  margin-bottom: 47px;
+}
+
+.mb-56px {
+  margin-bottom: 56px;
+}
+
+.mb-100px {
+  margin-bottom: 100px;
+}
+
+.min-vh-60 {
+  min-height: 60vh;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .mb-lg-300px {
+    margin-bottom: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .font-size-10px {
+    font-size: 14px;
+  }
+
+  .font-size-11px {
+    font-size: 17px;
+  }
+
+  .font-size-13px {
+    font-size: 24px;
+  }
+
+  .font-size-xl-30px {
+    font-size: 30px;
+  }
+
+  .mb-47px {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 414px) {
+  .mb-56px {
+    margin-bottom: 40px;
+  }
+
+  .pb-140px {
+    padding-bottom: 90px;
+  }
+
+  .pb-160px {
+    padding-bottom: 140px;
+  }
+}
+.modal-tutorial .close-btn-container {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.modal-tutorial .modal-dialog {
+  height: 100%;
+  padding-top: 50px;
+}
+@media (min-width: 992px) {
+  .modal-tutorial .modal-dialog {
+    padding-top: 55px;
+  }
+}
+.modal-tutorial .modal-dialog.media-dialog-body {
+  max-width: initial;
+}
+.modal-tutorial .modal-dialog.media-dialog-body .modal-content {
+  max-width: 500px;
+  margin: auto;
+}
+.modal-tutorial .tutorial-header {
+  font-size: 26px;
+  color: #FFFFFF;
+}
+.modal-tutorial .tutorial-text {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .modal-tutorial .tutorial-text {
+    font-size: 28px;
+  }
+}
+.modal-tutorial .modal-content {
+  background: transparent;
+  border: none;
+}
+.modal-tutorial.tutorial-img {
+  background: url("../images/welcome-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 414px) {
+  .modal-tutorial.tutorial-img {
+    background: url("../images/welcome-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.modal-tutorial .tutorial-hand-pointer {
+  position: relative;
+}
+.modal-tutorial .tutorial-hand-pointer::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 73px;
+  height: 73px;
+  background-image: url("../images/tutorial-hand.svg");
+  background-size: cover;
+}
+.modal-tutorial .tutorial-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+}
+.modal-tutorial .tutorial-background .slide-header {
+  background: linear-gradient(3.59deg, #1E1B3B 32.08%, #2D2E83 143.69%) !important;
+  min-height: 56px;
+}
+.modal-tutorial .tutorial-background .footer-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-tutorial .tutorial-background .slide-overlay {
+  background: linear-gradient(3.59deg, rgba(30, 27, 59, 0.94) 32.08%, rgba(45, 46, 131, 0.94) 143.69%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-tutorial .tutorial-background .slide-content {
+  margin-bottom: auto;
+  display: none;
+  padding-top: 20px;
+  max-height: calc(100vh - 63px - 56px);
+  overflow-y: hidden;
+}
+.modal-tutorial .tutorial-background .slide-content.active {
+  display: block;
+  opacity: 1;
+}
+.modal-tutorial .tutorial-background .chose-from-language-bg {
+  background-image: url(../images/languages-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .modal-tutorial .tutorial-background .chose-from-language-bg {
+    background-image: url("../images/languages-bg-desktop.svg");
+  }
+}
+.modal-tutorial .tutorial-background .choose-language-bg {
+  padding-top: 80px;
+  background-image: url(../images/languages-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .modal-tutorial .tutorial-background .choose-language-bg {
+    background-image: url("../images/languages-bg-desktop.svg");
+  }
+}
+.modal-tutorial .tutorial-background .choose-language-bg .tutorial-hand-pointer::after {
+  top: 30px;
+  right: -66px;
+}
+.modal-tutorial .tutorial-background .choose-level-bg .tutorial-hand-pointer::after {
+  bottom: -60px;
+  left: 50%;
+}
+.modal-tutorial .tutorial-background .practice-listening {
+  background-image: url(../images/languages-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .modal-tutorial .tutorial-background .practice-listening {
+    background-image: url("../images/languages-bg-desktop.svg");
+  }
+}
+.modal-tutorial .tutorial-background .practice-writing {
+  background-image: url(../images/languages-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .modal-tutorial .tutorial-background .practice-writing {
+    background-image: url("../images/languages-bg-desktop.svg");
+  }
+}
+.modal-tutorial .tutorial-background .choose-lesson-bg .tutorial-hand-pointer::after {
+  top: 30px;
+  right: -66px;
+}
+.modal-tutorial .carousel-indicators {
+  bottom: -50px;
+}
+.modal-tutorial .carousel-inner {
+  min-height: 488px;
+}
+@media (max-width: 320px) {
+  .modal-tutorial .carousel-inner {
+    min-height: 460px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-tutorial .carousel-inner {
+    min-height: 570px;
+  }
+}
+.modal-tutorial .carousel-inner .carousel-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.modal-tutorial .carousel-inner .carousel-item.chose-global-language-slide .tutorial-hand-pointer::after {
+  top: 25%;
+  right: -73px;
+}
+@media (min-width: 768px) {
+  .modal-tutorial .carousel-inner .carousel-item .language-picker {
+    transform: scale(2) translateY(46px);
+  }
+}
+.modal-tutorial .carousel-inner .carousel-item.listening-exercise-slide .card.disabled {
+  opacity: 0.15;
+}
+.modal-tutorial .carousel-inner .carousel-item.listening-exercise-slide .moving-card {
+  top: 38px;
+  left: 10%;
+}
+.modal-tutorial .carousel-inner .carousel-item.listening-exercise-slide .tutorial-hand-pointer::after {
+  top: 25%;
+  right: -73px;
+}
+@media (max-width: 340px) {
+  .modal-tutorial .carousel-inner .carousel-item.listening-exercise-slide .tutorial-hand-pointer::after {
+    right: -68px;
+  }
+}
+.modal-tutorial .carousel-inner .carousel-item.writing-exercise-slide .tutorial-hand-pointer::after {
+  top: 20%;
+  right: -80px;
+}
+.modal-tutorial .carousel-inner .carousel-item.writing-exercise-slide .form-control.unstyled-input {
+  border-bottom: none;
+  padding: 8px 0 8px 0;
+}
+@media (max-width: 320px) {
+  .modal-tutorial .carousel-inner .carousel-item.writing-exercise-slide .mb-47px {
+    margin-bottom: 30px;
+  }
+  .modal-tutorial .carousel-inner .carousel-item.writing-exercise-slide .form-control.unstyled-input {
+    border-bottom: none;
+    padding: 4px 0 4px 0;
+  }
+}
+
+.modal-content {
+  border-radius: 20px;
+}
+
+.modal-backdrop {
+  background: linear-gradient(3.59deg, rgba(30, 27, 59, 0.95) 32.08%, rgba(45, 46, 131, 0.95) 143.69%);
+}
+.modal-backdrop.show {
+  opacity: initial;
+}
+
+.modal-dialog.congrats-modal-bg {
+  background: url("../images/modal-congrats-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.carousel-indicators {
+  bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .carousel-indicators {
+    bottom: -50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .carousel-indicators {
+    bottom: 80px;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #C4C4C4;
+  margin: 0 25px;
+  opacity: 1;
+}
+.carousel-indicators [data-bs-target].active {
+  background-color: #FF4A65;
+}
+@media (max-width: 575px) {
+  .carousel-indicators [data-bs-target].active {
+    font-size: 24px;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 13px;
+  height: 13px;
+  margin: 0 10px;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  background: #2D2942;
+  border-radius: 16px;
+  padding: 18px 19px;
+  border: none;
+}
+.form-control::placeholder {
+  color: #9E9E9E;
+}
+.form-control.unstyled-input {
+  box-shadow: none;
+  color: #FF4A65;
+  border-radius: 0;
+  padding: 23px 0 0 0;
+  border-bottom: 2px solid #FF4A65;
+}
+.form-control.unstyled-input:focus {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background: transparent;
+}
+.form-control:disabled::placeholder,
+.form-control[readonly]::placeholder {
+  color: #FF4A65;
+}
+
+.input-group.search {
+  border: 0;
+  background: #F8F8F8;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(43, 42, 110, 0.5);
+}
+.input-group.search .input-group-text {
+  background: #F8F8F8;
+  border: 0;
+  border-radius: 10px;
+}
+.input-group.search .input-group-text::before {
+  font-family: "icomoon";
+  display: inline-block;
+  content: "";
+  font-size: 14px;
+  color: #2D2942;
+}
+.input-group.search .form-control {
+  padding: 12px;
+  border-left: 0;
+  border: none;
+  box-shadow: none;
+}
+.input-group.search .form-control:focus {
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  min-width: 0;
+}
+
+.dropdown-toggle {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+.dropdown-toggle::after {
+  vertical-align: middle;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #FF4A65;
+}
+
+.card {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F2FF 100%);
+  box-shadow: 0px 10px 10px rgba(49, 45, 100, 0.2);
+  border-radius: 0.25rem;
+  border: none;
+  padding: 1.25rem 1.563rem;
+  position: relative;
+}
+.card .card-text {
+  font-weight: 500;
+  font-size: 12px;
+  color: #464482;
+}
+.card.article card-title {
+  font-size: 13px;
+}
+.card.article .card-text {
+  font-size: 10px;
+}
+
+.articles .card {
+  background: none;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 3px rgba(97, 72, 72, 0.25);
+  border-radius: 0.8rem;
+  border: none;
+  padding: 0;
+  position: relative;
+}
+.articles .card .card-img,
+.articles .card .card-img-top {
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  max-height: 5.6rem;
+  object-fit: cover;
+  object-position: center;
+  min-height: 14vh;
+}
+.articles .card .card-body {
+  padding: 0.5rem;
+}
+.articles .card .card-body .card-title {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #2D2942;
+}
+
+@media (min-width: 992px) {
+  .articles .card .card-img,
+.articles .card .card-img-top {
+    object-fit: cover;
+    object-position: center;
+    min-height: 20vh;
+  }
+}
+@media (min-width: 1200px) {
+  .card .card-text {
+    font-size: 19px;
+  }
+  .card.article .card-title {
+    font-size: 26px;
+  }
+  .card.article .card-text {
+    font-size: 22px !important;
+  }
+}
+.choose-level-control {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 90px;
+}
+@media (min-width: 1200px) {
+  .choose-level-control {
+    height: 120px;
+  }
+}
+.choose-level-control .level-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.choose-level-control .level-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  min-width: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg width='133' height='90' viewBox='0 0 133 90' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:lighten'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M132.554 0H0V90H101.368L132.554 0Z' fill='%23EEF7FE' fill-opacity='0.9'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+@media (min-width: 1200px) {
+  .choose-level-control .level-label {
+    min-width: 180px;
+  }
+}
+.choose-level-control .language-flag {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.choose-level-control.disabled::after {
+  font-family: "icomoon";
+  content: "";
+  font-size: 24px;
+  color: #C2C2C7;
+  position: absolute;
+  background-color: rgba(81, 83, 85, 0.8);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.choose-level-control.disabled:focus::after {
+  background-color: rgba(81, 83, 85, 0.95);
+}
+
+.choose-lesson-control {
+  max-width: 113px;
+  display: inline-block;
+  width: 100%;
+}
+.choose-lesson-control.pink-border,
+.choose-lesson-control .pink-border {
+  --border-color: #FF4A65;
+}
+.choose-lesson-control.pink-color,
+.choose-lesson-control .pink-color {
+  --color: #FF4A65;
+}
+.choose-lesson-control.red-border,
+.choose-lesson-control .red-border {
+  --border-color: #FF3038;
+}
+.choose-lesson-control.red-color,
+.choose-lesson-control .red-color {
+  --color: #FF3038;
+}
+.choose-lesson-control.fuchsia-border,
+.choose-lesson-control .fuchsia-border {
+  --border-color: #FC4964;
+}
+.choose-lesson-control.fuchsia-color,
+.choose-lesson-control .fuchsia-color {
+  --color: #FC4964;
+}
+.choose-lesson-control.tomato-border,
+.choose-lesson-control .tomato-border {
+  --border-color: #FF4D56;
+}
+.choose-lesson-control.tomato-color,
+.choose-lesson-control .tomato-color {
+  --color: #FF4D56;
+}
+.choose-lesson-control.transparent-border,
+.choose-lesson-control .transparent-border {
+  --border-color: rgba(0, 0, 0, 0);
+}
+.choose-lesson-control.transparent-color,
+.choose-lesson-control .transparent-color {
+  --color: rgba(0, 0, 0, 0);
+}
+.choose-lesson-control .choose-lesson-control-container {
+  display: block;
+  position: relative;
+  border: 3px solid var(--border-color, #2C2A71);
+  border-radius: 50%;
+  width: 100%;
+}
+.choose-lesson-control .choose-lesson-control-container::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+  background-color: #2C2A71;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:screen' opacity='0.2'%3E%3Cmask id='mask0_221_46389' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='99' height='99'%3E%3Cpath d='M49.5 99C76.8381 99 99 76.8381 99 49.5C99 22.1619 76.8381 0 49.5 0C22.1619 0 0 22.1619 0 49.5C0 76.8381 22.1619 99 49.5 99Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_221_46389)'%3E%3Cpath d='M45.892 20.9213C45.892 20.9213 60.6299 17.4805 64.8161 18.2365C68.9972 18.9872 58.9356 35.3933 55.3541 38.2189C51.7778 41.0393 45.892 20.9213 45.892 20.9213Z' fill='%23A8A8A8'/%3E%3Cpath d='M44.7817 33.131C44.7817 33.131 59.5197 29.6902 63.7059 30.4462C67.8869 31.1969 57.8253 47.603 54.2438 50.4286C50.6623 53.249 44.7817 33.131 44.7817 33.131Z' fill='%23A8A8A8'/%3E%3Cpath d='M137.51 94.6265L59.7645 38.073C59.3214 37.755 58.8053 34.1057 58.2735 31.3635C58.2527 31.2384 58.2266 31.1133 58.2005 30.9933C57.893 29.4659 57.2517 27.6621 56.9494 27.6673C55.5105 24.6279 53.2271 22.9076 50.0157 21.7919C49.2911 21.4635 48.3735 21.2445 47.2266 21.1611C47.2005 21.1559 47.1745 21.1559 47.1484 21.1507C47.1328 21.1507 47.1223 21.1455 47.1067 21.1455C47.0494 21.1403 46.9972 21.1403 46.9399 21.1403C46.5958 21.1142 46.2517 21.0881 45.9024 21.0881C45.7148 21.0881 45.5323 21.109 45.3446 21.1142C35.7105 21.3384 30.2887 28.3033 30.2887 28.3033C30.2887 28.3033 31.7276 30.4616 33.3489 32.8858C33.3332 33.1516 33.3072 33.4175 33.3072 33.6834C33.3072 36.4621 34.2195 39.0218 35.7418 41.1071C30.2991 116.96 104.229 89.0744 105.266 89.0744C105.85 89.0744 121.213 94.7308 134.783 99.7668C137.99 100.961 140.294 96.6232 137.51 94.6265Z' fill='url(%23paint0_linear_221_46389)'/%3E%3Cpath d='M41.5858 31.2594C42.916 31.2594 43.9943 30.1811 43.9943 28.8509C43.9943 27.5207 42.916 26.4424 41.5858 26.4424C40.2556 26.4424 39.1772 27.5207 39.1772 28.8509C39.1772 30.1811 40.2556 31.2594 41.5858 31.2594Z' fill='white'/%3E%3Cpath d='M35.6375 29.049C35.6375 29.049 23.6522 25.0243 23.475 35.6959V40.1584C25.5968 40.1584 27.7394 38.9125 29.8612 38.9125C31.7954 38.9125 33.7034 40.1584 35.6375 40.1584V29.049Z' fill='url(%23paint1_linear_221_46389)'/%3E%3Cpath d='M59.6289 38.0156C59.6289 38.0156 46.7626 52.0393 58.9669 72.9028C71.1711 93.7663 107.304 72.6995 107.304 72.6995L59.6289 38.0156Z' fill='url(%23paint2_linear_221_46389)'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_221_46389' x1='36.8425' y1='43.4468' x2='122.652' y2='109.809' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23D5D5D5'/%3E%3Cstop offset='0.4218' stop-color='%23B8B8B8'/%3E%3Cstop offset='0.8525' stop-color='%23C7C7C7'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_221_46389' x1='29.0378' y1='28.051' x2='29.9961' y2='40.1742' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23E7E7E7'/%3E%3Cstop offset='0.6685' stop-color='%23DADADA'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear_221_46389' x1='53.7097' y1='60.0686' x2='107.308' y2='60.0686' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23C4C4C4'/%3E%3Cstop offset='0.4218' stop-color='%23CDCDCD'/%3E%3Cstop offset='0.8525' stop-color='%23F7F7F7'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: 100% 0%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_221_46600' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='99' height='99'%3E%3Cpath d='M49.5 99C76.8381 99 99 76.8381 99 49.5C99 22.1619 76.8381 0 49.5 0C22.1619 0 0 22.1619 0 49.5C0 76.8381 22.1619 99 49.5 99Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_221_46600)'%3E%3Cpath d='M45.8921 20.9213C45.8921 20.9213 60.63 17.4805 64.8163 18.2365C68.9973 18.9872 58.9357 35.3933 55.3542 38.2189C51.7779 41.0393 45.8921 20.9213 45.8921 20.9213Z' fill='%237D2F65'/%3E%3Cpath d='M44.7819 33.131C44.7819 33.131 59.5198 29.6902 63.706 30.4462C67.8871 31.1969 57.8255 47.603 54.2439 50.4286C50.6624 53.249 44.7819 33.131 44.7819 33.131Z' fill='%237D2F65'/%3E%3Cpath d='M137.51 94.6265L59.7646 38.073C59.3215 37.755 58.8054 34.1057 58.2736 31.3635C58.2528 31.2384 58.2267 31.1133 58.2007 30.9933C57.8931 29.4659 57.2519 27.6621 56.9495 27.6673C55.5106 24.6279 53.2272 22.9076 50.0158 21.7919C49.2912 21.4635 48.3737 21.2445 47.2267 21.1611C47.2007 21.1559 47.1746 21.1559 47.1485 21.1507C47.1329 21.1507 47.1225 21.1455 47.1068 21.1455C47.0495 21.1403 46.9973 21.1403 46.94 21.1403C46.5959 21.1142 46.2519 21.0881 45.9026 21.0881C45.7149 21.0881 45.5324 21.109 45.3447 21.1142C35.7106 21.3384 30.2888 28.3033 30.2888 28.3033C30.2888 28.3033 31.7277 30.4616 33.349 32.8858C33.3334 33.1516 33.3073 33.4175 33.3073 33.6834C33.3073 36.4621 34.2196 39.0218 35.7419 41.1071C30.2992 116.96 104.229 89.0744 105.266 89.0744C105.85 89.0744 121.213 94.7308 134.784 99.7668C137.99 100.961 140.294 96.6232 137.51 94.6265Z' fill='url(%23paint0_linear_221_46600)'/%3E%3Cpath d='M41.586 31.2594C42.9162 31.2594 43.9946 30.1811 43.9946 28.8509C43.9946 27.5207 42.9162 26.4424 41.586 26.4424C40.2558 26.4424 39.1775 27.5207 39.1775 28.8509C39.1775 30.1811 40.2558 31.2594 41.586 31.2594Z' fill='white'/%3E%3Cpath d='M35.6377 29.049C35.6377 29.049 23.6523 25.0243 23.4751 35.6959V40.1584C25.5969 40.1584 27.7396 38.9125 29.8614 38.9125C31.7955 38.9125 33.7035 40.1584 35.6377 40.1584V29.049Z' fill='url(%23paint1_linear_221_46600)'/%3E%3Cpath d='M59.6291 38.0156C59.6291 38.0156 46.7627 52.0393 58.967 72.9028C71.1712 93.7663 107.304 72.6995 107.304 72.6995L59.6291 38.0156Z' fill='url(%23paint2_linear_221_46600)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_221_46600' x1='36.8426' y1='43.4468' x2='122.653' y2='109.809' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23E9457E'/%3E%3Cstop offset='0.4218' stop-color='%23E71D73'/%3E%3Cstop offset='0.8525' stop-color='%237D2F65'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_221_46600' x1='29.0379' y1='28.051' x2='29.9962' y2='40.1742' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FDC800'/%3E%3Cstop offset='0.6685' stop-color='%23F18F34'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear_221_46600' x1='53.7099' y1='60.0686' x2='107.308' y2='60.0686' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EC608A'/%3E%3Cstop offset='0.4218' stop-color='%23EC638B'/%3E%3Cstop offset='0.8525' stop-color='%23E8407B'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="0"] {
+  background-size: 100% 18%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="1"] {
+  background-size: 100% 18.82%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="2"] {
+  background-size: 100% 19.64%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="3"] {
+  background-size: 100% 20.46%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="4"] {
+  background-size: 100% 21.28%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="5"] {
+  background-size: 100% 22.1%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="6"] {
+  background-size: 100% 22.92%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="7"] {
+  background-size: 100% 23.74%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="8"] {
+  background-size: 100% 24.56%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="9"] {
+  background-size: 100% 25.38%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="10"] {
+  background-size: 100% 26.2%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="11"] {
+  background-size: 100% 27.02%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="12"] {
+  background-size: 100% 27.84%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="13"] {
+  background-size: 100% 28.66%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="14"] {
+  background-size: 100% 29.48%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="15"] {
+  background-size: 100% 30.3%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="16"] {
+  background-size: 100% 31.12%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="17"] {
+  background-size: 100% 31.94%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="18"] {
+  background-size: 100% 32.76%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="19"] {
+  background-size: 100% 33.58%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="20"] {
+  background-size: 100% 34.4%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="21"] {
+  background-size: 100% 35.22%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="22"] {
+  background-size: 100% 36.04%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="23"] {
+  background-size: 100% 36.86%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="24"] {
+  background-size: 100% 37.68%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="25"] {
+  background-size: 100% 38.5%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="26"] {
+  background-size: 100% 39.32%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="27"] {
+  background-size: 100% 40.14%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="28"] {
+  background-size: 100% 40.96%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="29"] {
+  background-size: 100% 41.78%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="30"] {
+  background-size: 100% 42.6%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="31"] {
+  background-size: 100% 43.42%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="32"] {
+  background-size: 100% 44.24%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="33"] {
+  background-size: 100% 45.06%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="34"] {
+  background-size: 100% 45.88%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="35"] {
+  background-size: 100% 46.7%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="36"] {
+  background-size: 100% 47.52%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="37"] {
+  background-size: 100% 48.34%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="38"] {
+  background-size: 100% 49.16%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="39"] {
+  background-size: 100% 49.98%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="40"] {
+  background-size: 100% 50.8%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="41"] {
+  background-size: 100% 51.62%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="42"] {
+  background-size: 100% 52.44%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="43"] {
+  background-size: 100% 53.26%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="44"] {
+  background-size: 100% 54.08%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="45"] {
+  background-size: 100% 54.9%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="46"] {
+  background-size: 100% 55.72%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="47"] {
+  background-size: 100% 56.54%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="48"] {
+  background-size: 100% 57.36%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="49"] {
+  background-size: 100% 58.18%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="50"] {
+  background-size: 100% 59%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="51"] {
+  background-size: 100% 59.82%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="52"] {
+  background-size: 100% 60.64%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="53"] {
+  background-size: 100% 61.46%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="54"] {
+  background-size: 100% 62.28%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="55"] {
+  background-size: 100% 63.1%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="56"] {
+  background-size: 100% 63.92%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="57"] {
+  background-size: 100% 64.74%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="58"] {
+  background-size: 100% 65.56%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="59"] {
+  background-size: 100% 66.38%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="60"] {
+  background-size: 100% 67.2%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="61"] {
+  background-size: 100% 68.02%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="62"] {
+  background-size: 100% 68.84%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="63"] {
+  background-size: 100% 69.66%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="64"] {
+  background-size: 100% 70.48%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="65"] {
+  background-size: 100% 71.3%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="66"] {
+  background-size: 100% 72.12%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="67"] {
+  background-size: 100% 72.94%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="68"] {
+  background-size: 100% 73.76%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="69"] {
+  background-size: 100% 74.58%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="70"] {
+  background-size: 100% 75.4%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="71"] {
+  background-size: 100% 76.22%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="72"] {
+  background-size: 100% 77.04%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="73"] {
+  background-size: 100% 77.86%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="74"] {
+  background-size: 100% 78.68%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="75"] {
+  background-size: 100% 79.5%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="76"] {
+  background-size: 100% 80.32%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="77"] {
+  background-size: 100% 81.14%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="78"] {
+  background-size: 100% 81.96%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="79"] {
+  background-size: 100% 82.78%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="80"] {
+  background-size: 100% 83.6%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="81"] {
+  background-size: 100% 84.42%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="82"] {
+  background-size: 100% 85.24%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="83"] {
+  background-size: 100% 86.06%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="84"] {
+  background-size: 100% 86.88%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="85"] {
+  background-size: 100% 87.7%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="86"] {
+  background-size: 100% 88.52%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="87"] {
+  background-size: 100% 89.34%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="88"] {
+  background-size: 100% 90.16%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="89"] {
+  background-size: 100% 90.98%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="90"] {
+  background-size: 100% 91.8%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="91"] {
+  background-size: 100% 92.62%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="92"] {
+  background-size: 100% 93.44%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="93"] {
+  background-size: 100% 94.26%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="94"] {
+  background-size: 100% 95.08%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="95"] {
+  background-size: 100% 95.9%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="96"] {
+  background-size: 100% 96.72%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="97"] {
+  background-size: 100% 97.54%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="98"] {
+  background-size: 100% 98.36%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="99"] {
+  background-size: 100% 99.18%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-value[data-value="100"] {
+  background-size: 100% 100%;
+}
+.choose-lesson-control .choose-lesson-control-container .choose-lesson-body .progress-label {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 800;
+}
+.choose-lesson-control.disabled .choose-lesson-body::after {
+  font-family: "icomoon";
+  content: "";
+  font-size: 24px;
+  color: #C2C2C7;
+  position: absolute;
+  background-color: rgba(81, 83, 85, 0.8);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.choose-lesson-control.disabled:focus .choose-lesson-control-container {
+  border-width: 5px;
+}
+
+.circle-progress, .badge-control {
+  max-width: 113px;
+  display: inline-block;
+  width: 100%;
+}
+.circle-progress.pink-border, .pink-border.badge-control,
+.circle-progress .pink-border,
+.badge-control .pink-border {
+  --border-color: #FF4A65;
+}
+.circle-progress.pink-color, .pink-color.badge-control,
+.circle-progress .pink-color,
+.badge-control .pink-color {
+  --color: #FF4A65;
+}
+.circle-progress.red-border, .red-border.badge-control,
+.circle-progress .red-border,
+.badge-control .red-border {
+  --border-color: #FF3038;
+}
+.circle-progress.red-color, .red-color.badge-control,
+.circle-progress .red-color,
+.badge-control .red-color {
+  --color: #FF3038;
+}
+.circle-progress.fuchsia-border, .fuchsia-border.badge-control,
+.circle-progress .fuchsia-border,
+.badge-control .fuchsia-border {
+  --border-color: #FC4964;
+}
+.circle-progress.fuchsia-color, .fuchsia-color.badge-control,
+.circle-progress .fuchsia-color,
+.badge-control .fuchsia-color {
+  --color: #FC4964;
+}
+.circle-progress.tomato-border, .tomato-border.badge-control,
+.circle-progress .tomato-border,
+.badge-control .tomato-border {
+  --border-color: #FF4D56;
+}
+.circle-progress.tomato-color, .tomato-color.badge-control,
+.circle-progress .tomato-color,
+.badge-control .tomato-color {
+  --color: #FF4D56;
+}
+.circle-progress.transparent-border, .transparent-border.badge-control,
+.circle-progress .transparent-border,
+.badge-control .transparent-border {
+  --border-color: rgba(0, 0, 0, 0);
+}
+.circle-progress.transparent-color, .transparent-color.badge-control,
+.circle-progress .transparent-color,
+.badge-control .transparent-color {
+  --color: rgba(0, 0, 0, 0);
+}
+.circle-progress .circle-progress-container, .badge-control .circle-progress-container {
+  display: block;
+  position: relative;
+  border: 3px solid var(--border-color, #2C2A71);
+  border-radius: 50%;
+  width: 100%;
+}
+.circle-progress .circle-progress-container::before, .badge-control .circle-progress-container::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.circle-progress .circle-progress-container .circle-progress-body, .badge-control .circle-progress-container .circle-progress-body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-background-image, .badge-control .circle-progress-container .circle-progress-body .progress-background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value, .badge-control .circle-progress-container .circle-progress-body .progress-value {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="0"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="0"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 100%, var(--color, #2e2e78) 100%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="1"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="1"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 99%, var(--color, #2e2e78) 99%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="2"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="2"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 98%, var(--color, #2e2e78) 98%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="3"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="3"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 97%, var(--color, #2e2e78) 97%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="4"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="4"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 96%, var(--color, #2e2e78) 96%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="5"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="5"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 95%, var(--color, #2e2e78) 95%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="6"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="6"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 94%, var(--color, #2e2e78) 94%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="7"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="7"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 93%, var(--color, #2e2e78) 93%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="8"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="8"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 92%, var(--color, #2e2e78) 92%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="9"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="9"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 91%, var(--color, #2e2e78) 91%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="10"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="10"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 90%, var(--color, #2e2e78) 90%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="11"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="11"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 89%, var(--color, #2e2e78) 89%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="12"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="12"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 88%, var(--color, #2e2e78) 88%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="13"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="13"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 87%, var(--color, #2e2e78) 87%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="14"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="14"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 86%, var(--color, #2e2e78) 86%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="15"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="15"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 85%, var(--color, #2e2e78) 85%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="16"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="16"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 84%, var(--color, #2e2e78) 84%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="17"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="17"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 83%, var(--color, #2e2e78) 83%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="18"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="18"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 82%, var(--color, #2e2e78) 82%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="19"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="19"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 81%, var(--color, #2e2e78) 81%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="20"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="20"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 80%, var(--color, #2e2e78) 80%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="21"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="21"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 79%, var(--color, #2e2e78) 79%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="22"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="22"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 78%, var(--color, #2e2e78) 78%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="23"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="23"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 77%, var(--color, #2e2e78) 77%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="24"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="24"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 76%, var(--color, #2e2e78) 76%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="25"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="25"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 75%, var(--color, #2e2e78) 75%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="26"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="26"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 74%, var(--color, #2e2e78) 74%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="27"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="27"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 73%, var(--color, #2e2e78) 73%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="28"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="28"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 72%, var(--color, #2e2e78) 72%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="29"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="29"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 71%, var(--color, #2e2e78) 71%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="30"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="30"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 70%, var(--color, #2e2e78) 70%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="31"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="31"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 69%, var(--color, #2e2e78) 69%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="32"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="32"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 68%, var(--color, #2e2e78) 68%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="33"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="33"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 67%, var(--color, #2e2e78) 67%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="34"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="34"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 66%, var(--color, #2e2e78) 66%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="35"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="35"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 65%, var(--color, #2e2e78) 65%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="36"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="36"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 64%, var(--color, #2e2e78) 64%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="37"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="37"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 63%, var(--color, #2e2e78) 63%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="38"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="38"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 62%, var(--color, #2e2e78) 62%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="39"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="39"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 61%, var(--color, #2e2e78) 61%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="40"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="40"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 60%, var(--color, #2e2e78) 60%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="41"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="41"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 59%, var(--color, #2e2e78) 59%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="42"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="42"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 58%, var(--color, #2e2e78) 58%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="43"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="43"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 57%, var(--color, #2e2e78) 57%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="44"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="44"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 56%, var(--color, #2e2e78) 56%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="45"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="45"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 55%, var(--color, #2e2e78) 55%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="46"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="46"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 54%, var(--color, #2e2e78) 54%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="47"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="47"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 53%, var(--color, #2e2e78) 53%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="48"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="48"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 52%, var(--color, #2e2e78) 52%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="49"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="49"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 51%, var(--color, #2e2e78) 51%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="50"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="50"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 50%, var(--color, #2e2e78) 50%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="51"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="51"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 49%, var(--color, #2e2e78) 49%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="52"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="52"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 48%, var(--color, #2e2e78) 48%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="53"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="53"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 47%, var(--color, #2e2e78) 47%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="54"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="54"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 46%, var(--color, #2e2e78) 46%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="55"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="55"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 45%, var(--color, #2e2e78) 45%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="56"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="56"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 44%, var(--color, #2e2e78) 44%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="57"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="57"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 43%, var(--color, #2e2e78) 43%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="58"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="58"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 42%, var(--color, #2e2e78) 42%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="59"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="59"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 41%, var(--color, #2e2e78) 41%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="60"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="60"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 40%, var(--color, #2e2e78) 40%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="61"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="61"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 39%, var(--color, #2e2e78) 39%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="62"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="62"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 38%, var(--color, #2e2e78) 38%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="63"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="63"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 37%, var(--color, #2e2e78) 37%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="64"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="64"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 36%, var(--color, #2e2e78) 36%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="65"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="65"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 35%, var(--color, #2e2e78) 35%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="66"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="66"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 34%, var(--color, #2e2e78) 34%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="67"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="67"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 33%, var(--color, #2e2e78) 33%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="68"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="68"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 32%, var(--color, #2e2e78) 32%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="69"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="69"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 31%, var(--color, #2e2e78) 31%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="70"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="70"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 30%, var(--color, #2e2e78) 30%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="71"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="71"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 29%, var(--color, #2e2e78) 29%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="72"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="72"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 28%, var(--color, #2e2e78) 28%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="73"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="73"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 27%, var(--color, #2e2e78) 27%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="74"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="74"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 26%, var(--color, #2e2e78) 26%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="75"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="75"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 25%, var(--color, #2e2e78) 25%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="76"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="76"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 24%, var(--color, #2e2e78) 24%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="77"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="77"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 23%, var(--color, #2e2e78) 23%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="78"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="78"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 22%, var(--color, #2e2e78) 22%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="79"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="79"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 21%, var(--color, #2e2e78) 21%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="80"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="80"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 20%, var(--color, #2e2e78) 20%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="81"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="81"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 19%, var(--color, #2e2e78) 19%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="82"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="82"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 18%, var(--color, #2e2e78) 18%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="83"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="83"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 17%, var(--color, #2e2e78) 17%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="84"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="84"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 16%, var(--color, #2e2e78) 16%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="85"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="85"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 15%, var(--color, #2e2e78) 15%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="86"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="86"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 14%, var(--color, #2e2e78) 14%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="87"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="87"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 13%, var(--color, #2e2e78) 13%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="88"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="88"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 12%, var(--color, #2e2e78) 12%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="89"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="89"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 11%, var(--color, #2e2e78) 11%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="90"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="90"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 10%, var(--color, #2e2e78) 10%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="91"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="91"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 9%, var(--color, #2e2e78) 9%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="92"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="92"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 8%, var(--color, #2e2e78) 8%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="93"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="93"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 7%, var(--color, #2e2e78) 7%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="94"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="94"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 6%, var(--color, #2e2e78) 6%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="95"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="95"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 5%, var(--color, #2e2e78) 5%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="96"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="96"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 4%, var(--color, #2e2e78) 4%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="97"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="97"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 3%, var(--color, #2e2e78) 3%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="98"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="98"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 2%, var(--color, #2e2e78) 2%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="99"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="99"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 1%, var(--color, #2e2e78) 1%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value[data-value="100"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value[data-value="100"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.8;
+  background: linear-gradient(180deg, #5c5c62 0%, var(--color, #2e2e78) 0%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="0"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="0"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 100%, var(--color, rgba(46, 46, 120, 0.8)) 100%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="1"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="1"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 99%, var(--color, rgba(46, 46, 120, 0.8)) 99%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="2"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="2"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 98%, var(--color, rgba(46, 46, 120, 0.8)) 98%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="3"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="3"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 97%, var(--color, rgba(46, 46, 120, 0.8)) 97%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="4"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="4"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 96%, var(--color, rgba(46, 46, 120, 0.8)) 96%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="5"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="5"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 95%, var(--color, rgba(46, 46, 120, 0.8)) 95%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="6"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="6"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 94%, var(--color, rgba(46, 46, 120, 0.8)) 94%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="7"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="7"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 93%, var(--color, rgba(46, 46, 120, 0.8)) 93%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="8"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="8"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 92%, var(--color, rgba(46, 46, 120, 0.8)) 92%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="9"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="9"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 91%, var(--color, rgba(46, 46, 120, 0.8)) 91%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="10"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="10"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 90%, var(--color, rgba(46, 46, 120, 0.8)) 90%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="11"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="11"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 89%, var(--color, rgba(46, 46, 120, 0.8)) 89%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="12"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="12"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 88%, var(--color, rgba(46, 46, 120, 0.8)) 88%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="13"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="13"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 87%, var(--color, rgba(46, 46, 120, 0.8)) 87%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="14"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="14"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 86%, var(--color, rgba(46, 46, 120, 0.8)) 86%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="15"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="15"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 85%, var(--color, rgba(46, 46, 120, 0.8)) 85%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="16"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="16"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 84%, var(--color, rgba(46, 46, 120, 0.8)) 84%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="17"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="17"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 83%, var(--color, rgba(46, 46, 120, 0.8)) 83%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="18"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="18"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 82%, var(--color, rgba(46, 46, 120, 0.8)) 82%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="19"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="19"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 81%, var(--color, rgba(46, 46, 120, 0.8)) 81%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="20"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="20"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 80%, var(--color, rgba(46, 46, 120, 0.8)) 80%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="21"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="21"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 79%, var(--color, rgba(46, 46, 120, 0.8)) 79%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="22"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="22"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 78%, var(--color, rgba(46, 46, 120, 0.8)) 78%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="23"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="23"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 77%, var(--color, rgba(46, 46, 120, 0.8)) 77%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="24"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="24"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 76%, var(--color, rgba(46, 46, 120, 0.8)) 76%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="25"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="25"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 75%, var(--color, rgba(46, 46, 120, 0.8)) 75%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="26"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="26"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 74%, var(--color, rgba(46, 46, 120, 0.8)) 74%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="27"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="27"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 73%, var(--color, rgba(46, 46, 120, 0.8)) 73%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="28"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="28"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 72%, var(--color, rgba(46, 46, 120, 0.8)) 72%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="29"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="29"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 71%, var(--color, rgba(46, 46, 120, 0.8)) 71%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="30"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="30"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 70%, var(--color, rgba(46, 46, 120, 0.8)) 70%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="31"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="31"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 69%, var(--color, rgba(46, 46, 120, 0.8)) 69%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="32"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="32"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 68%, var(--color, rgba(46, 46, 120, 0.8)) 68%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="33"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="33"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 67%, var(--color, rgba(46, 46, 120, 0.8)) 67%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="34"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="34"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 66%, var(--color, rgba(46, 46, 120, 0.8)) 66%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="35"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="35"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 65%, var(--color, rgba(46, 46, 120, 0.8)) 65%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="36"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="36"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 64%, var(--color, rgba(46, 46, 120, 0.8)) 64%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="37"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="37"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 63%, var(--color, rgba(46, 46, 120, 0.8)) 63%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="38"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="38"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 62%, var(--color, rgba(46, 46, 120, 0.8)) 62%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="39"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="39"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 61%, var(--color, rgba(46, 46, 120, 0.8)) 61%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="40"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="40"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 60%, var(--color, rgba(46, 46, 120, 0.8)) 60%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="41"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="41"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 59%, var(--color, rgba(46, 46, 120, 0.8)) 59%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="42"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="42"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 58%, var(--color, rgba(46, 46, 120, 0.8)) 58%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="43"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="43"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 57%, var(--color, rgba(46, 46, 120, 0.8)) 57%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="44"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="44"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 56%, var(--color, rgba(46, 46, 120, 0.8)) 56%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="45"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="45"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 55%, var(--color, rgba(46, 46, 120, 0.8)) 55%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="46"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="46"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 54%, var(--color, rgba(46, 46, 120, 0.8)) 54%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="47"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="47"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 53%, var(--color, rgba(46, 46, 120, 0.8)) 53%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="48"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="48"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 52%, var(--color, rgba(46, 46, 120, 0.8)) 52%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="49"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="49"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 51%, var(--color, rgba(46, 46, 120, 0.8)) 51%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="50"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="50"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 50%, var(--color, rgba(46, 46, 120, 0.8)) 50%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="51"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="51"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 49%, var(--color, rgba(46, 46, 120, 0.8)) 49%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="52"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="52"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 48%, var(--color, rgba(46, 46, 120, 0.8)) 48%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="53"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="53"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 47%, var(--color, rgba(46, 46, 120, 0.8)) 47%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="54"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="54"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 46%, var(--color, rgba(46, 46, 120, 0.8)) 46%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="55"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="55"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 45%, var(--color, rgba(46, 46, 120, 0.8)) 45%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="56"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="56"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 44%, var(--color, rgba(46, 46, 120, 0.8)) 44%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="57"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="57"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 43%, var(--color, rgba(46, 46, 120, 0.8)) 43%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="58"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="58"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 42%, var(--color, rgba(46, 46, 120, 0.8)) 42%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="59"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="59"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 41%, var(--color, rgba(46, 46, 120, 0.8)) 41%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="60"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="60"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 40%, var(--color, rgba(46, 46, 120, 0.8)) 40%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="61"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="61"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 39%, var(--color, rgba(46, 46, 120, 0.8)) 39%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="62"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="62"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 38%, var(--color, rgba(46, 46, 120, 0.8)) 38%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="63"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="63"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 37%, var(--color, rgba(46, 46, 120, 0.8)) 37%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="64"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="64"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 36%, var(--color, rgba(46, 46, 120, 0.8)) 36%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="65"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="65"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 35%, var(--color, rgba(46, 46, 120, 0.8)) 35%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="66"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="66"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 34%, var(--color, rgba(46, 46, 120, 0.8)) 34%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="67"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="67"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 33%, var(--color, rgba(46, 46, 120, 0.8)) 33%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="68"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="68"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 32%, var(--color, rgba(46, 46, 120, 0.8)) 32%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="69"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="69"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 31%, var(--color, rgba(46, 46, 120, 0.8)) 31%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="70"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="70"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 30%, var(--color, rgba(46, 46, 120, 0.8)) 30%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="71"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="71"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 29%, var(--color, rgba(46, 46, 120, 0.8)) 29%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="72"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="72"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 28%, var(--color, rgba(46, 46, 120, 0.8)) 28%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="73"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="73"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 27%, var(--color, rgba(46, 46, 120, 0.8)) 27%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="74"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="74"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 26%, var(--color, rgba(46, 46, 120, 0.8)) 26%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="75"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="75"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 25%, var(--color, rgba(46, 46, 120, 0.8)) 25%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="76"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="76"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 24%, var(--color, rgba(46, 46, 120, 0.8)) 24%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="77"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="77"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 23%, var(--color, rgba(46, 46, 120, 0.8)) 23%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="78"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="78"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 22%, var(--color, rgba(46, 46, 120, 0.8)) 22%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="79"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="79"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 21%, var(--color, rgba(46, 46, 120, 0.8)) 21%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="80"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="80"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 20%, var(--color, rgba(46, 46, 120, 0.8)) 20%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="81"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="81"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 19%, var(--color, rgba(46, 46, 120, 0.8)) 19%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="82"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="82"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 18%, var(--color, rgba(46, 46, 120, 0.8)) 18%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="83"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="83"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 17%, var(--color, rgba(46, 46, 120, 0.8)) 17%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="84"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="84"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 16%, var(--color, rgba(46, 46, 120, 0.8)) 16%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="85"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="85"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 15%, var(--color, rgba(46, 46, 120, 0.8)) 15%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="86"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="86"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 14%, var(--color, rgba(46, 46, 120, 0.8)) 14%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="87"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="87"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 13%, var(--color, rgba(46, 46, 120, 0.8)) 13%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="88"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="88"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 12%, var(--color, rgba(46, 46, 120, 0.8)) 12%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="89"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="89"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 11%, var(--color, rgba(46, 46, 120, 0.8)) 11%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="90"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="90"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 10%, var(--color, rgba(46, 46, 120, 0.8)) 10%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="91"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="91"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 9%, var(--color, rgba(46, 46, 120, 0.8)) 9%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="92"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="92"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 8%, var(--color, rgba(46, 46, 120, 0.8)) 8%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="93"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="93"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 7%, var(--color, rgba(46, 46, 120, 0.8)) 7%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="94"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="94"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 6%, var(--color, rgba(46, 46, 120, 0.8)) 6%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="95"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="95"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 5%, var(--color, rgba(46, 46, 120, 0.8)) 5%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="96"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="96"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 4%, var(--color, rgba(46, 46, 120, 0.8)) 4%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="97"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="97"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 3%, var(--color, rgba(46, 46, 120, 0.8)) 3%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="98"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="98"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 2%, var(--color, rgba(46, 46, 120, 0.8)) 2%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="99"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="99"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 1%, var(--color, rgba(46, 46, 120, 0.8)) 1%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="100"]::after, .badge-control .circle-progress-container .circle-progress-body .progress-value.horizontal[data-value="100"]::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) 0%, var(--color, rgba(46, 46, 120, 0.8)) 0%);
+}
+.circle-progress .circle-progress-container .circle-progress-body .progress-label, .badge-control .circle-progress-container .circle-progress-body .progress-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+.circle-progress.disabled .circle-progress-body::after, .disabled.badge-control .circle-progress-body::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  font-family: "icomoon";
+  content: "";
+  font-size: 24px;
+  color: #C2C2C7;
+  background-color: rgba(81, 83, 85, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.badge-control .circle-progress-container {
+  border: 5px solid transparent;
+}
+.badge-control .circle-progress-container .circle-progress-body {
+  border: none;
+}
+.badge-control:focus .circle-progress-container {
+  border: 5px solid #2C2A71;
+}
+
+.simple-popover {
+  border-radius: 12px;
+  opacity: 0.9;
+  background-color: #2E2E78;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.simple-popover .popover-body {
+  color: #FFFFFF;
+  padding: 0 12px 12px 12px;
+}
+.simple-popover .icon-close {
+  margin-top: 0.375rem;
+  margin-right: 0.375rem;
+  font-size: 16px;
+}
+
+.simple-popover-content {
+  display: none;
+}
+
+.article-thumbnail .unlock-instruction {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 80%;
+  background-color: rgba(46, 46, 120, 0.9);
+  z-index: 4;
+  border-radius: 0.8rem;
+  border: 3px solid #2E2E78;
+}
+.article-thumbnail .unlock-instruction .icon-close {
+  color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  margin-top: 0.375rem;
+  margin-right: 0.375rem;
+  font-size: 16px;
+}
+.article-thumbnail .unlock-instruction .unlock-message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+.article-thumbnail.disabled {
+  cursor: pointer;
+}
+.article-thumbnail.disabled::after {
+  background: rgba(98, 96, 96, 0.4);
+  font-family: "icomoon";
+  content: "";
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 0.7rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.article-thumbnail.disabled .unlock-instruction.show {
+  display: block;
+}
+
+.landing {
+  background-image: url("../images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+@media (min-width: 576px) {
+  .landing {
+    background-image: url("../images/footer-bg-desktop.png");
+  }
+}
+.landing main {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  .landing main {
+    background-image: url("../images/mobile-hero-bg.jpg");
+    background-position: top;
+    background-size: 100%;
+  }
+  .landing main .wifi-registration {
+    margin-top: -120px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .landing main {
+    background-image: url("../images/hero-bg-middle.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 530px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) and (min-width: 768px) {
+  .landing main {
+    background-size: 640px;
+  }
+}
+@media (min-width: 992px) {
+  .landing main {
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url("../images/hero-bg.png");
+    background-size: 726px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .landing main {
+    background-size: 780px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1400px) {
+  .landing main {
+    background-size: 900px;
+  }
+}
+@media (min-width: 992px) {
+  .landing main .wifi-registration {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+.landing main footer {
+  margin-top: auto;
+}
+@media (max-width: 575px) {
+  .landing .hero {
+    padding-top: 70vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .landing .hero {
+    padding-top: 230px;
+  }
+  .landing .hero h3 {
+    font-size: 49px;
+  }
+}
+@media (min-width: 992px) {
+  .landing .hero {
+    padding-top: 140px;
+  }
+  .landing .hero h3 {
+    font-size: 49px;
+  }
+}
+
+.read-more-link {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #FF4B65;
+}
+.read-more-link:hover {
+  color: #FF4B65;
+}
+.read-more-link::before, .read-more-link::after {
+  font-family: "icomoon";
+  content: "";
+  color: #FF4B65;
+  font-size: 0.6rem;
+}
+.read-more-link.collapsed::after, .read-more-link.collapsed::before {
+  content: "";
+}
+.read-more-link .show-expanded {
+  display: none;
+}
+.read-more-link .show-collapsed {
+  display: inline-block;
+}
+.read-more-link.collapsed .show-expanded {
+  display: inline-block;
+}
+.read-more-link.collapsed .show-collapsed {
+  display: none;
+}
+
+.read-more-list {
+  list-style-type: none;
+}
+.read-more-list li {
+  position: relative;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #2D2942;
+  text-align: start;
+  margin-bottom: 0.5rem;
+}
+.read-more-list li::before {
+  position: absolute;
+  font-family: "icomoon";
+  content: "";
+  color: #FF4B65;
+  font-size: 4px;
+  vertical-align: middle;
+  top: 6px;
+  left: -16px;
+}
+.read-more-list li span,
+.read-more-list li a {
+  color: #FF4B65;
+}
+
+.input-label {
+  font-size: 11px;
+}
+@media (max-width: 414px) {
+  .input-label {
+    font-size: 9px;
+  }
+}
+
+.article-circle {
+  width: 65px;
+  height: 65px;
+  background: #FFFBFB;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+.article-circle .icon-style {
+  font-size: 24px;
+}
+
+@media (max-width: 375px) {
+  .word-card .card-body {
+    padding: 10px 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .article-circle {
+    width: 94px;
+    height: 94px;
+  }
+  .article-circle .icon-style {
+    font-size: 36px;
+  }
+}
+.hero-heading {
+  position: relative;
+}
+.hero-heading:after {
+  content: "";
+  display: block;
+  height: 0.375rem;
+  width: 3.125rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  background: #FF4A65;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 0.625rem;
+}
+
+.main {
+  background-image: url("../images/languages-bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .main {
+    background-image: url("../images/languages-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+}
+
+.main-blue, .modal-tutorial .tutorial-background {
+  background-image: url("../images/decor.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.main-lesson {
+  background-image: url("../images/lesson.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-circle-style {
+  width: 113px;
+  height: 113px;
+  position: relative;
+}
+.main-circle-style::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(130, 130, 130, 0.8);
+  height: 100%;
+  z-index: 1;
+  border: 3px solid #FFFFFF;
+  outline: 3px solid #2D2942;
+  border-radius: 50%;
+}
+.main-circle-style::before.blue {
+  background: rgba(18, 15, 110, 0.8);
+}
+.main-circle-style .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(97, 97, 97, 0.6);
+  height: 100%;
+  z-index: 1;
+  border: 3px solid #FFFFFF;
+  outline: 3px solid #2D2942;
+}
+.main-circle-style .img-overlay.blue {
+  background: rgba(18, 15, 110, 0.8);
+}
+.main-circle-style .title-block {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+.main-circle-style .icon-style {
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+}
+.main-circle-style.disabled .img-overlay {
+  background: rgba(85, 85, 100, 0.9);
+  outline: 3px solid #68665F;
+}
+.main-circle-style.disabled::after {
+  font-family: "icomoon";
+  content: "";
+  font-size: 24px;
+  color: #C2C2C7;
+  position: relative;
+  z-index: 3;
+  top: calc(50% - 20px);
+}
+.main-circle-style.disabled .title-block {
+  color: gray;
+}
+.main-circle-style[data-type=progress][data-value="0"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 100%, rgba(46, 46, 120, 0.8) 100%);
+}
+.main-circle-style[data-type=progress][data-value="1"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 99%, rgba(46, 46, 120, 0.8) 99%);
+}
+.main-circle-style[data-type=progress][data-value="2"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 98%, rgba(46, 46, 120, 0.8) 98%);
+}
+.main-circle-style[data-type=progress][data-value="3"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 97%, rgba(46, 46, 120, 0.8) 97%);
+}
+.main-circle-style[data-type=progress][data-value="4"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 96%, rgba(46, 46, 120, 0.8) 96%);
+}
+.main-circle-style[data-type=progress][data-value="5"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 95%, rgba(46, 46, 120, 0.8) 95%);
+}
+.main-circle-style[data-type=progress][data-value="6"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 94%, rgba(46, 46, 120, 0.8) 94%);
+}
+.main-circle-style[data-type=progress][data-value="7"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 93%, rgba(46, 46, 120, 0.8) 93%);
+}
+.main-circle-style[data-type=progress][data-value="8"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 92%, rgba(46, 46, 120, 0.8) 92%);
+}
+.main-circle-style[data-type=progress][data-value="9"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 91%, rgba(46, 46, 120, 0.8) 91%);
+}
+.main-circle-style[data-type=progress][data-value="10"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 90%, rgba(46, 46, 120, 0.8) 90%);
+}
+.main-circle-style[data-type=progress][data-value="11"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 89%, rgba(46, 46, 120, 0.8) 89%);
+}
+.main-circle-style[data-type=progress][data-value="12"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 88%, rgba(46, 46, 120, 0.8) 88%);
+}
+.main-circle-style[data-type=progress][data-value="13"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 87%, rgba(46, 46, 120, 0.8) 87%);
+}
+.main-circle-style[data-type=progress][data-value="14"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 86%, rgba(46, 46, 120, 0.8) 86%);
+}
+.main-circle-style[data-type=progress][data-value="15"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 85%, rgba(46, 46, 120, 0.8) 85%);
+}
+.main-circle-style[data-type=progress][data-value="16"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 84%, rgba(46, 46, 120, 0.8) 84%);
+}
+.main-circle-style[data-type=progress][data-value="17"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 83%, rgba(46, 46, 120, 0.8) 83%);
+}
+.main-circle-style[data-type=progress][data-value="18"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 82%, rgba(46, 46, 120, 0.8) 82%);
+}
+.main-circle-style[data-type=progress][data-value="19"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 81%, rgba(46, 46, 120, 0.8) 81%);
+}
+.main-circle-style[data-type=progress][data-value="20"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 80%, rgba(46, 46, 120, 0.8) 80%);
+}
+.main-circle-style[data-type=progress][data-value="21"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 79%, rgba(46, 46, 120, 0.8) 79%);
+}
+.main-circle-style[data-type=progress][data-value="22"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 78%, rgba(46, 46, 120, 0.8) 78%);
+}
+.main-circle-style[data-type=progress][data-value="23"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 77%, rgba(46, 46, 120, 0.8) 77%);
+}
+.main-circle-style[data-type=progress][data-value="24"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 76%, rgba(46, 46, 120, 0.8) 76%);
+}
+.main-circle-style[data-type=progress][data-value="25"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 75%, rgba(46, 46, 120, 0.8) 75%);
+}
+.main-circle-style[data-type=progress][data-value="26"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 74%, rgba(46, 46, 120, 0.8) 74%);
+}
+.main-circle-style[data-type=progress][data-value="27"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 73%, rgba(46, 46, 120, 0.8) 73%);
+}
+.main-circle-style[data-type=progress][data-value="28"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 72%, rgba(46, 46, 120, 0.8) 72%);
+}
+.main-circle-style[data-type=progress][data-value="29"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 71%, rgba(46, 46, 120, 0.8) 71%);
+}
+.main-circle-style[data-type=progress][data-value="30"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 70%, rgba(46, 46, 120, 0.8) 70%);
+}
+.main-circle-style[data-type=progress][data-value="31"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 69%, rgba(46, 46, 120, 0.8) 69%);
+}
+.main-circle-style[data-type=progress][data-value="32"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 68%, rgba(46, 46, 120, 0.8) 68%);
+}
+.main-circle-style[data-type=progress][data-value="33"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 67%, rgba(46, 46, 120, 0.8) 67%);
+}
+.main-circle-style[data-type=progress][data-value="34"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 66%, rgba(46, 46, 120, 0.8) 66%);
+}
+.main-circle-style[data-type=progress][data-value="35"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 65%, rgba(46, 46, 120, 0.8) 65%);
+}
+.main-circle-style[data-type=progress][data-value="36"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 64%, rgba(46, 46, 120, 0.8) 64%);
+}
+.main-circle-style[data-type=progress][data-value="37"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 63%, rgba(46, 46, 120, 0.8) 63%);
+}
+.main-circle-style[data-type=progress][data-value="38"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 62%, rgba(46, 46, 120, 0.8) 62%);
+}
+.main-circle-style[data-type=progress][data-value="39"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 61%, rgba(46, 46, 120, 0.8) 61%);
+}
+.main-circle-style[data-type=progress][data-value="40"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 60%, rgba(46, 46, 120, 0.8) 60%);
+}
+.main-circle-style[data-type=progress][data-value="41"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 59%, rgba(46, 46, 120, 0.8) 59%);
+}
+.main-circle-style[data-type=progress][data-value="42"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 58%, rgba(46, 46, 120, 0.8) 58%);
+}
+.main-circle-style[data-type=progress][data-value="43"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 57%, rgba(46, 46, 120, 0.8) 57%);
+}
+.main-circle-style[data-type=progress][data-value="44"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 56%, rgba(46, 46, 120, 0.8) 56%);
+}
+.main-circle-style[data-type=progress][data-value="45"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 55%, rgba(46, 46, 120, 0.8) 55%);
+}
+.main-circle-style[data-type=progress][data-value="46"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 54%, rgba(46, 46, 120, 0.8) 54%);
+}
+.main-circle-style[data-type=progress][data-value="47"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 53%, rgba(46, 46, 120, 0.8) 53%);
+}
+.main-circle-style[data-type=progress][data-value="48"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 52%, rgba(46, 46, 120, 0.8) 52%);
+}
+.main-circle-style[data-type=progress][data-value="49"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 51%, rgba(46, 46, 120, 0.8) 51%);
+}
+.main-circle-style[data-type=progress][data-value="50"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 50%, rgba(46, 46, 120, 0.8) 50%);
+}
+.main-circle-style[data-type=progress][data-value="51"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 49%, rgba(46, 46, 120, 0.8) 49%);
+}
+.main-circle-style[data-type=progress][data-value="52"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 48%, rgba(46, 46, 120, 0.8) 48%);
+}
+.main-circle-style[data-type=progress][data-value="53"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 47%, rgba(46, 46, 120, 0.8) 47%);
+}
+.main-circle-style[data-type=progress][data-value="54"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 46%, rgba(46, 46, 120, 0.8) 46%);
+}
+.main-circle-style[data-type=progress][data-value="55"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 45%, rgba(46, 46, 120, 0.8) 45%);
+}
+.main-circle-style[data-type=progress][data-value="56"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 44%, rgba(46, 46, 120, 0.8) 44%);
+}
+.main-circle-style[data-type=progress][data-value="57"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 43%, rgba(46, 46, 120, 0.8) 43%);
+}
+.main-circle-style[data-type=progress][data-value="58"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 42%, rgba(46, 46, 120, 0.8) 42%);
+}
+.main-circle-style[data-type=progress][data-value="59"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 41%, rgba(46, 46, 120, 0.8) 41%);
+}
+.main-circle-style[data-type=progress][data-value="60"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 40%, rgba(46, 46, 120, 0.8) 40%);
+}
+.main-circle-style[data-type=progress][data-value="61"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 39%, rgba(46, 46, 120, 0.8) 39%);
+}
+.main-circle-style[data-type=progress][data-value="62"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 38%, rgba(46, 46, 120, 0.8) 38%);
+}
+.main-circle-style[data-type=progress][data-value="63"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 37%, rgba(46, 46, 120, 0.8) 37%);
+}
+.main-circle-style[data-type=progress][data-value="64"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 36%, rgba(46, 46, 120, 0.8) 36%);
+}
+.main-circle-style[data-type=progress][data-value="65"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 35%, rgba(46, 46, 120, 0.8) 35%);
+}
+.main-circle-style[data-type=progress][data-value="66"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 34%, rgba(46, 46, 120, 0.8) 34%);
+}
+.main-circle-style[data-type=progress][data-value="67"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 33%, rgba(46, 46, 120, 0.8) 33%);
+}
+.main-circle-style[data-type=progress][data-value="68"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 32%, rgba(46, 46, 120, 0.8) 32%);
+}
+.main-circle-style[data-type=progress][data-value="69"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 31%, rgba(46, 46, 120, 0.8) 31%);
+}
+.main-circle-style[data-type=progress][data-value="70"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 30%, rgba(46, 46, 120, 0.8) 30%);
+}
+.main-circle-style[data-type=progress][data-value="71"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 29%, rgba(46, 46, 120, 0.8) 29%);
+}
+.main-circle-style[data-type=progress][data-value="72"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 28%, rgba(46, 46, 120, 0.8) 28%);
+}
+.main-circle-style[data-type=progress][data-value="73"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 27%, rgba(46, 46, 120, 0.8) 27%);
+}
+.main-circle-style[data-type=progress][data-value="74"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 26%, rgba(46, 46, 120, 0.8) 26%);
+}
+.main-circle-style[data-type=progress][data-value="75"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 25%, rgba(46, 46, 120, 0.8) 25%);
+}
+.main-circle-style[data-type=progress][data-value="76"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 24%, rgba(46, 46, 120, 0.8) 24%);
+}
+.main-circle-style[data-type=progress][data-value="77"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 23%, rgba(46, 46, 120, 0.8) 23%);
+}
+.main-circle-style[data-type=progress][data-value="78"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 22%, rgba(46, 46, 120, 0.8) 22%);
+}
+.main-circle-style[data-type=progress][data-value="79"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 21%, rgba(46, 46, 120, 0.8) 21%);
+}
+.main-circle-style[data-type=progress][data-value="80"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 20%, rgba(46, 46, 120, 0.8) 20%);
+}
+.main-circle-style[data-type=progress][data-value="81"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 19%, rgba(46, 46, 120, 0.8) 19%);
+}
+.main-circle-style[data-type=progress][data-value="82"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 18%, rgba(46, 46, 120, 0.8) 18%);
+}
+.main-circle-style[data-type=progress][data-value="83"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 17%, rgba(46, 46, 120, 0.8) 17%);
+}
+.main-circle-style[data-type=progress][data-value="84"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 16%, rgba(46, 46, 120, 0.8) 16%);
+}
+.main-circle-style[data-type=progress][data-value="85"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 15%, rgba(46, 46, 120, 0.8) 15%);
+}
+.main-circle-style[data-type=progress][data-value="86"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 14%, rgba(46, 46, 120, 0.8) 14%);
+}
+.main-circle-style[data-type=progress][data-value="87"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 13%, rgba(46, 46, 120, 0.8) 13%);
+}
+.main-circle-style[data-type=progress][data-value="88"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 12%, rgba(46, 46, 120, 0.8) 12%);
+}
+.main-circle-style[data-type=progress][data-value="89"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 11%, rgba(46, 46, 120, 0.8) 11%);
+}
+.main-circle-style[data-type=progress][data-value="90"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 10%, rgba(46, 46, 120, 0.8) 10%);
+}
+.main-circle-style[data-type=progress][data-value="91"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 9%, rgba(46, 46, 120, 0.8) 9%);
+}
+.main-circle-style[data-type=progress][data-value="92"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 8%, rgba(46, 46, 120, 0.8) 8%);
+}
+.main-circle-style[data-type=progress][data-value="93"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 7%, rgba(46, 46, 120, 0.8) 7%);
+}
+.main-circle-style[data-type=progress][data-value="94"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 6%, rgba(46, 46, 120, 0.8) 6%);
+}
+.main-circle-style[data-type=progress][data-value="95"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 5%, rgba(46, 46, 120, 0.8) 5%);
+}
+.main-circle-style[data-type=progress][data-value="96"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 4%, rgba(46, 46, 120, 0.8) 4%);
+}
+.main-circle-style[data-type=progress][data-value="97"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 3%, rgba(46, 46, 120, 0.8) 3%);
+}
+.main-circle-style[data-type=progress][data-value="98"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 2%, rgba(46, 46, 120, 0.8) 2%);
+}
+.main-circle-style[data-type=progress][data-value="99"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 1%, rgba(46, 46, 120, 0.8) 1%);
+}
+.main-circle-style[data-type=progress][data-value="100"]::before {
+  background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) 0%, rgba(46, 46, 120, 0.8) 0%);
+}
+
+.badge-border {
+  border: 9px solid rgba(130, 130, 130, 0.8);
+}
+
+.badge-circle-style {
+  position: relative;
+}
+.badge-circle-style.big {
+  width: 5.688rem;
+  height: 5.688rem;
+}
+.badge-circle-style.small {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.badge-circle-style::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(130, 130, 130, 0.8);
+  height: 100%;
+  z-index: 1;
+  border: 9px solid rgba(130, 130, 130, 0.8);
+  border-radius: 50%;
+}
+.badge-circle-style::before.blue {
+  background: rgba(18, 15, 110, 0.8);
+}
+.badge-circle-style::before.pink {
+  background: #FF4A65;
+}
+.badge-circle-style .title-block {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+.badge-circle-style .title-block.big img {
+  width: 46px;
+}
+.badge-circle-style .title-block.small img {
+  width: 20px;
+}
+.badge-circle-style[data-type=progress][data-value="0"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 100%, rgba(37, 104, 183, 0.8) 100%);
+}
+.badge-circle-style[data-type=progress][data-value="1"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 99%, rgba(37, 104, 183, 0.8) 99%);
+}
+.badge-circle-style[data-type=progress][data-value="2"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 98%, rgba(37, 104, 183, 0.8) 98%);
+}
+.badge-circle-style[data-type=progress][data-value="3"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 97%, rgba(37, 104, 183, 0.8) 97%);
+}
+.badge-circle-style[data-type=progress][data-value="4"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 96%, rgba(37, 104, 183, 0.8) 96%);
+}
+.badge-circle-style[data-type=progress][data-value="5"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 95%, rgba(37, 104, 183, 0.8) 95%);
+}
+.badge-circle-style[data-type=progress][data-value="6"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 94%, rgba(37, 104, 183, 0.8) 94%);
+}
+.badge-circle-style[data-type=progress][data-value="7"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 93%, rgba(37, 104, 183, 0.8) 93%);
+}
+.badge-circle-style[data-type=progress][data-value="8"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 92%, rgba(37, 104, 183, 0.8) 92%);
+}
+.badge-circle-style[data-type=progress][data-value="9"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 91%, rgba(37, 104, 183, 0.8) 91%);
+}
+.badge-circle-style[data-type=progress][data-value="10"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 90%, rgba(37, 104, 183, 0.8) 90%);
+}
+.badge-circle-style[data-type=progress][data-value="11"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 89%, rgba(37, 104, 183, 0.8) 89%);
+}
+.badge-circle-style[data-type=progress][data-value="12"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 88%, rgba(37, 104, 183, 0.8) 88%);
+}
+.badge-circle-style[data-type=progress][data-value="13"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 87%, rgba(37, 104, 183, 0.8) 87%);
+}
+.badge-circle-style[data-type=progress][data-value="14"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 86%, rgba(37, 104, 183, 0.8) 86%);
+}
+.badge-circle-style[data-type=progress][data-value="15"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 85%, rgba(37, 104, 183, 0.8) 85%);
+}
+.badge-circle-style[data-type=progress][data-value="16"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 84%, rgba(37, 104, 183, 0.8) 84%);
+}
+.badge-circle-style[data-type=progress][data-value="17"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 83%, rgba(37, 104, 183, 0.8) 83%);
+}
+.badge-circle-style[data-type=progress][data-value="18"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 82%, rgba(37, 104, 183, 0.8) 82%);
+}
+.badge-circle-style[data-type=progress][data-value="19"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 81%, rgba(37, 104, 183, 0.8) 81%);
+}
+.badge-circle-style[data-type=progress][data-value="20"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 80%, rgba(37, 104, 183, 0.8) 80%);
+}
+.badge-circle-style[data-type=progress][data-value="21"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 79%, rgba(37, 104, 183, 0.8) 79%);
+}
+.badge-circle-style[data-type=progress][data-value="22"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 78%, rgba(37, 104, 183, 0.8) 78%);
+}
+.badge-circle-style[data-type=progress][data-value="23"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 77%, rgba(37, 104, 183, 0.8) 77%);
+}
+.badge-circle-style[data-type=progress][data-value="24"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 76%, rgba(37, 104, 183, 0.8) 76%);
+}
+.badge-circle-style[data-type=progress][data-value="25"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 75%, rgba(37, 104, 183, 0.8) 75%);
+}
+.badge-circle-style[data-type=progress][data-value="26"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 74%, rgba(37, 104, 183, 0.8) 74%);
+}
+.badge-circle-style[data-type=progress][data-value="27"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 73%, rgba(37, 104, 183, 0.8) 73%);
+}
+.badge-circle-style[data-type=progress][data-value="28"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 72%, rgba(37, 104, 183, 0.8) 72%);
+}
+.badge-circle-style[data-type=progress][data-value="29"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 71%, rgba(37, 104, 183, 0.8) 71%);
+}
+.badge-circle-style[data-type=progress][data-value="30"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 70%, rgba(37, 104, 183, 0.8) 70%);
+}
+.badge-circle-style[data-type=progress][data-value="31"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 69%, rgba(37, 104, 183, 0.8) 69%);
+}
+.badge-circle-style[data-type=progress][data-value="32"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 68%, rgba(37, 104, 183, 0.8) 68%);
+}
+.badge-circle-style[data-type=progress][data-value="33"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 67%, rgba(37, 104, 183, 0.8) 67%);
+}
+.badge-circle-style[data-type=progress][data-value="34"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 66%, rgba(37, 104, 183, 0.8) 66%);
+}
+.badge-circle-style[data-type=progress][data-value="35"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 65%, rgba(37, 104, 183, 0.8) 65%);
+}
+.badge-circle-style[data-type=progress][data-value="36"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 64%, rgba(37, 104, 183, 0.8) 64%);
+}
+.badge-circle-style[data-type=progress][data-value="37"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 63%, rgba(37, 104, 183, 0.8) 63%);
+}
+.badge-circle-style[data-type=progress][data-value="38"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 62%, rgba(37, 104, 183, 0.8) 62%);
+}
+.badge-circle-style[data-type=progress][data-value="39"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 61%, rgba(37, 104, 183, 0.8) 61%);
+}
+.badge-circle-style[data-type=progress][data-value="40"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 60%, rgba(37, 104, 183, 0.8) 60%);
+}
+.badge-circle-style[data-type=progress][data-value="41"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 59%, rgba(37, 104, 183, 0.8) 59%);
+}
+.badge-circle-style[data-type=progress][data-value="42"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 58%, rgba(37, 104, 183, 0.8) 58%);
+}
+.badge-circle-style[data-type=progress][data-value="43"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 57%, rgba(37, 104, 183, 0.8) 57%);
+}
+.badge-circle-style[data-type=progress][data-value="44"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 56%, rgba(37, 104, 183, 0.8) 56%);
+}
+.badge-circle-style[data-type=progress][data-value="45"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 55%, rgba(37, 104, 183, 0.8) 55%);
+}
+.badge-circle-style[data-type=progress][data-value="46"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 54%, rgba(37, 104, 183, 0.8) 54%);
+}
+.badge-circle-style[data-type=progress][data-value="47"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 53%, rgba(37, 104, 183, 0.8) 53%);
+}
+.badge-circle-style[data-type=progress][data-value="48"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 52%, rgba(37, 104, 183, 0.8) 52%);
+}
+.badge-circle-style[data-type=progress][data-value="49"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 51%, rgba(37, 104, 183, 0.8) 51%);
+}
+.badge-circle-style[data-type=progress][data-value="50"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 50%, rgba(37, 104, 183, 0.8) 50%);
+}
+.badge-circle-style[data-type=progress][data-value="51"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 49%, rgba(37, 104, 183, 0.8) 49%);
+}
+.badge-circle-style[data-type=progress][data-value="52"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 48%, rgba(37, 104, 183, 0.8) 48%);
+}
+.badge-circle-style[data-type=progress][data-value="53"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 47%, rgba(37, 104, 183, 0.8) 47%);
+}
+.badge-circle-style[data-type=progress][data-value="54"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 46%, rgba(37, 104, 183, 0.8) 46%);
+}
+.badge-circle-style[data-type=progress][data-value="55"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 45%, rgba(37, 104, 183, 0.8) 45%);
+}
+.badge-circle-style[data-type=progress][data-value="56"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 44%, rgba(37, 104, 183, 0.8) 44%);
+}
+.badge-circle-style[data-type=progress][data-value="57"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 43%, rgba(37, 104, 183, 0.8) 43%);
+}
+.badge-circle-style[data-type=progress][data-value="58"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 42%, rgba(37, 104, 183, 0.8) 42%);
+}
+.badge-circle-style[data-type=progress][data-value="59"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 41%, rgba(37, 104, 183, 0.8) 41%);
+}
+.badge-circle-style[data-type=progress][data-value="60"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 40%, rgba(37, 104, 183, 0.8) 40%);
+}
+.badge-circle-style[data-type=progress][data-value="61"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 39%, rgba(37, 104, 183, 0.8) 39%);
+}
+.badge-circle-style[data-type=progress][data-value="62"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 38%, rgba(37, 104, 183, 0.8) 38%);
+}
+.badge-circle-style[data-type=progress][data-value="63"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 37%, rgba(37, 104, 183, 0.8) 37%);
+}
+.badge-circle-style[data-type=progress][data-value="64"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 36%, rgba(37, 104, 183, 0.8) 36%);
+}
+.badge-circle-style[data-type=progress][data-value="65"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 35%, rgba(37, 104, 183, 0.8) 35%);
+}
+.badge-circle-style[data-type=progress][data-value="66"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 34%, rgba(37, 104, 183, 0.8) 34%);
+}
+.badge-circle-style[data-type=progress][data-value="67"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 33%, rgba(37, 104, 183, 0.8) 33%);
+}
+.badge-circle-style[data-type=progress][data-value="68"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 32%, rgba(37, 104, 183, 0.8) 32%);
+}
+.badge-circle-style[data-type=progress][data-value="69"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 31%, rgba(37, 104, 183, 0.8) 31%);
+}
+.badge-circle-style[data-type=progress][data-value="70"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 30%, rgba(37, 104, 183, 0.8) 30%);
+}
+.badge-circle-style[data-type=progress][data-value="71"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 29%, rgba(37, 104, 183, 0.8) 29%);
+}
+.badge-circle-style[data-type=progress][data-value="72"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 28%, rgba(37, 104, 183, 0.8) 28%);
+}
+.badge-circle-style[data-type=progress][data-value="73"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 27%, rgba(37, 104, 183, 0.8) 27%);
+}
+.badge-circle-style[data-type=progress][data-value="74"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 26%, rgba(37, 104, 183, 0.8) 26%);
+}
+.badge-circle-style[data-type=progress][data-value="75"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 25%, rgba(37, 104, 183, 0.8) 25%);
+}
+.badge-circle-style[data-type=progress][data-value="76"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 24%, rgba(37, 104, 183, 0.8) 24%);
+}
+.badge-circle-style[data-type=progress][data-value="77"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 23%, rgba(37, 104, 183, 0.8) 23%);
+}
+.badge-circle-style[data-type=progress][data-value="78"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 22%, rgba(37, 104, 183, 0.8) 22%);
+}
+.badge-circle-style[data-type=progress][data-value="79"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 21%, rgba(37, 104, 183, 0.8) 21%);
+}
+.badge-circle-style[data-type=progress][data-value="80"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 20%, rgba(37, 104, 183, 0.8) 20%);
+}
+.badge-circle-style[data-type=progress][data-value="81"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 19%, rgba(37, 104, 183, 0.8) 19%);
+}
+.badge-circle-style[data-type=progress][data-value="82"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 18%, rgba(37, 104, 183, 0.8) 18%);
+}
+.badge-circle-style[data-type=progress][data-value="83"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 17%, rgba(37, 104, 183, 0.8) 17%);
+}
+.badge-circle-style[data-type=progress][data-value="84"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 16%, rgba(37, 104, 183, 0.8) 16%);
+}
+.badge-circle-style[data-type=progress][data-value="85"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 15%, rgba(37, 104, 183, 0.8) 15%);
+}
+.badge-circle-style[data-type=progress][data-value="86"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 14%, rgba(37, 104, 183, 0.8) 14%);
+}
+.badge-circle-style[data-type=progress][data-value="87"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 13%, rgba(37, 104, 183, 0.8) 13%);
+}
+.badge-circle-style[data-type=progress][data-value="88"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 12%, rgba(37, 104, 183, 0.8) 12%);
+}
+.badge-circle-style[data-type=progress][data-value="89"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 11%, rgba(37, 104, 183, 0.8) 11%);
+}
+.badge-circle-style[data-type=progress][data-value="90"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 10%, rgba(37, 104, 183, 0.8) 10%);
+}
+.badge-circle-style[data-type=progress][data-value="91"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 9%, rgba(37, 104, 183, 0.8) 9%);
+}
+.badge-circle-style[data-type=progress][data-value="92"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 8%, rgba(37, 104, 183, 0.8) 8%);
+}
+.badge-circle-style[data-type=progress][data-value="93"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 7%, rgba(37, 104, 183, 0.8) 7%);
+}
+.badge-circle-style[data-type=progress][data-value="94"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 6%, rgba(37, 104, 183, 0.8) 6%);
+}
+.badge-circle-style[data-type=progress][data-value="95"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 5%, rgba(37, 104, 183, 0.8) 5%);
+}
+.badge-circle-style[data-type=progress][data-value="96"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 4%, rgba(37, 104, 183, 0.8) 4%);
+}
+.badge-circle-style[data-type=progress][data-value="97"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 3%, rgba(37, 104, 183, 0.8) 3%);
+}
+.badge-circle-style[data-type=progress][data-value="98"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 2%, rgba(37, 104, 183, 0.8) 2%);
+}
+.badge-circle-style[data-type=progress][data-value="99"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 1%, rgba(37, 104, 183, 0.8) 1%);
+}
+.badge-circle-style[data-type=progress][data-value="100"]::before {
+  background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) 0%, rgba(37, 104, 183, 0.8) 0%);
+}
+
+.edit-circle-btn {
+  position: relative;
+  width: 33px;
+  height: 33px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+.edit-circle-btn .circle-btn-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #FF4A65;
+  border-radius: 50%;
+}
+.edit-circle-btn .circle-btn-container span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listen-circle-btn {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border: 4px solid rgba(255, 171, 200, 0.5);
+  border-radius: 50%;
+}
+.listen-circle-btn .circle-btn-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+}
+.listen-circle-btn .circle-btn-container .circle-btn-body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 171, 200, 0.5);
+}
+.listen-circle-btn .circle-btn-container .circle-btn-body span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #FF4A65;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number-circle {
+  min-width: 26px;
+  height: 26px;
+  background: #F0F3FF;
+  color: #FF4A65;
+  font-weight: 800;
+  font-size: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px rgba(44, 42, 113, 0.15);
+}
+
+.congrats {
+  background: url("../images/intro-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.congrats p {
+  font-size: 18px;
+}
+
+@media (min-width: 1200px) {
+  .congrats {
+    background: url("../images/intro-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .congrats p {
+    font-size: 28px;
+  }
+}
+.close {
+  border: none !important;
+  background-color: transparent !important;
+  opacity: 1;
+}
+
+.return-link {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  left: 2rem;
+}
+@media (min-width: 1200px) {
+  .return-link {
+    top: 8px;
+  }
+}
+
+.return-circle {
+  background-color: #FF4A65;
+  width: 39px;
+  height: 39px;
+}
+@media (max-width: 320px) {
+  .return-circle {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 1.25rem;
+}
+@media (min-width: 1200px) {
+  .close-btn {
+    top: 10px;
+    right: 0;
+  }
+}
+
+/* Custom select */
+.custom-select {
+  position: relative;
+}
+.custom-select select {
+  display: none;
+}
+.custom-select .select-selected {
+  background: #FFFFFF;
+  border-radius: 11px;
+  text-align: start;
+  border: none;
+}
+.custom-select .select-selected::after {
+  font-family: "icomoon";
+  content: "";
+  color: #2D2942;
+  position: absolute;
+  font-size: 10px;
+  display: inline-block;
+  right: 10px;
+  top: 24px;
+}
+.custom-select .select-selected::before {
+  font-family: "icomoon";
+  content: "";
+  color: #2D2942;
+  position: absolute;
+  font-size: 14px;
+  display: inline-block;
+  left: 10px;
+  top: 18px;
+}
+.custom-select .select-selected.select-arrow-active {
+  border: 3px solid #2D2942;
+}
+.custom-select .select-arrow-active:after {
+  transform: rotate(180deg);
+  top: 18px;
+}
+.custom-select .select-items {
+  position: absolute;
+  background: #F8F8F8;
+  border-radius: 10px;
+  text-align: start;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 12px 0;
+  margin-top: 12px;
+}
+.custom-select .select-items .same-as-selected {
+  background-color: #2D2942;
+  color: #FFFFFF;
+  border-radius: 0;
+}
+.custom-select .select-items div,
+.custom-select .select-selected {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  color: #9E9E9E;
+  padding: 18px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.custom-select .select-items div {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2D2942;
+}
+@media (max-width: 414px) {
+  .custom-select .select-items div {
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+  }
+}
+.custom-select .select-hide {
+  display: none;
+}
+
+.profile-select.custom-select .select-selected,
+.select-items {
+  background: #2D2942 !important;
+  border: none;
+}
+.profile-select.custom-select .select-selected div,
+.select-items div {
+  font-size: 12px !important;
+  color: #FFFFFF !important;
+}
+
+.list-group {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F2FF 100%);
+  box-shadow: 0px 4px 4px rgba(49, 45, 100, 0.2);
+  border-radius: 5px;
+}
+.list-group .list-group-item {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #A9A8C6;
+}
+
+.flag-style {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.progress {
+  border-radius: 0.125rem;
+  height: 0.563rem;
+  background-color: #C4C4C4;
+}
+
+.modal .wow-backdrop {
+  position: relative;
+}
+.modal .wow-backdrop::before {
+  content: "";
+  position: absolute;
+  height: calc(100% + 104px + 64px);
+  width: 100vw;
+  z-index: -1;
+  top: -104px;
+  right: 0;
+  left: calc((100% - 100vw) / 2);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/wow-backdrop.svg");
+}
+.modal .wow-backdrop::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/wow-confetti.svg");
+  height: calc(100% + 104px + 64px);
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  z-index: 1;
+  top: -104px;
+  right: 0;
+  left: calc((100% - 100vw) / 2);
+  pointer-events: none;
+}
+.modal .top-icon-block {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  left: 0;
+}
+.modal .top-icon-block > * {
+  max-width: 90px;
+}
+@media (orientation: landscape) and (max-height: 412px) {
+  .modal .pt-140px {
+    padding-top: 64px;
+  }
+}
+
+.footer .list-items .list-item {
+  padding: 0 16px;
+}
+.footer .list-items .list-item .list-link {
+  font-size: 14px;
+}
+.footer .copyright {
+  font-size: 12px;
+}
+
+.continue-training {
+  bottom: 84px;
+}
+@media (min-width: 321px) {
+  .continue-training {
+    bottom: 110px;
+  }
+  .continue-training .btn {
+    padding: 13px 32px;
+  }
+}
+
+.card-img {
+  object-fit: cover;
+  object-position: top;
+  height: 40vh;
+}
+
+.card-terms {
+  padding: 79px 68px;
+}
+@media (max-width: 992px) {
+  .card-terms {
+    padding: 20px 26px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-img {
+    object-fit: cover;
+    object-position: top;
+    height: 65vh;
+  }
+}
+@media (min-width: 1200px) {
+  .card .read-more-list li {
+    font-size: 1.5rem;
+  }
+  .card .read-more-list li::before {
+    font-size: 6px;
+    top: 12px;
+    left: -22px;
+  }
+
+  .footer .list-items .list-item {
+    padding: 0 30px;
+  }
+  .footer .list-items .list-item .list-link {
+    font-size: 25px;
+  }
+  .footer .copyright {
+    font-size: 22px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,87 @@
+.circle-progress {
+    max-width: 113px;
+    display: inline-block;
+    width: 100%;
+    @include export_circle_progress_colors;
+    
+    .circle-progress-container {
+        display: block;
+        position: relative;
+        border: 3px solid var(--border-color, #2C2A71);
+        border-radius: 50%;
+        width: 100%;
+        &::before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+        .circle-progress-body {
+            @include absolute_fit_parent;
+            border: 3px solid $white;
+            border-radius: 50%;
+            .progress-background-image {
+                @include absolute_fit_parent;
+                object-fit: cover;
+                border-radius: 50%;
+                width: 100%;
+            }
+            .progress-value {
+                @include absolute_fit_parent;
+                border-radius: 50%;
+                @for $i from 0 through 100 {
+                    &[data-value='#{$i}'] {
+                        $topProgress: 100-$i;
+                        $bottomProgress: $i;
+                        &::after {
+                            @include absolute_fit_parent;
+                            content: '';
+                            border-radius: 50%;
+                            opacity: 0.8;
+                            background: linear-gradient(180deg, rgb(92, 92, 98) $topProgress * 1%, var(--color, rgb(46, 46, 120)) $topProgress * 1%);
+                        }
+                    }
+                }
+                &.horizontal {
+                    @for $i from 0 through 100 {
+                        &[data-value='#{$i}'] {
+                            $topProgress: 100-$i;
+                            $bottomProgress: $i;
+                            &::after {
+                                @include absolute_fit_parent;
+                                content: '';
+                                border-radius: 50%;
+                                background: linear-gradient(270deg, rgba(92, 92, 98, 0.8) $topProgress * 1%, var(--color, rgba(46, 46, 120, 0.8)) $topProgress * 1%);
+                            }
+                        }
+                    }
+                }
+            }
+            .progress-label {
+                @include absolute_fit_parent;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+    &.disabled {
+        .circle-progress-body {
+            &::after {
+                @include absolute_fit_parent;
+                font-family: 'icomoon';
+                content: "\e905";
+                font-size: 24px;
+                color: #C2C2C7;
+                background-color: rgba(81, 83, 85, 0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+            }
+        }
+    }
+}

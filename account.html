@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CelebSpot</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand d-block" href="./index.html">
+                <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+            </a>
+
+        </div>
+    </nav>
+    <section class="main-blue min-vh-100 pt-22px pb-140px">
+        <div class="container">
+            <div class="row justify-content-center mb-4 mb-lg-5">
+                <div class="col-lg-3 col-12 text-center position-relative">
+                    <div class="return-link">
+                        <a href="index.html" class="d-flex justify-content-center align-items-center">
+                            <span class="icon-back font-size-14px"></span>
+                        </a>
+                    </div>
+                    <h3 class="mb-0">My Account</h3>
+                </div>
+            </div>
+
+            <div class="row px-lg-3 px-4 justify-content-center">
+                <div class="col-lg-6 col-12 px-1 px-lg-2">
+                    <a href="faq.html">
+                        <div class="card bg-primary shadow rounded-4 mb-lg-3 mb-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="font-size-14px text-white fw-500">FAQ</p>
+                                <span class="icon-next text-white font-size-16px"></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="terms.html">
+                        <div class="card bg-primary shadow rounded-4 mb-lg-3 mb-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="font-size-14px text-white fw-500">Terms and Conditions</p>
+                                <span class="icon-next text-white font-size-16px"></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="contact-us.html">
+                        <div class="card bg-primary shadow rounded-4 mb-lg-3 mb-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="font-size-14px text-white fw-500">Contact Us</p>
+                                <span class="icon-next text-white font-size-16px"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row px-lg-3 px-4 mt-lg-3 justify-content-center">
+                <div class="col-lg-4 col-12 px-1 px-lg-2">
+                    <h4 class="subscription-title mb-4 text-start">My subscription</h4>
+                    <div class="card bg-primary shadow rounded-4 mb-4">
+                        <p class="font-size-11px text-white fw-500 text-center">You are part of Starspot since <span class="text-pink">xx.xx.xx</span></p>
+                    </div>
+
+                    <div class="text-center">
+                        <a class="btn-link" data-bs-toggle="modal" data-bs-target="#liveSubscription">Unsubscribe from Starspot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="liveSubscription" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="close pt-3 pe-3" data-bs-dismiss="modal" aria-label="Close">
+                <span class="icon-close font-size-24px text-white"></span>
+            </button>
+        </div>
+        <div class="modal-dialog px-4 pt-160px">
+            <div class="modal-content p-4">
+                <p class="font-size-12px text-dark mb-4">Are you sure you want to unsubscribe?</p>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-secondary w-100 px-0" data-bs-dismiss="modal">Decline</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-primary w-100 px-0" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#liveSubscriptionConfirmed">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="liveSubscriptionConfirmed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionConfirmedLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="close pt-3 pe-3" data-bs-dismiss="modal" aria-label="Close">
+                <span class="icon-close font-size-24px text-white"></span>
+            </button>
+        </div>
+
+        <div class="modal-dialog px-4 pt-140px">
+            <div class="modal-content p-4">
+                <p class="font-size-12px text-dark mb-4">You are no longer member of CelebSpot <br><br>Please continue your visit at our homepage.</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-6 text-center">
+                        <button type="button" class="btn btn-primary w-100 px-0" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

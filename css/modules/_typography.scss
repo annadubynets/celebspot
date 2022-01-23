@@ -1,0 +1,143 @@
+body {
+    font-family: 'Poppins';
+    background-color: $black;
+}
+
+main {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    margin-bottom: 0;
+    color: $midnightblue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.375rem;
+    color: $white;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: $white;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: $white;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 1.125rem;
+    color: $midnightblue;
+}
+
+.subscription-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: $white;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: $pink;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: $white;
+}
+
+.text-secondary {
+    color: $darkgrey!important;
+}
+
+.text-muted {
+    color: $silver!important;
+}
+
+.text-pink {
+    color: $deeppink;
+}
+
+.text-primary {
+    color: $midnightblue!important;
+}
+
+.text-danger {
+    color: $red!important;
+}
+
+.bg-primary {
+    background: $midnightblue!important;
+}
+
+.bg-light {
+    background: #F7F8F9!important;
+}
+
+.bg-pink {
+    background: $pink!important;
+}
+
+.bg-gradient-pink {
+    background: linear-gradient(180deg, #F2F2FF 0%, #F2F2FF 100%)!important;
+}
+
+.bg-gradient-transparent {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(242, 242, 255, 0.9) 100%)!important;
+}
+
+@media (min-width: 576px) {
+    .subtitle {
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3.563rem;
+    }
+    h2 {
+        font-size: 2.75rem;
+    }
+    h4 {
+        font-size: 1.75rem;
+    }
+    .title {
+        font-size: 1rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .pt-22px {
+        padding-top: 90px!important;
+    }
+    .row-cols-5>* {
+        flex: 0 0 auto;
+        width: 10%;
+    }
+}

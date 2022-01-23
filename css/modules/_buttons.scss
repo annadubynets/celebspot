@@ -1,0 +1,95 @@
+.btn {
+    font-weight: 500;
+    border-radius: 27px;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-primary {
+    font-size: 16px;
+    color: $white;
+    background: linear-gradient(90deg, #FF3A49 0%, #FF545B 100%);
+    border: 2.03254px solid #FF3038;
+    box-shadow: 0px 2.71006px 2.71006px rgba(0, 0, 0, 0.25), inset 0px 2.71006px 13.5503px rgba(0, 0, 0, 0.14);
+    border-radius: 18.2929px;
+    padding: 8px 30px;
+    &.col-to-action {
+        font-size: 20px;
+        padding: 13px 60px;
+        @media (max-width: 414px) {
+            padding: 13px 40px;
+        }
+    }
+    @media (min-width: 1200px) {
+        font-size: 20px;
+        padding: 17px 46px;
+        border-radius: 42px;
+    }
+}
+
+.btn-info {
+    font-size: 20px;
+    color: #302D6C;
+    background: linear-gradient(90deg, #F6F5FF 0%, #D7E0FF 100%);
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 20px rgba(0, 0, 0, 0.14);
+    border-radius: 27px;
+    padding: 13px 30px;
+    &:hover,
+    &:focus {
+        color: $white;
+        background: #7965F5;
+        border: 3px solid #FFFFFF;
+    }
+    @media (min-width: 1200px) {
+        padding: 18px 30px;
+        border-radius: 42px;
+    }
+}
+
+.btn-secondary {
+    font-size: 16px;
+    color: $white;
+    background: linear-gradient(90deg, #898989 0%, #A9A9A9 100%);
+    border: 2.05755px solid #9C9C9C;
+    box-shadow: 0px 2.7434px 2.7434px rgba(0, 0, 0, 0.25), inset 0px 2.7434px 13.717px rgba(0, 0, 0, 0.14);
+    border-radius: 18.5179px;
+    padding: 8px 30px;
+    @media (min-width: 1200px) {
+        font-size: 20px;
+        padding: 18px 30px;
+        border-radius: 42px;
+    }
+}
+
+.modal {
+    .btn {
+        font-size: 16px;
+        @media (min-width: 1200px) {
+            font-size: 22px;
+        }
+    }
+    .btn-primary {
+        padding: 9px 30px;
+    }
+    .btn-secondary {
+        padding: 9px 30px;
+    }
+}
+
+.btn-link {
+    font-weight: 500;
+    font-size: 12px;
+    color: $deeppink;
+}
+
+.btn-light {
+    font-weight: 400;
+    font-size: 12px;
+    color: $white;
+    background: $midnightblue;
+    border-color: transparent;
+    border-radius: 7px;
+    padding: 16px 26px;
+}
