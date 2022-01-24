@@ -35,7 +35,7 @@
 }
 @font-face {
   font-family: "cs-icons";
-  src: url("../fonts/cs-icons.eot?87331c6386a1c3b3fa661ac7f90b59e5?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?87331c6386a1c3b3fa661ac7f90b59e5") format("woff2"), url("../fonts/cs-icons.woff?87331c6386a1c3b3fa661ac7f90b59e5") format("woff"), url("../fonts/cs-icons.ttf?87331c6386a1c3b3fa661ac7f90b59e5") format("truetype"), url("../fonts/cs-icons.svg?87331c6386a1c3b3fa661ac7f90b59e5#cs-icons") format("svg");
+  src: url("../fonts/cs-icons.eot?ab9f494d3d11a80ce0821e9cb02da765?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?ab9f494d3d11a80ce0821e9cb02da765") format("woff2"), url("../fonts/cs-icons.woff?ab9f494d3d11a80ce0821e9cb02da765") format("woff"), url("../fonts/cs-icons.ttf?ab9f494d3d11a80ce0821e9cb02da765") format("truetype"), url("../fonts/cs-icons.svg?ab9f494d3d11a80ce0821e9cb02da765#cs-icons") format("svg");
 }
 i[class^=cs-icons-]:before, i[class*=" cs-icons-"]:before {
   font-family: cs-icons !important;
@@ -108,32 +108,36 @@ i[class^=cs-icons-]:before, i[class*=" cs-icons-"]:before {
   content: "";
 }
 
-.cs-icons-search:before {
+.cs-icons-plus:before {
   content: "";
 }
 
-.cs-icons-showbiz:before {
+.cs-icons-search:before {
   content: "";
 }
 
-.cs-icons-star:before {
+.cs-icons-showbiz:before {
   content: "";
 }
 
-.cs-icons-tv:before {
+.cs-icons-star:before {
   content: "";
 }
 
-.cs-icons-up:before {
+.cs-icons-tv:before {
   content: "";
 }
 
-.cs-icons-user:before {
+.cs-icons-up:before {
   content: "";
 }
 
-.cs-icons-viral:before {
+.cs-icons-user:before {
   content: "";
+}
+
+.cs-icons-viral:before {
+  content: "";
 }
 
 body {
@@ -3387,6 +3391,45 @@ textarea {
 .hero .same-as-selected {
   background-color: #FF4D56 !important;
   color: #FFFFFF !important;
+}
+
+.search {
+  background-color: #191626;
+  padding-top: 56px;
+}
+.search .form-control {
+  color: #FFFFFF;
+  background: rgba(142, 142, 147, 0.5);
+  border-radius: 7px;
+  padding: 12px 14px;
+}
+.search .input-group-text {
+  color: #FFFFFF;
+  background: #FF4A65;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 17px rgba(0, 0, 0, 0.14);
+  border-radius: 0px 7px 7px 0px;
+  border: none;
+}
+.search input:focus {
+  border-color: #2d2d2d;
+  box-shadow: none;
+}
+.search input:focus ~ .input-group-text {
+  border-color: #2d2d2d;
+}
+.search label {
+  color: #191626;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 15px 0;
+}
+.search p {
+  color: #2D2D2D;
+  font-size: 21px;
+  font-weight: 400;
+}
+.search .border-bottom {
+  border-bottom: 1px solid #1b9eff38 !important;
 }
 
 .card-bg-style {
