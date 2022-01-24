@@ -166,6 +166,9 @@ h1 {
   font-size: 1.375rem;
   color: #FFFFFF;
 }
+h1 span {
+  font-size: 1.25rem;
+}
 
 h2 {
   font-weight: 800;
@@ -257,23 +260,34 @@ h4 {
 }
 @media (min-width: 1200px) {
   h1 {
-    font-size: 3.563rem;
+    font-size: 3.063rem;
+  }
+  h1 span {
+    font-size: 2.75rem;
   }
 
   h2 {
     font-size: 2.75rem;
   }
 
+  h3 {
+    font-size: 1.25rem;
+  }
+
   h4 {
     font-size: 1.75rem;
   }
 
+  .subtitle {
+    font-size: 1.375rem;
+  }
+
   .title {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 
   .pt-22px {
@@ -301,6 +315,13 @@ h4 {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 17px rgba(0, 0, 0, 0.14);
   border-radius: 23px;
   padding: 12px 30px;
+}
+@media (min-width: 1200px) {
+  .btn-primary {
+    font-size: 22px;
+    padding: 18px 46px;
+    border-radius: 32px;
+  }
 }
 
 .btn-info {
@@ -876,7 +897,10 @@ h4 {
 }
 
 @media (min-width: 1200px) {
-  .card .card-text {
+  .collapse .card {
+    padding: 5.625rem 4.25rem;
+  }
+  .collapse .card .card-text {
     font-size: 19px;
   }
 }
@@ -3296,7 +3320,7 @@ h4 {
 }
 @media (min-width: 992px) {
   .landing .hero {
-    padding-top: 140px;
+    padding-top: 56px;
   }
   .landing .hero h3 {
     font-size: 49px;
@@ -3307,6 +3331,11 @@ h4 {
   font-size: 0.75rem;
   font-weight: 500;
   color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .read-more-link {
+    font-size: 1.375rem;
+  }
 }
 .read-more-link:hover {
   color: #FFFFFF;
@@ -3352,10 +3381,25 @@ h4 {
 .link-style {
   color: #FFFFFF;
   padding: 0 9px;
+  font-size: 1rem;
+}
+@media (min-width: 1200px) {
+  .link-style {
+    font-size: 2.625rem;
+  }
 }
 
 textarea {
   resize: none;
+}
+
+.copyright {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .copyright {
+    font-size: 23px;
+  }
 }
 
 .hero {
@@ -3396,10 +3440,23 @@ textarea {
   border-radius: 18px;
   padding: 53px 26px;
 }
+.card-bg-style ul li a {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .card-bg-style ul li a {
+    font-size: 24px;
+  }
+}
 
 .descr-border-bottom {
   position: relative;
   padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .descr-border-bottom {
+    padding-bottom: 46px;
+  }
 }
 .descr-border-bottom::after {
   content: "";
