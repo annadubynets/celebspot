@@ -152,7 +152,7 @@ a {
 
 p {
   margin-bottom: 0;
-  color: #2D2942;
+  color: #FFFFFF;
 }
 
 ul {
@@ -3362,6 +3362,13 @@ textarea {
   background: url("../images/bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  .hero {
+    background: url("../images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .hero .form-control {
   background-color: #FFFFFF;
