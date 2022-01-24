@@ -1,0 +1,12 @@
+.alert {
+    font-weight: 600;
+    font-size: 0.688rem;
+    border-radius: 0;
+}
+
+.alert-danger {
+    color: $white;
+    background: linear-gradient(219.63deg, #FF5624 -195.99%, #FF4A65 -125.55%);
+    border-color: transparent;
+    padding: 0.875rem 1.75rem;
+}
