@@ -1,6 +1,7 @@
 @import "./owl.carousel.min.css";
 @import "./owl.theme.default.min.css";
-@import "fonts.css";
+@import "fonts";
+@import "cs-icons";
 @import "progress";
 @import "modules/variables";
 @import "modules/mixins";
@@ -9,13 +10,10 @@
 @import "modules/navbar";
 @import "modules/accordion";
 @import "modules/utilities";
-@import "modules/tutorial";
 @import "modules/carousel";
 @import "modules/input";
 @import "modules/dropdown";
 @import "modules/card";
-@import "modules/choose-level-control";
-@import "modules/choose-lesson-control";
 @import "modules/circle-progress";
 @import "modules/badge-control";
 @import "modules/popovers";
@@ -36,9 +34,6 @@
             background-image: url('../images/mobile-hero-bg.jpg');
             background-position: top;
             background-size: 100%;
-            .wifi-registration {
-                margin-top: -120px;
-            }
         }
         @media (min-width: 576px) and (max-width: 991px) {
             background-image: url('../images/hero-bg-middle.png');
@@ -70,8 +65,9 @@
         }
     }
     .hero {
+        min-height: calc(100vh - 0px);
         @media (max-width: 575px) {
-            padding-top: 70vw;
+            padding-top: 14vw;
         }
         @media (min-width: 576px) and (max-width: 991px) {
             padding-top: 230px;
@@ -89,22 +85,22 @@
 }
 
 .read-more-link {
-    font-size: 1.125rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    color: $hotpink;
+    color: $white;
     &:hover {
-        color: $hotpink;
+        color: $white;
     }
     &::before,
     &::after {
-        font-family: 'icomoon';
-        content: "\e910";
-        color: $hotpink;
+        font-family: cs-icons !important;
+        content: "\f106";
+        color: $white;
         font-size: 0.6rem;
     }
     &.collapsed::after,
     &.collapsed::before {
-        content: "\e90f";
+        content: "\f114";
     }
     .show-expanded {
         display: none;
@@ -128,19 +124,9 @@
         position: relative;
         font-size: 0.75rem;
         font-weight: 500;
-        color: $midnightblue;
+        color: $white;
         text-align: start;
-        margin-bottom: 0.5rem;
-        &::before {
-            position: absolute;
-            font-family: 'icomoon';
-            content: "\e909";
-            color: $hotpink;
-            font-size: 4px;
-            vertical-align: middle;
-            top: 6px;
-            left: -16px;
-        }
+        margin-bottom: 1.25rem;
         span,
         a {
             color: $hotpink;
@@ -148,56 +134,67 @@
     }
 }
 
+.link-style {
+    color: $white;
+    padding: 0 9px;
+}
+
+textarea {
+    resize: none;
+}
+
+.hero {
+    background: url("../images/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .form-control {
+        background-color: $white;
+        padding: 10px 16px;
+        border-radius: 11px;
+    }
+    .profile-select.custom-select .select-selected,
+    .select-items {
+        background-color: $white!important;
+        padding: 10px 16px;
+        border-radius: 11px;
+        div {
+            color: $black!important;
+        }
+    }
+    .same-as-selected {
+        background-color: $tomato!important;
+        color: $white!important;
+    }
+}
+
+.card-bg-style {
+    background: rgba(25, 22, 38, 0.95);
+    box-shadow: 0px 2.83916px 2.83916px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    padding: 53px 26px;
+}
+
+.descr-border-bottom {
+    position: relative;
+    padding-bottom: 20px;
+    &::after {
+        content: "";
+        display: block;
+        width: 243px;
+        color: $white;
+        border-width: 0.7px;
+        border-style: dashed solid;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -120px;
+    }
+}
+
 .input-label {
     font-size: 11px;
     @media (max-width: 414px) {
         font-size: 9px;
-    }
-}
-
-.article-circle {
-    width: 65px;
-    height: 65px;
-    background: #FFFBFB;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0 auto;
-    .icon-style {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 375px) {
-    .word-card {
-        .card-body {
-            padding: 10px 10px;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .article-circle {
-        width: 94px;
-        height: 94px;
-        .icon-style {
-            font-size: 36px;
-        }
-    }
-}
-
-.hero-heading {
-    position: relative;
-    &:after {
-        content: "";
-        display: block;
-        height: 0.375rem;
-        width: 3.125rem;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left: -20px;
-        background: $pink;
-        box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
-        border-radius: 0.625rem;
     }
 }
 
@@ -211,253 +208,6 @@
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: cover;
-    }
-}
-
-.main-blue {
-    background-image: url('../images/decor.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-}
-
-.main-lesson {
-    background-image: url('../images/lesson.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.main-circle-style {
-    width: 113px;
-    height: 113px;
-    position: relative;
-    &::before {
-        display: inline-block;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: rgba(130, 130, 130, 0.8);
-        height: 100%;
-        z-index: 1;
-        border: 3px solid $white;
-        outline: 3px solid $midnightblue;
-        border-radius: 50%;
-        &.blue {
-            background: rgba(18, 15, 110, 0.8);
-        }
-    }
-    .img-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: rgba(97, 97, 97, 0.6);
-        height: 100%;
-        z-index: 1;
-        border: 3px solid $white;
-        outline: 3px solid $midnightblue;
-        &.blue {
-            background: rgba(18, 15, 110, 0.8);
-        }
-    }
-    .title-block {
-        font-weight: 500;
-        font-size: 16px;
-        color: $white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        z-index: 2;
-    }
-    .icon-style {
-        position: absolute;
-        bottom: 8px;
-        right: 0;
-    }
-    &.disabled {
-        .img-overlay {
-            background: rgba(85, 85, 100, 0.9);
-            outline: 3px solid #68665F;
-        }
-        &::after {
-            font-family: 'icomoon';
-            content: "\e905";
-            font-size: 24px;
-            color: #C2C2C7;
-            position: relative;
-            z-index: 3;
-            top: calc(50% - 20px);
-        }
-        .title-block {
-            color: rgb(128, 128, 128);
-        }
-    }
-    &[data-type="progress"] {
-        $unit: '%';
-        @for $i from 0 through 100 {
-            &[data-value='#{$i}'] {
-                $topProgress: 100-$i;
-                $bottomProgress: $i;
-                &::before {
-                    background: linear-gradient(180deg, rgba(92, 92, 98, 0.8) $topProgress * 1%, rgba(46, 46, 120, 0.8) $topProgress * 1%);
-                }
-            }
-        }
-    }
-}
-
-.badge-border {
-    border: 9px solid rgba(130, 130, 130, 0.8);
-}
-
-.badge-circle-style {
-    position: relative;
-    &.big {
-        width: 5.688rem;
-        height: 5.688rem;
-    }
-    &.small {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    &::before {
-        display: inline-block;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: rgba(130, 130, 130, 0.8);
-        height: 100%;
-        z-index: 1;
-        border: 9px solid rgba(130, 130, 130, 0.8);
-        border-radius: 50%;
-        &.blue {
-            background: rgba(18, 15, 110, 0.8);
-        }
-        &.pink {
-            background: $pink;
-        }
-    }
-    .title-block {
-        color: $white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        z-index: 2;
-        &.big img {
-            width: 46px;
-        }
-        &.small img {
-            width: 20px;
-        }
-    }
-    &[data-type="progress"] {
-        $unit: '%';
-        @for $i from 0 through 100 {
-            &[data-value='#{$i}'] {
-                $topProgress: 100-$i;
-                $bottomProgress: $i;
-                &::before {
-                    background: linear-gradient(90deg, rgba(92, 92, 98, 0.8) $topProgress * 1%, rgba(37, 104, 183, 0.8) $topProgress * 1%);
-                }
-            }
-        }
-    }
-}
-
-.edit-circle-btn {
-    position: relative;
-    width: 33px;
-    height: 33px;
-    border: 2px solid $white;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
-    background: $white;
-    border-radius: 50%;
-    .circle-btn-container {
-        @include absolute_fit_parent;
-        border: 2px solid $pink;
-        border-radius: 50%;
-        span {
-            @include absolute_fit_parent;
-            background: $white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-}
-
-.listen-circle-btn {
-    position: relative;
-    width: 90px;
-    height: 90px;
-    border: 4px solid rgba(255, 171, 200, 0.5);
-    border-radius: 50%;
-    .circle-btn-container {
-        @include absolute_fit_parent;
-        border: 4px solid $white;
-        border-radius: 50%;
-        .circle-btn-body {
-            @include absolute_fit_parent;
-            border-radius: 50%;
-            border: 2px solid rgba(255, 171, 200, 0.5);
-            span {
-                @include absolute_fit_parent;
-                background: $pink;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-    }
-}
-
-.number-circle {
-    min-width: 26px;
-    height: 26px;
-    background: #F0F3FF;
-    color: $pink;
-    font-weight: 800;
-    font-size: 20px;
-    border-radius: 50%;
-    box-shadow: 0px 2px 2px rgba(44, 42, 113, 0.15);
-}
-
-.congrats {
-    background: url('../images/intro-bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    p {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .congrats {
-        background: url('../images/intro-bg-desktop.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        p {
-            font-size: 28px;
-        }
     }
 }
 
@@ -477,26 +227,6 @@
     left: 2rem;
 }
 
-.return-circle {
-    background-color: $pink;
-    width: 39px;
-    height: 39px;
-    @media (max-width: 320px) {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-.close-btn {
-    position: absolute;
-    top: 0;
-    right: 1.25rem;
-    @media (min-width: 1200px) {
-        top: 10px;
-        right: 0;
-    }
-}
-
 
 /* Custom select */
 
@@ -511,24 +241,14 @@
         text-align: start;
         border: none;
         &::after {
-            font-family: 'icomoon';
-            content: "\e90f";
-            color: $midnightblue;
+            font-family: cs-icons !important;
+            content: "\f106";
+            color: $white;
             position: absolute;
             font-size: 10px;
             display: inline-block;
             right: 10px;
             top: 24px;
-        }
-        &::before {
-            font-family: 'icomoon';
-            content: "\e913";
-            color: $midnightblue;
-            position: absolute;
-            font-size: 14px;
-            display: inline-block;
-            left: 10px;
-            top: 18px;
         }
         &.select-arrow-active {
             border: 3px solid $midnightblue;
@@ -561,7 +281,7 @@
         font-weight: 300;
         font-size: 12px;
         color: #9E9E9E;
-        padding: 18px 50px;
+        padding: 18px 14px;
         border-radius: 10px;
         cursor: pointer;
         user-select: none;
@@ -588,30 +308,6 @@
         font-size: 12px!important;
         color: $white!important;
     }
-}
-
-.list-group {
-    background: linear-gradient(180deg, #FFFFFF 0%, #F2F2FF 100%);
-    box-shadow: 0px 4px 4px rgba(49, 45, 100, 0.2);
-    border-radius: 5px;
-    .list-group-item {
-        background-color: transparent;
-        border: 0;
-        border-bottom: 1px solid #A9A8C6;
-    }
-}
-
-.flag-style {
-    width: 24px;
-    height: 24px;
-    border: 2px solid $white;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-.progress {
-    border-radius: 0.125rem;
-    height: 0.563rem;
-    background-color: #C4C4C4;
 }
 
 .modal {
@@ -675,27 +371,10 @@
     }
 }
 
-.continue-training {
-    bottom: 84px;
-    @media (min-width: 321px) {
-        bottom: 110px;
-        .btn {
-            padding: 13px 32px;
-        }
-    }
-}
-
 .card-img {
     object-fit: cover;
     object-position: top;
     height: 40vh;
-}
-
-.card-terms {
-    padding: 79px 68px;
-    @media (max-width: 992px) {
-        padding: 20px 26px;
-    }
 }
 
 @media (min-width: 992px) {

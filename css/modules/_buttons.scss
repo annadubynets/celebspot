@@ -7,25 +7,25 @@
 }
 
 .btn-primary {
-    font-size: 16px;
+    font-size: 14px;
     color: $white;
     background: linear-gradient(90deg, #FF3A49 0%, #FF545B 100%);
-    border: 2.03254px solid #FF3038;
-    box-shadow: 0px 2.71006px 2.71006px rgba(0, 0, 0, 0.25), inset 0px 2.71006px 13.5503px rgba(0, 0, 0, 0.14);
-    border-radius: 18.2929px;
-    padding: 8px 30px;
-    &.col-to-action {
-        font-size: 20px;
-        padding: 13px 60px;
-        @media (max-width: 414px) {
-            padding: 13px 40px;
-        }
-    }
-    @media (min-width: 1200px) {
-        font-size: 20px;
-        padding: 17px 46px;
-        border-radius: 42px;
-    }
+    border: 2px solid #FF3038;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 17px rgba(0, 0, 0, 0.14);
+    border-radius: 23px;
+    padding: 12px 30px;
+    // &.col-to-action {
+    //     font-size: 20px;
+    //     padding: 13px 60px;
+    //     @media (max-width: 414px) {
+    //         padding: 13px 40px;
+    //     }
+    // }
+    // @media (min-width: 1200px) {
+    //     font-size: 20px;
+    //     padding: 17px 46px;
+    //     border-radius: 42px;
+    // }
 }
 
 .btn-info {

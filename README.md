@@ -25,7 +25,7 @@
 
 Make sure you executes all the steps from the prerequisites chapter above. Then run the following command:
 
-        npm run compile-fonts
+        npm run generate-fonts
 
 
 ### Dev sass compilation ###

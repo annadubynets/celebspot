@@ -13,9 +13,9 @@
         box-shadow: none;
     }
     &::after {
-        font-family: 'icomoon';
-        content: "\e90f";
-        color: $midnightblue;
+        font-family: cs-icons !important;
+        content: "\f106";
+        color: $white;
         font-size: 10px;
         background-image: none;
     }
