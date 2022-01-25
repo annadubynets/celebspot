@@ -1,3 +1,39 @@
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10 18.3334C7.78926 18.3353 5.66848 17.458 4.10525 15.8948C2.54201 14.3315 1.66468 12.2108 1.66667 10V9.83335C1.73482 6.49353 3.78983 3.51681 6.88864 2.26923C9.98744 1.02165 13.5317 1.74409 15.895 4.10502C18.2804 6.48842 18.9943 10.0745 17.7036 13.1897C16.4129 16.305 13.372 18.3353 10 18.3334ZM10 11.175L12.1583 13.3334L13.3333 12.1584L11.175 10L13.3333 7.84168L12.1583 6.66668L10 8.82502L7.84167 6.66668L6.66667 7.84168L8.82501 10L6.66667 12.1584L7.84167 13.3334L10 11.1759V11.175Z" fill="#F54B64"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20"
+   height="20"
+   viewBox="0 0 20 20"
+   fill="none"
+   version="1.1"
+   id="svg39"
+   sodipodi:docname="off-close.svg"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs43" />
+  <sodipodi:namedview
+     id="namedview41"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="19.939717"
+     inkscape:cx="10.155611"
+     inkscape:cy="11.359239"
+     inkscape:window-width="1312"
+     inkscape:window-height="811"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg39" />
+  <path
+     style="color:#000000;fill:#f54b64;-inkscape-stroke:none"
+     d="M 10,18.3334 C 7.78926,18.3353 5.66848,17.458 4.10525,15.8948 2.54201,14.3315 1.66468,12.2108 1.66667,10 V 9.83335 C 1.73482,6.49353 3.78983,3.51681 6.88864,2.26923 9.98744,1.02165 13.5317,1.74409 15.895,4.10502 18.2804,6.48842 18.9943,10.0745 17.7036,13.1897 16.4129,16.305 13.372,18.3353 10,18.3334 Z m 0,-7.1584 2.1583,2.1584 1.175,-1.175 L 11.175,10 13.3333,7.84168 12.1583,6.66668 10,8.82502 7.84167,6.66668 6.66667,7.84168 8.82501,10 6.66667,12.1584 7.84167,13.3334 10,11.1759 Z"
+     id="path37" />
 </svg>

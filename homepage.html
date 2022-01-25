@@ -13,19 +13,45 @@
 
 <body class="landing">
     <header>
-        <nav class="navbar fixed-top position-absolute d-lg-none d-block shadow-none">
+        <nav class="navbar navbar-expand navbar-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand mx-auto" href="index.html"><img src="images/logo.svg" class="navbar-brand-img" alt="CelebSpot"></a>
-            </div>
-        </nav>
-        <nav class="navbar fixed-top position-absolute text-start d-lg-block d-none">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="images/logo-desktop.svg" class="navbar-brand-img" alt="CelebSpot"></a>
+                <ul class="navbar-nav d-flex justify-content-between w-100">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- <i class="cs-icons-close font-size-24px text-white"></i> -->
+                            <i class="cs-icons-menu font-size-14px text-white"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="cs-icons-new-videos font-size-14px text-pink pe-3"></i>New Videos</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="cs-icons-viral font-size-14px text-pink pe-3"></i>Viral Videos</a></li>
+                            <li><a class="dropdown-item" href="catalogy-music.html"><i class="cs-icons-music font-size-14px text-pink pe-3"></i>Music</a></li>
+                            <li><a class="dropdown-item" href="catalogy-movies.html"><i class="cs-icons-movies font-size-14px text-pink pe-3"></i>Movies</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="cs-icons-tv font-size-14px text-pink pe-3"></i>Television</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="cs-icons-showbiz font-size-14px text-pink pe-3"></i>Showbiz</a></li>
+                            <li><a class="dropdown-item" href="catalogy-beauty.html"><i class="cs-icons-beauty font-size-14px text-pink pe-3"></i>Star Style & Beauty</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="cs-icons-events font-size-14px text-pink pe-3"></i>Celebrity Events</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="cs-icons-fashion font-size-14px text-pink pe-3"></i>Fashion</a></li>
+                            <li><a class="dropdown-item" href="account.html"><i class="cs-icons-user font-size-14px text-pink pe-3"></i>My account</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.svg" class="navbar-brand-img" alt="CelebSpot">
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="ms-auto">
+                            <i class="cs-icons-user font-size-24px text-white"></i>
+                        </span>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="search">
+        <section class="search pt-60px">
             <div class="alert alert-danger" role="alert">
                 You are subscribed to CelebSpot enjoy unlimited content
             </div>
@@ -40,7 +66,7 @@
                         </div>
                         <div class="pt-4">
                             <span><i class="cs-icons-path font-size-12px text-white"></i></span>
-                            <a class="btn btn-link py-0" href="#" role="button">See Popular Search</a>
+                            <a class="btn btn-link py-0" href="popular-search.html" role="button">See Popular Search</a>
                         </div>
                     </div>
                 </div>
@@ -52,6 +78,43 @@
                 <div class="d-flex justify-content-between px-4 pb-3">
                     <p class="subscription-title">New Videos <i class="cs-icons-new-videos text-pink ps-2"></i></p>
                     <p class="font-size-13px">Load more <i class="cs-icons-plus text-pink ps-2"></i></p>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center px-0">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item active">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="images/video-example.png" class="card-img-top" alt="Video">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Zac Efron fries in a tough and tense outback thriller...</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="images/video-example.png" class="card-img-top" alt="Video">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Zac Efron fries in a tough and tense outback thriller...</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="images/video-example.png" class="card-img-top" alt="Video">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Zac Efron fries in a tough and tense outback thriller...</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -87,7 +150,7 @@
             <div class="container">
                 <div class="d-flex justify-content-between px-4 pb-3">
                     <p class="subscription-title">Music <i class="cs-icons-music text-pink ps-2"></i></p>
-                    <p class="font-size-13px">Load more <i class="cs-icons-plus text-pink ps-2"></i></p>
+                    <a href="catalogy-music.html" class="font-size-13px text-white">Load more <i class="cs-icons-plus text-pink ps-2"></i></a>
                 </div>
                 <div class="row px-4">
                     <div class="col-6 pb-4">
@@ -113,6 +176,7 @@
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

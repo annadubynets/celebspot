@@ -85,27 +85,25 @@ $(function() {
 if ($('.owl-carousel').length > 0) {
     $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 25,
         responsiveClass: true,
         autoplay: false,
+        nav: false,
+        dots: false,
         responsive: {
             0: {
-                items: 3,
-                stagePadding: 40,
-                nav: true
+                items: 1,
+                stagePadding: 70
             },
             720: {
-                items: 4,
-                stagePadding: 40,
-                nav: true
+                items: 3,
+                stagePadding: 60
             },
             1050: {
-                items: 4,
-                nav: true
+                items: 4
             },
             1200: {
-                items: 6,
-                nav: true
+                items: 6
             }
         }
     })

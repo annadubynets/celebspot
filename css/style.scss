@@ -4,28 +4,16 @@
 @import "cs-icons";
 @import "progress";
 @import "modules/variables";
-@import "modules/mixins";
 @import "modules/typography";
 @import "modules/buttons";
 @import "modules/navbar";
 @import "modules/accordion";
 @import "modules/utilities";
-@import "modules/carousel";
 @import "modules/input";
-@import "modules/dropdown";
 @import "modules/card";
-@import "modules/circle-progress";
-@import "modules/badge-control";
 @import "modules/popovers";
 @import "modules/alerts";
 .landing {
-    background-image: url('../images/footer-bg.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    @media (min-width: 576px) {
-        background-image: url('../images/footer-bg-desktop.png');
-    }
     main {
         display: flex;
         flex-direction: column;
@@ -188,7 +176,6 @@ textarea {
 
 .search {
     background-color: $darkgrey;
-    padding-top: 56px;
     .form-control {
         color: $white;
         background: rgba(142, 142, 147, 0.5);
@@ -216,11 +203,6 @@ textarea {
         font-size: 12px;
         font-weight: 300;
         padding: 15px 0;
-    }
-    p {
-        color: #2D2D2D;
-        font-size: 21px;
-        font-weight: 400;
     }
     .border-bottom {
         border-bottom: 1px solid #1b9eff38!important;
@@ -268,19 +250,6 @@ textarea {
     font-size: 11px;
     @media (max-width: 414px) {
         font-size: 9px;
-    }
-}
-
-.main {
-    background-image: url('../images/languages-bg.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    @media (min-width: 768px) {
-        background-image: url('../images/languages-bg-desktop.svg');
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: cover;
     }
 }
 
@@ -448,6 +417,16 @@ textarea {
     object-fit: cover;
     object-position: top;
     height: 40vh;
+}
+
+.owl-carousel {
+    display: block;
+}
+
+.dropdown-toggle {
+    &::after {
+        content: none;
+    }
 }
 
 @media (min-width: 992px) {

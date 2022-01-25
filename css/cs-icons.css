@@ -1,10 +1,10 @@
 @font-face {
     font-family: "cs-icons";
-    src: url("../fonts/cs-icons.eot?ab9f494d3d11a80ce0821e9cb02da765?#iefix") format("embedded-opentype"),
-url("../fonts/cs-icons.woff2?ab9f494d3d11a80ce0821e9cb02da765") format("woff2"),
-url("../fonts/cs-icons.woff?ab9f494d3d11a80ce0821e9cb02da765") format("woff"),
-url("../fonts/cs-icons.ttf?ab9f494d3d11a80ce0821e9cb02da765") format("truetype"),
-url("../fonts/cs-icons.svg?ab9f494d3d11a80ce0821e9cb02da765#cs-icons") format("svg");
+    src: url("../fonts/cs-icons.eot?8638514c7e7d10991af8984203472bfd?#iefix") format("embedded-opentype"),
+url("../fonts/cs-icons.woff2?8638514c7e7d10991af8984203472bfd") format("woff2"),
+url("../fonts/cs-icons.woff?8638514c7e7d10991af8984203472bfd") format("woff"),
+url("../fonts/cs-icons.ttf?8638514c7e7d10991af8984203472bfd") format("truetype"),
+url("../fonts/cs-icons.svg?8638514c7e7d10991af8984203472bfd#cs-icons") format("svg");
 }
 
 i[class^="cs-icons-"]:before, i[class*=" cs-icons-"]:before {

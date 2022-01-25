@@ -23,3 +23,21 @@
         }
     }
 }
+
+.owl-carousel {
+    .card {
+        padding: 0;
+        border-top-left-radius: 1.125rem;
+        border-top-right-radius: 1.125rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        .card-body {
+            padding: 12px 8px;
+            .card-title {
+                color: $white;
+                font-weight: 500;
+                font-size: 0.688rem;
+            }
+        }
+    }
+}
