@@ -503,7 +503,7 @@ h4 {
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25) !important;
 }
 
-.shadow, .simple-popover {
+.shadow {
   box-shadow: 0px 4.174px 4.174px rgba(0, 0, 0, 0.25) !important;
 }
 
@@ -777,27 +777,6 @@ h4 {
   font-size: 0.688rem;
 }
 
-.simple-popover {
-  border-radius: 12px;
-  opacity: 0.9;
-  background-color: #2E2E78;
-  color: #FFFFFF;
-  font-size: 12px;
-}
-.simple-popover .popover-body {
-  color: #FFFFFF;
-  padding: 0 12px 12px 12px;
-}
-.simple-popover .icon-close {
-  margin-top: 0.375rem;
-  margin-right: 0.375rem;
-  font-size: 16px;
-}
-
-.simple-popover-content {
-  display: none;
-}
-
 .alert {
   font-weight: 600;
   font-size: 0.688rem;
@@ -903,12 +882,12 @@ h4 {
 }
 .read-more-link::before, .read-more-link::after {
   font-family: cs-icons !important;
-  content: "";
+  content: "";
   color: #FFFFFF;
   font-size: 0.6rem;
 }
 .read-more-link.collapsed::after, .read-more-link.collapsed::before {
-  content: "";
+  content: "";
 }
 .read-more-link .show-expanded {
   display: none;
