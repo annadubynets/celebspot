@@ -77,6 +77,10 @@ h4 {
     color: $white;
 }
 
+.product-description {
+    font-size: 0.75rem;
+}
+
 .text-secondary {
     color: $darkgrey!important;
 }
@@ -107,18 +111,6 @@ h4 {
 
 .bg-light {
     background: #F7F8F9!important;
-}
-
-.bg-pink {
-    background: $pink!important;
-}
-
-.bg-gradient-pink {
-    background: linear-gradient(180deg, #F2F2FF 0%, #F2F2FF 100%)!important;
-}
-
-.bg-gradient-transparent {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(242, 242, 255, 0.9) 100%)!important;
 }
 
 @media (min-width: 576px) {
@@ -153,11 +145,13 @@ h4 {
     .description {
         font-size: 0.875rem;
     }
+    .product-description {
+        font-size: 1rem;
+    }
     .pt-22px {
         padding-top: 90px!important;
     }
-    .row-cols-5>* {
-        flex: 0 0 auto;
-        width: 10%;
+    .subscription-title {
+        font-size: 1.25rem;
     }
 }
