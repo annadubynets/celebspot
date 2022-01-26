@@ -288,12 +288,12 @@ textarea {
         &::after {
             font-family: cs-icons !important;
             content: "\f106";
-            color: $white;
+            color: $black;
             position: absolute;
             font-size: 10px;
             display: inline-block;
-            right: 10px;
-            top: 24px;
+            right: 12px;
+            top: 12px;
         }
         &.select-arrow-active {
             border: 3px solid $midnightblue;
@@ -301,7 +301,7 @@ textarea {
     }
     .select-arrow-active:after {
         transform: rotate( 180deg);
-        top: 18px;
+        top: 12px;
     }
     .select-items {
         position: absolute;
@@ -342,6 +342,13 @@ textarea {
     }
     .select-hide {
         display: none;
+    }
+}
+
+.profile-select.custom-select .select-selected {
+    &::after {
+        color: $white;
+        top: 18px;
     }
 }
 
