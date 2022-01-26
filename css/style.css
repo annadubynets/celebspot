@@ -35,7 +35,7 @@
 }
 @font-face {
   font-family: "cs-icons";
-  src: url("../fonts/cs-icons.eot?efd6d5c333c4d2318e23b0c47809165c?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?efd6d5c333c4d2318e23b0c47809165c") format("woff2"), url("../fonts/cs-icons.woff?efd6d5c333c4d2318e23b0c47809165c") format("woff"), url("../fonts/cs-icons.ttf?efd6d5c333c4d2318e23b0c47809165c") format("truetype"), url("../fonts/cs-icons.svg?efd6d5c333c4d2318e23b0c47809165c#cs-icons") format("svg");
+  src: url("../fonts/cs-icons.eot?e21b2882d789c6733ace16cc8506ef7a?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?e21b2882d789c6733ace16cc8506ef7a") format("woff2"), url("../fonts/cs-icons.woff?e21b2882d789c6733ace16cc8506ef7a") format("woff"), url("../fonts/cs-icons.ttf?e21b2882d789c6733ace16cc8506ef7a") format("truetype"), url("../fonts/cs-icons.svg?e21b2882d789c6733ace16cc8506ef7a#cs-icons") format("svg");
 }
 i[class^=cs-icons-]:before, i[class*=" cs-icons-"]:before {
   font-family: cs-icons !important;
