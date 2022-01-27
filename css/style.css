@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "./owl.carousel.min.css";
 @import "./owl.theme.default.min.css";
 @font-face {
@@ -35,7 +34,7 @@
 }
 @font-face {
   font-family: "cs-icons";
-  src: url("../fonts/cs-icons.eot?0e302d806b3ec2dbae82da5ea6fd1f32?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?0e302d806b3ec2dbae82da5ea6fd1f32") format("woff2"), url("../fonts/cs-icons.woff?0e302d806b3ec2dbae82da5ea6fd1f32") format("woff"), url("../fonts/cs-icons.ttf?0e302d806b3ec2dbae82da5ea6fd1f32") format("truetype"), url("../fonts/cs-icons.svg?0e302d806b3ec2dbae82da5ea6fd1f32#cs-icons") format("svg");
+  src: url("../fonts/cs-icons.eot?a1efbb668117e45d331ba148a0dd9a98?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?a1efbb668117e45d331ba148a0dd9a98") format("woff2"), url("../fonts/cs-icons.woff?a1efbb668117e45d331ba148a0dd9a98") format("woff"), url("../fonts/cs-icons.ttf?a1efbb668117e45d331ba148a0dd9a98") format("truetype"), url("../fonts/cs-icons.svg?a1efbb668117e45d331ba148a0dd9a98#cs-icons") format("svg");
 }
 i[class^=cs-icons-]:before, i[class*=" cs-icons-"]:before {
   font-family: cs-icons !important;
@@ -49,95 +48,91 @@ i[class^=cs-icons-]:before, i[class*=" cs-icons-"]:before {
 }
 
 .cs-icons-back:before {
-  content: "";
+  content: "\f101";
 }
 
 .cs-icons-beauty:before {
-  content: "";
+  content: "\f102";
 }
 
 .cs-icons-close:before {
-  content: "";
+  content: "\f103";
 }
 
 .cs-icons-copy:before {
-  content: "";
+  content: "\f104";
 }
 
 .cs-icons-delete:before {
-  content: "";
-}
-
-.cs-icons-down:before {
-  content: "";
+  content: "\f105";
 }
 
 .cs-icons-events:before {
-  content: "";
+  content: "\f106";
 }
 
 .cs-icons-fashion:before {
-  content: "";
+  content: "\f107";
 }
 
 .cs-icons-menu:before {
-  content: "";
+  content: "\f108";
 }
 
 .cs-icons-movies:before {
-  content: "";
+  content: "\f109";
 }
 
 .cs-icons-music:before {
-  content: "";
+  content: "\f10a";
 }
 
 .cs-icons-new-videos:before {
-  content: "";
+  content: "\f10b";
 }
 
 .cs-icons-next:before {
-  content: "";
+  content: "\f10c";
 }
 
 .cs-icons-off-close:before {
-  content: "";
+  content: "\f10d";
 }
 
 .cs-icons-path:before {
-  content: "";
+  content: "\f10e";
 }
 
 .cs-icons-plus:before {
-  content: "";
+  content: "\f10f";
 }
 
 .cs-icons-search:before {
-  content: "";
+  content: "\f110";
 }
 
 .cs-icons-showbiz:before {
-  content: "";
+  content: "\f111";
 }
 
 .cs-icons-star:before {
-  content: "";
+  content: "\f112";
 }
 
 .cs-icons-tv:before {
-  content: "";
+  content: "\f113";
 }
 
 .cs-icons-up:before {
-  content: "";
+  content: "\f114";
 }
 
 .cs-icons-user:before {
-  content: "";
+  content: "\f115";
 }
 
 .cs-icons-viral:before {
-  content: "";
+  content: "\f116";
 }
 
 body {
@@ -436,7 +431,7 @@ h4 {
 }
 .accordion-button::after {
   font-family: cs-icons !important;
-  content: "";
+  content: "\f106";
   color: #FFFFFF;
   font-size: 10px;
   background-image: none;
@@ -648,7 +643,7 @@ h4 {
 .input-group.search .input-group-text::before {
   font-family: "icomoon";
   display: inline-block;
-  content: "";
+  content: "\e90b";
   font-size: 14px;
   color: #2D2942;
 }
@@ -782,12 +777,12 @@ h4 {
 }
 .read-more-link::before, .read-more-link::after {
   font-family: cs-icons !important;
-  content: "";
+  content: "\f115";
   color: #FFFFFF;
   font-size: 0.6rem;
 }
 .read-more-link.collapsed::after, .read-more-link.collapsed::before {
-  content: "";
+  content: "\f106";
 }
 .read-more-link .show-expanded {
   display: none;
@@ -1005,7 +1000,7 @@ textarea {
 }
 .custom-select .select-selected::after {
   font-family: cs-icons !important;
-  content: "";
+  content: "\f106";
   color: #FFFFFF;
   position: absolute;
   font-size: 10px;
