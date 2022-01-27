@@ -375,6 +375,9 @@ h4 {
   font-size: 14px;
   color: #F54B64;
 }
+.btn-link:hover {
+  color: #F54B64;
+}
 
 .btn-light {
   font-weight: 400;
@@ -625,10 +628,15 @@ h4 {
   font-style: italic;
   font-weight: 300;
   font-size: 12px;
+  color: #FFFFFF;
   background: #2D2942;
   border-radius: 7px;
-  padding: 18px 19px;
+  padding: 15px 13px;
   border: none;
+}
+.form-control:focus {
+  color: #FFFFFF;
+  box-shadow: none;
 }
 .form-control::placeholder {
   color: #9E9E9E;
@@ -1042,12 +1050,9 @@ textarea {
   right: 12px;
   top: 20px;
 }
-.custom-select .select-selected.select-arrow-active {
-  border: 3px solid #2D2942;
-}
 .custom-select .select-arrow-active:after {
   transform: rotate(180deg);
-  top: 12px;
+  top: 20px;
 }
 .custom-select .select-items {
   position: absolute;
@@ -1071,11 +1076,15 @@ textarea {
   font-style: italic;
   font-weight: 300;
   font-size: 12px;
-  color: #9E9E9E;
-  padding: 18px 14px;
+  color: #FFFFFF;
+  padding: 15px 13px;
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
+}
+.custom-select .select-items div.placeholder-value,
+.custom-select .select-selected.placeholder-value {
+  color: #9E9E9E;
 }
 .custom-select .select-items div {
   font-weight: 500;

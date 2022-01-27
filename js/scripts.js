@@ -10,9 +10,8 @@ $(function() {
         a = document.createElement("DIV");
         a.setAttribute("class", "select-selected");
         a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-        if (selElmnt.selectedIndex == 0) { // first item is a placeholder
-            a.classList.add("not-selected");
-        }
+        // first item is a placeholder
+        a.classList.toggle("placeholder-value", selElmnt.selectedIndex == 0);
         x[i].appendChild(a);
         /*for each element, create a new DIV that will contain the option list:*/
         b = document.createElement("DIV");
@@ -34,6 +33,7 @@ $(function() {
                         selectInput.selectedIndex = i;
                         selectInput.dispatchEvent(new Event('change'));
                         h.innerHTML = this.innerHTML;
+                        h.classList.toggle("placeholder-value", h.selectedIndex == 0);
                         y = this.parentNode.getElementsByClassName("same-as-selected");
                         yl = y.length;
                         for (k = 0; k < yl; k++) {
