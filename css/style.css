@@ -38,7 +38,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: block;
-  src: url("../fonts/cs-icons.eot?b97cf79c70c5a5cda451a31a5f5a51ca?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?b97cf79c70c5a5cda451a31a5f5a51ca") format("woff2"), url("../fonts/cs-icons.woff?b97cf79c70c5a5cda451a31a5f5a51ca") format("woff"), url("../fonts/cs-icons.ttf?b97cf79c70c5a5cda451a31a5f5a51ca") format("truetype"), url("../fonts/cs-icons.svg?b97cf79c70c5a5cda451a31a5f5a51ca#cs-icons") format("svg");
+  src: url("../fonts/cs-icons.eot?c7f03d95667c23d1f62968d09a8861b3?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?c7f03d95667c23d1f62968d09a8861b3") format("woff2"), url("../fonts/cs-icons.woff?c7f03d95667c23d1f62968d09a8861b3") format("woff"), url("../fonts/cs-icons.ttf?c7f03d95667c23d1f62968d09a8861b3") format("truetype"), url("../fonts/cs-icons.svg?c7f03d95667c23d1f62968d09a8861b3#cs-icons") format("svg");
 }
 [class^=cs-icons-],
 [class*=" cs-icons-"] {
@@ -74,72 +74,76 @@
   content: "";
 }
 
-.cs-icons-events:before {
+.cs-icons-down:before {
   content: "";
 }
 
-.cs-icons-fashion:before {
+.cs-icons-events:before {
   content: "";
 }
 
-.cs-icons-menu:before {
+.cs-icons-fashion:before {
   content: "";
 }
 
-.cs-icons-movies:before {
+.cs-icons-menu:before {
   content: "";
 }
 
-.cs-icons-music:before {
+.cs-icons-movies:before {
   content: "";
 }
 
-.cs-icons-new-videos:before {
+.cs-icons-music:before {
   content: "";
 }
 
-.cs-icons-next:before {
+.cs-icons-new-videos:before {
   content: "";
 }
 
-.cs-icons-off-close:before {
+.cs-icons-next:before {
   content: "";
 }
 
-.cs-icons-path:before {
+.cs-icons-off-close:before {
   content: "";
 }
 
-.cs-icons-plus:before {
+.cs-icons-path:before {
   content: "";
 }
 
-.cs-icons-search:before {
+.cs-icons-plus:before {
   content: "";
 }
 
-.cs-icons-showbiz:before {
+.cs-icons-search:before {
   content: "";
 }
 
-.cs-icons-star:before {
+.cs-icons-showbiz:before {
   content: "";
 }
 
-.cs-icons-tv:before {
+.cs-icons-star:before {
   content: "";
 }
 
-.cs-icons-up:before {
+.cs-icons-tv:before {
   content: "";
 }
 
-.cs-icons-user:before {
+.cs-icons-up:before {
   content: "";
 }
 
-.cs-icons-viral:before {
+.cs-icons-user:before {
   content: "";
+}
+
+.cs-icons-viral:before {
+  content: "";
 }
 
 body {
