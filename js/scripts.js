@@ -10,6 +10,9 @@ $(function() {
         a = document.createElement("DIV");
         a.setAttribute("class", "select-selected");
         a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        if (selElmnt.selectedIndex == 0) { // first item is a placeholder
+            a.classList.add("not-selected");
+        }
         x[i].appendChild(a);
         /*for each element, create a new DIV that will contain the option list:*/
         b = document.createElement("DIV");

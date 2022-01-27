@@ -19,12 +19,24 @@
             .dropdown-icon-close {
                 display: none;
             }
+
+            &:before {
+                position: fixed;
+                top: 56px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(25, 22, 38, 0.8);
+                content: '';
+                z-index: 1;
+            }
         }
     }
     .dropdown-menu {
         position: fixed;
         left: 0;
         top: 45px;
+        margin-top: 0;
         background: #191626;
         .dropdown-item {
             color: $white;
