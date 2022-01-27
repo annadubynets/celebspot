@@ -205,16 +205,19 @@ textarea {
 
 .card-bg-style {
     background: rgba(25, 22, 38, 0.95);
-    box-shadow: 0px 2.83916px 2.83916px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
-    padding: 53px 26px;
+    padding: 3.313rem 1.625rem;
     ul {
         li {
             font-size: 0.75rem;
             @media (min-width: 1200px) {
-                font-size: 0.875rem;
+                font-size: 1.5rem;
             }
         }
+    }
+    @media (min-width: 1200px) {
+        padding: 4rem 5.625rem;
     }
 }
 
@@ -270,19 +273,19 @@ textarea {
         display: none;
     }
     .select-selected {
-        background: $white;
+        background: $midnightblue;
         border-radius: 11px;
         text-align: start;
         border: none;
         &::after {
             font-family: cs-icons !important;
             content: "\f106";
-            color: $black;
+            color: $white;
             position: absolute;
             font-size: 10px;
             display: inline-block;
             right: 12px;
-            top: 12px;
+            top: 20px;
             font-style: initial;
         }
         &.select-arrow-active {
@@ -337,8 +340,8 @@ textarea {
 
 .profile-select.custom-select .select-selected {
     &::after {
-        color: $white;
-        top: 18px;
+        color: $black;
+        top: 12px;
     }
 }
 
