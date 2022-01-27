@@ -420,9 +420,12 @@ h4 {
 .navbar-expand .navbar-nav .dropdown-menu {
   position: fixed;
   left: 0;
-  top: 45px;
+  top: 56px;
   margin-top: 0;
   background: #191626;
+  max-height: calc(100vh - 56px);
+  overflow-y: scroll;
+  border-top: 0;
 }
 .navbar-expand .navbar-nav .dropdown-menu .dropdown-item {
   color: #FFFFFF;
