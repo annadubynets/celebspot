@@ -376,6 +376,9 @@ h4 {
   font-size: 14px;
   color: #F54B64;
 }
+.btn-link:hover {
+  color: #F54B64;
+}
 
 .btn-light {
   font-weight: 400;
