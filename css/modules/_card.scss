@@ -11,6 +11,9 @@
         font-size: 12px;
         color: #464482;
     }
+    @media (max-width: 576px) {
+        padding: 1rem;
+    }
 }
 
 @media (min-width: 1200px) {

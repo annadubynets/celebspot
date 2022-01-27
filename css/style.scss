@@ -17,20 +17,6 @@
         display: flex;
         flex-direction: column;
         background-repeat: no-repeat;
-        @media (max-width: 575px) {
-            background-image: url('../images/mobile-hero-bg.jpg');
-            background-position: top;
-            background-size: 100%;
-        }
-        @media (min-width: 576px) and (max-width: 991px) {
-            background-image: url('../images/hero-bg-middle.png');
-            background-repeat: no-repeat;
-            background-position: top right;
-            background-size: 530px;
-            @media (min-width: 768px) {
-                background-size: 640px;
-            }
-        }
         @media (min-width: 1200px) {
             background-repeat: no-repeat;
             background-position: top right;
@@ -297,6 +283,7 @@ textarea {
             display: inline-block;
             right: 12px;
             top: 12px;
+            font-style: initial;
         }
         &.select-arrow-active {
             border: 3px solid $midnightblue;
