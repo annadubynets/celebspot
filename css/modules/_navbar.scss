@@ -1,7 +1,11 @@
 .navbar {
-    background: #191626;
+    background: $darkgrey;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
+
+    &.menu-visible {
+        background: #0D0D1C;
+    }
 }
 
 $navbar-height: 56px;
@@ -21,7 +25,6 @@ $navbar-height: 56px;
             .dropdown-icon-close {
                 display: none;
             }
-
             &:before {
                 position: fixed;
                 top: $navbar-height;
@@ -39,10 +42,13 @@ $navbar-height: 56px;
         left: 0;
         top: $navbar-height;
         margin-top: 0;
-        background: #191626;
         max-height: calc(100vh - #{$navbar-height});
         overflow-y: scroll;
         border-top: 0;
+        background: $darkgrey;
+        &.show {
+            background: #0D0D1C;
+        }
         .dropdown-item {
             color: $white;
             padding: 10px 30px;

@@ -372,3 +372,17 @@ $(function() {
         }
     });
 });
+
+$(function() {
+    var menuToggler = document.querySelector('.navbar .dropdown-toggle');
+    var navbar = document.querySelector('.navbar');
+    if (!navbar || !menuToggler) return;
+
+    menuToggler.addEventListener('shown.bs.dropdown', function () {
+        navbar.classList.add('menu-visible')
+    });
+
+    menuToggler.addEventListener('hidden.bs.dropdown', function () {
+        navbar.classList.remove('menu-visible')
+    });
+});
