@@ -279,7 +279,7 @@ textarea {
         border: none;
         &::after {
             @include cs-icons-mixin();
-            content: "\f106";
+            @include cs-icons-down();
             color: $white;
             position: absolute;
             font-size: 10px;
@@ -340,7 +340,7 @@ textarea {
 .profile-select.custom-select .select-selected {
     &::after {
         color: $black;
-        top: 12px;
+        top: 14px;
     }
 }
 

@@ -37,7 +37,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: block;
-  src: url("../fonts/cs-icons.eot?2e06dab22c2c2360a2974a2c9b81b30f?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?2e06dab22c2c2360a2974a2c9b81b30f") format("woff2"), url("../fonts/cs-icons.woff?2e06dab22c2c2360a2974a2c9b81b30f") format("woff"), url("../fonts/cs-icons.ttf?2e06dab22c2c2360a2974a2c9b81b30f") format("truetype"), url("../fonts/cs-icons.svg?2e06dab22c2c2360a2974a2c9b81b30f#cs-icons") format("svg");
+  src: url("../fonts/cs-icons.eot?029bc60c0f0ad4ee305e9269329db00a?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?029bc60c0f0ad4ee305e9269329db00a") format("woff2"), url("../fonts/cs-icons.woff?029bc60c0f0ad4ee305e9269329db00a") format("woff"), url("../fonts/cs-icons.ttf?029bc60c0f0ad4ee305e9269329db00a") format("truetype"), url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("svg");
 }
 [class^=cs-icons-],
 [class*=" cs-icons-"] {
@@ -73,72 +73,76 @@
   content: "\f105";
 }
 
-.cs-icons-events:before {
+.cs-icons-down:before {
   content: "\f106";
 }
 
-.cs-icons-fashion:before {
+.cs-icons-events:before {
   content: "\f107";
 }
 
-.cs-icons-menu:before {
+.cs-icons-fashion:before {
   content: "\f108";
 }
 
-.cs-icons-movies:before {
+.cs-icons-menu:before {
   content: "\f109";
 }
 
-.cs-icons-music:before {
+.cs-icons-movies:before {
   content: "\f10a";
 }
 
-.cs-icons-new-videos:before {
+.cs-icons-music:before {
   content: "\f10b";
 }
 
-.cs-icons-next:before {
+.cs-icons-new-videos:before {
   content: "\f10c";
 }
 
-.cs-icons-off-close:before {
+.cs-icons-next:before {
   content: "\f10d";
 }
 
-.cs-icons-path:before {
+.cs-icons-off-close:before {
   content: "\f10e";
 }
 
-.cs-icons-plus:before {
+.cs-icons-path:before {
   content: "\f10f";
 }
 
-.cs-icons-search:before {
+.cs-icons-plus:before {
   content: "\f110";
 }
 
-.cs-icons-showbiz:before {
+.cs-icons-search:before {
   content: "\f111";
 }
 
-.cs-icons-star:before {
+.cs-icons-showbiz:before {
   content: "\f112";
 }
 
-.cs-icons-tv:before {
+.cs-icons-star:before {
   content: "\f113";
 }
 
-.cs-icons-up:before {
+.cs-icons-tv:before {
   content: "\f114";
 }
 
-.cs-icons-user:before {
+.cs-icons-up:before {
   content: "\f115";
 }
 
-.cs-icons-viral:before {
+.cs-icons-user:before {
   content: "\f116";
+}
+
+.cs-icons-viral:before {
+  content: "\f117";
 }
 
 body {
@@ -1079,7 +1083,7 @@ textarea {
 
 .profile-select.custom-select .select-selected::after {
   color: #090919;
-  top: 12px;
+  top: 14px;
 }
 
 .profile-select.custom-select .select-selected,

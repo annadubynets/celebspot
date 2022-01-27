@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "cs-icons";
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    src: url("../fonts/cs-icons.eot?c7f03d95667c23d1f62968d09a8861b3?#iefix") format("embedded-opentype"),
+url("../fonts/cs-icons.woff2?c7f03d95667c23d1f62968d09a8861b3") format("woff2"),
+url("../fonts/cs-icons.woff?c7f03d95667c23d1f62968d09a8861b3") format("woff"),
+url("../fonts/cs-icons.ttf?c7f03d95667c23d1f62968d09a8861b3") format("truetype"),
+url("../fonts/cs-icons.svg?c7f03d95667c23d1f62968d09a8861b3#cs-icons") format("svg");
+}
+
+[class^="cs-icons-"],
+[class*=" cs-icons-"] {
+    font-family: cs-icons !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cs-icons-back:before {
+    content: "\f101";
+}
+.cs-icons-beauty:before {
+    content: "\f102";
+}
+.cs-icons-close:before {
+    content: "\f103";
+}
+.cs-icons-copy:before {
+    content: "\f104";
+}
+.cs-icons-delete:before {
+    content: "\f105";
+}
+.cs-icons-down:before {
+    content: "\f106";
+}
+.cs-icons-events:before {
+    content: "\f107";
+}
+.cs-icons-fashion:before {
+    content: "\f108";
+}
+.cs-icons-menu:before {
+    content: "\f109";
+}
+.cs-icons-movies:before {
+    content: "\f10a";
+}
+.cs-icons-music:before {
+    content: "\f10b";
+}
+.cs-icons-new-videos:before {
+    content: "\f10c";
+}
+.cs-icons-next:before {
+    content: "\f10d";
+}
+.cs-icons-off-close:before {
+    content: "\f10e";
+}
+.cs-icons-path:before {
+    content: "\f10f";
+}
+.cs-icons-plus:before {
+    content: "\f110";
+}
+.cs-icons-search:before {
+    content: "\f111";
+}
+.cs-icons-showbiz:before {
+    content: "\f112";
+}
+.cs-icons-star:before {
+    content: "\f113";
+}
+.cs-icons-tv:before {
+    content: "\f114";
+}
+.cs-icons-up:before {
+    content: "\f115";
+}
+.cs-icons-user:before {
+    content: "\f116";
+}
+.cs-icons-viral:before {
+    content: "\f117";
+}
