@@ -103,7 +103,7 @@ if ($('.owl-carousel').length > 0) {
                 items: 4
             },
             1200: {
-                items: 6
+                items: 5
             }
         }
     })
