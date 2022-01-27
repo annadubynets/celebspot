@@ -34,15 +34,21 @@
 }
 @font-face {
   font-family: "cs-icons";
-  src: url("../fonts/cs-icons.eot?a1efbb668117e45d331ba148a0dd9a98?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?a1efbb668117e45d331ba148a0dd9a98") format("woff2"), url("../fonts/cs-icons.woff?a1efbb668117e45d331ba148a0dd9a98") format("woff"), url("../fonts/cs-icons.ttf?a1efbb668117e45d331ba148a0dd9a98") format("truetype"), url("../fonts/cs-icons.svg?a1efbb668117e45d331ba148a0dd9a98#cs-icons") format("svg");
-}
-i[class^=cs-icons-]:before, i[class*=" cs-icons-"]:before {
-  font-family: cs-icons !important;
+  font-weight: normal;
   font-style: normal;
-  font-weight: normal !important;
+  font-display: block;
+  src: url("../fonts/cs-icons.eot?b97cf79c70c5a5cda451a31a5f5a51ca?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?b97cf79c70c5a5cda451a31a5f5a51ca") format("woff2"), url("../fonts/cs-icons.woff?b97cf79c70c5a5cda451a31a5f5a51ca") format("woff"), url("../fonts/cs-icons.ttf?b97cf79c70c5a5cda451a31a5f5a51ca") format("truetype"), url("../fonts/cs-icons.svg?b97cf79c70c5a5cda451a31a5f5a51ca#cs-icons") format("svg");
+}
+[class^=cs-icons-],
+[class*=" cs-icons-"] {
+  font-family: cs-icons !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -556,6 +562,10 @@ h4 {
 
 .fw-500 {
   font-weight: 500;
+}
+
+.w-22px {
+  width: 22px;
 }
 
 @media (min-width: 1200px) {
