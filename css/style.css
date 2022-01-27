@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./owl.carousel.min.css";
 @import "./owl.theme.default.min.css";
 @font-face {
@@ -54,95 +55,95 @@
 }
 
 .cs-icons-back:before {
-  content: "\f101";
+  content: "";
 }
 
 .cs-icons-beauty:before {
-  content: "\f102";
+  content: "";
 }
 
 .cs-icons-close:before {
-  content: "\f103";
+  content: "";
 }
 
 .cs-icons-copy:before {
-  content: "\f104";
+  content: "";
 }
 
 .cs-icons-delete:before {
-  content: "\f105";
+  content: "";
 }
 
 .cs-icons-down:before {
-  content: "\f106";
+  content: "";
 }
 
 .cs-icons-events:before {
-  content: "\f107";
+  content: "";
 }
 
 .cs-icons-fashion:before {
-  content: "\f108";
+  content: "";
 }
 
 .cs-icons-menu:before {
-  content: "\f109";
+  content: "";
 }
 
 .cs-icons-movies:before {
-  content: "\f10a";
+  content: "";
 }
 
 .cs-icons-music:before {
-  content: "\f10b";
+  content: "";
 }
 
 .cs-icons-new-videos:before {
-  content: "\f10c";
+  content: "";
 }
 
 .cs-icons-next:before {
-  content: "\f10d";
+  content: "";
 }
 
 .cs-icons-off-close:before {
-  content: "\f10e";
+  content: "";
 }
 
 .cs-icons-path:before {
-  content: "\f10f";
+  content: "";
 }
 
 .cs-icons-plus:before {
-  content: "\f110";
+  content: "";
 }
 
 .cs-icons-search:before {
-  content: "\f111";
+  content: "";
 }
 
 .cs-icons-showbiz:before {
-  content: "\f112";
+  content: "";
 }
 
 .cs-icons-star:before {
-  content: "\f113";
+  content: "";
 }
 
 .cs-icons-tv:before {
-  content: "\f114";
+  content: "";
 }
 
 .cs-icons-up:before {
-  content: "\f115";
+  content: "";
 }
 
 .cs-icons-user:before {
-  content: "\f116";
+  content: "";
 }
 
 .cs-icons-viral:before {
-  content: "\f117";
+  content: "";
 }
 
 body {
@@ -441,7 +442,7 @@ h4 {
 }
 .accordion-button::after {
   font-family: cs-icons !important;
-  content: "\f106";
+  content: "";
   color: #FFFFFF;
   font-size: 10px;
   background-image: none;
@@ -614,10 +615,15 @@ h4 {
   font-style: italic;
   font-weight: 300;
   font-size: 12px;
+  color: #FFFFFF;
   background: #2D2942;
   border-radius: 7px;
-  padding: 18px 19px;
+  padding: 15px 13px;
   border: none;
+}
+.form-control:focus {
+  color: #FFFFFF;
+  box-shadow: none;
 }
 .form-control::placeholder {
   color: #9E9E9E;
@@ -657,7 +663,7 @@ h4 {
 .input-group.search .input-group-text::before {
   font-family: "icomoon";
   display: inline-block;
-  content: "\e90b";
+  content: "";
   font-size: 14px;
   color: #2D2942;
 }
@@ -791,12 +797,12 @@ h4 {
 }
 .read-more-link::before, .read-more-link::after {
   font-family: cs-icons !important;
-  content: "\f115";
+  content: "";
   color: #FFFFFF;
   font-size: 0.6rem;
 }
 .read-more-link.collapsed::after, .read-more-link.collapsed::before {
-  content: "\f106";
+  content: "";
 }
 .read-more-link .show-expanded {
   display: none;
@@ -1023,7 +1029,7 @@ textarea {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\f106";
+  content: "";
   color: #FFFFFF;
   position: absolute;
   font-size: 10px;
@@ -1031,12 +1037,9 @@ textarea {
   right: 12px;
   top: 20px;
 }
-.custom-select .select-selected.select-arrow-active {
-  border: 3px solid #2D2942;
-}
 .custom-select .select-arrow-active:after {
   transform: rotate(180deg);
-  top: 12px;
+  top: 20px;
 }
 .custom-select .select-items {
   position: absolute;
@@ -1061,7 +1064,7 @@ textarea {
   font-weight: 300;
   font-size: 12px;
   color: #9E9E9E;
-  padding: 18px 14px;
+  padding: 15px 13px;
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
