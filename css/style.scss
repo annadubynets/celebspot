@@ -31,7 +31,7 @@
                 background-size: 640px;
             }
         }
-        @media (min-width: 992px) {
+        @media (min-width: 1200px) {
             background-repeat: no-repeat;
             background-position: top right;
             background-image: url('../images/hero-bg.png');
@@ -61,7 +61,7 @@
                 font-size: 49px;
             }
         }
-        @media (min-width: 992px) {
+        @media (min-width: 1200px) {
             h3 {
                 font-size: 49px;
             }
@@ -73,7 +73,7 @@
     font-size: 0.75rem;
     font-weight: 500;
     color: $white;
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         font-size: 1.375rem;
     }
     &:hover {
@@ -108,6 +108,7 @@
 
 .read-more-list {
     list-style-type: none;
+    padding: 1.813rem 1.625rem;
     li {
         position: relative;
         font-size: 0.75rem;
@@ -120,6 +121,9 @@
             color: $hotpink;
         }
     }
+    @media (min-width: 1200px) {
+        padding: 5.625rem 4.25rem;
+    }
 }
 
 .link-style {
@@ -130,7 +134,7 @@
     &:focus {
         color: $white;
     }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         font-size: 2.625rem;
     }
 }
@@ -141,7 +145,7 @@ textarea {
 
 .copyright {
     font-size: 12px;
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         font-size: 23px;
     }
 }
@@ -150,7 +154,7 @@ textarea {
     background: url("../images/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         background: url("../images/bg-desktop.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -219,7 +223,7 @@ textarea {
         li {
             a {
                 font-size: 12px;
-                @media (min-width: 992px) {
+                @media (min-width: 1200px) {
                     font-size: 24px;
                 }
             }
@@ -264,7 +268,7 @@ textarea {
     position: absolute;
     height: 100%;
     display: flex;
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         top: 8px;
     }
     left: 2rem;
@@ -443,7 +447,7 @@ textarea {
     border-radius: 0.438rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .card-img {
         object-fit: cover;
         object-position: top;
@@ -451,7 +455,7 @@ textarea {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .card {
         .read-more-list {
             li {

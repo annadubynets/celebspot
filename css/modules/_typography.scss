@@ -113,14 +113,7 @@ h4 {
     background: #F7F8F9!important;
 }
 
-@media (min-width: 576px) {
-    .subtitle {
-        font-weight: 500;
-        font-size: 1.25rem;
-    }
-}
-
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     h1 {
         font-size: 3.063rem;
         span {
