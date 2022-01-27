@@ -57,13 +57,11 @@
             padding-top: 14vw;
         }
         @media (min-width: 576px) and (max-width: 991px) {
-            padding-top: 230px;
             h3 {
                 font-size: 49px;
             }
         }
         @media (min-width: 992px) {
-            padding-top: 56px;
             h3 {
                 font-size: 49px;
             }
@@ -132,7 +130,7 @@
     &:focus {
         color: $white;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
         font-size: 2.625rem;
     }
 }
@@ -143,7 +141,7 @@ textarea {
 
 .copyright {
     font-size: 12px;
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         font-size: 23px;
     }
 }
@@ -152,7 +150,7 @@ textarea {
     background: url("../images/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         background: url("../images/bg-desktop.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -221,7 +219,7 @@ textarea {
         li {
             a {
                 font-size: 12px;
-                @media (min-width: 768px) {
+                @media (min-width: 992px) {
                     font-size: 24px;
                 }
             }
@@ -266,7 +264,7 @@ textarea {
     position: absolute;
     height: 100%;
     display: flex;
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
         top: 8px;
     }
     left: 2rem;
@@ -453,7 +451,7 @@ textarea {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .card {
         .read-more-list {
             li {

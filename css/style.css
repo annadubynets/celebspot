@@ -261,7 +261,7 @@ h4 {
     font-size: 1.25rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   h1 {
     font-size: 3.063rem;
   }
@@ -776,17 +776,11 @@ h4 {
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
-  .landing .hero {
-    padding-top: 230px;
-  }
   .landing .hero h3 {
     font-size: 49px;
   }
 }
 @media (min-width: 992px) {
-  .landing .hero {
-    padding-top: 56px;
-  }
   .landing .hero h3 {
     font-size: 49px;
   }
@@ -851,7 +845,7 @@ h4 {
 .link-style:hover, .link-style:focus {
   color: #FFFFFF;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .link-style {
     font-size: 2.625rem;
   }
@@ -864,7 +858,7 @@ textarea {
 .copyright {
   font-size: 12px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .copyright {
     font-size: 23px;
   }
@@ -875,7 +869,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .hero {
     background: url("../images/bg-desktop.svg");
     background-repeat: no-repeat;
@@ -944,7 +938,7 @@ textarea {
 .card-bg-style ul li a {
   font-size: 12px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .card-bg-style ul li a {
     font-size: 24px;
   }
@@ -993,7 +987,7 @@ textarea {
   display: flex;
   left: 2rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .return-link {
     top: 8px;
   }
@@ -1170,7 +1164,7 @@ textarea {
     height: 65vh;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .card .read-more-list li {
     font-size: 1.5rem;
   }
