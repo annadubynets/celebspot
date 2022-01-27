@@ -417,11 +417,11 @@ h4 {
 .navbar-expand .navbar-nav .dropdown-menu .dropdown-item i {
   color: #FF4A65;
 }
-.navbar-expand .navbar-nav .dropdown-menu .dropdown-item i:focus, .navbar-expand .navbar-nav .dropdown-menu .dropdown-item i:hover {
-  color: #FFFFFF;
-}
 .navbar-expand .navbar-nav .dropdown-menu .dropdown-item:focus, .navbar-expand .navbar-nav .dropdown-menu .dropdown-item:hover {
   background-color: #FF4A65;
+}
+.navbar-expand .navbar-nav .dropdown-menu .dropdown-item:focus i, .navbar-expand .navbar-nav .dropdown-menu .dropdown-item:hover i {
+  color: #FFFFFF;
 }
 
 .accordion-button {

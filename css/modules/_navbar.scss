@@ -31,14 +31,13 @@
             padding: 10px 30px;
             i {
                 color: $pink;
-                &:focus,
-                &:hover {
-                    color: $white;
-                }
             }
             &:focus,
             &:hover {
                 background-color: $pink;
+                i {
+                    color: $white;
+                }
             }
         }
     }
