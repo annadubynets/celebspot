@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "cs-icons";
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    src: url("../fonts/cs-icons.eot?2e06dab22c2c2360a2974a2c9b81b30f?#iefix") format("embedded-opentype"),
+url("../fonts/cs-icons.woff2?2e06dab22c2c2360a2974a2c9b81b30f") format("woff2"),
+url("../fonts/cs-icons.woff?2e06dab22c2c2360a2974a2c9b81b30f") format("woff"),
+url("../fonts/cs-icons.ttf?2e06dab22c2c2360a2974a2c9b81b30f") format("truetype"),
+url("../fonts/cs-icons.svg?2e06dab22c2c2360a2974a2c9b81b30f#cs-icons") format("svg");
+}
+
+@mixin cs-icons-mixin {
+    font-family: cs-icons !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="cs-icons-"],
+[class*=" cs-icons-"] {
+    @include cs-icons-mixin();
+}
+
+
+@mixin cs-icons-back {
+    content: "\f101";
+}
+
+.cs-icons-back:before {
+    @include cs-icons-back();
+}
+
+@mixin cs-icons-beauty {
+    content: "\f102";
+}
+
+.cs-icons-beauty:before {
+    @include cs-icons-beauty();
+}
+
+@mixin cs-icons-close {
+    content: "\f103";
+}
+
+.cs-icons-close:before {
+    @include cs-icons-close();
+}
+
+@mixin cs-icons-copy {
+    content: "\f104";
+}
+
+.cs-icons-copy:before {
+    @include cs-icons-copy();
+}
+
+@mixin cs-icons-delete {
+    content: "\f105";
+}
+
+.cs-icons-delete:before {
+    @include cs-icons-delete();
+}
+
+@mixin cs-icons-events {
+    content: "\f106";
+}
+
+.cs-icons-events:before {
+    @include cs-icons-events();
+}
+
+@mixin cs-icons-fashion {
+    content: "\f107";
+}
+
+.cs-icons-fashion:before {
+    @include cs-icons-fashion();
+}
+
+@mixin cs-icons-menu {
+    content: "\f108";
+}
+
+.cs-icons-menu:before {
+    @include cs-icons-menu();
+}
+
+@mixin cs-icons-movies {
+    content: "\f109";
+}
+
+.cs-icons-movies:before {
+    @include cs-icons-movies();
+}
+
+@mixin cs-icons-music {
+    content: "\f10a";
+}
+
+.cs-icons-music:before {
+    @include cs-icons-music();
+}
+
+@mixin cs-icons-new-videos {
+    content: "\f10b";
+}
+
+.cs-icons-new-videos:before {
+    @include cs-icons-new-videos();
+}
+
+@mixin cs-icons-next {
+    content: "\f10c";
+}
+
+.cs-icons-next:before {
+    @include cs-icons-next();
+}
+
+@mixin cs-icons-off-close {
+    content: "\f10d";
+}
+
+.cs-icons-off-close:before {
+    @include cs-icons-off-close();
+}
+
+@mixin cs-icons-path {
+    content: "\f10e";
+}
+
+.cs-icons-path:before {
+    @include cs-icons-path();
+}
+
+@mixin cs-icons-plus {
+    content: "\f10f";
+}
+
+.cs-icons-plus:before {
+    @include cs-icons-plus();
+}
+
+@mixin cs-icons-search {
+    content: "\f110";
+}
+
+.cs-icons-search:before {
+    @include cs-icons-search();
+}
+
+@mixin cs-icons-showbiz {
+    content: "\f111";
+}
+
+.cs-icons-showbiz:before {
+    @include cs-icons-showbiz();
+}
+
+@mixin cs-icons-star {
+    content: "\f112";
+}
+
+.cs-icons-star:before {
+    @include cs-icons-star();
+}
+
+@mixin cs-icons-tv {
+    content: "\f113";
+}
+
+.cs-icons-tv:before {
+    @include cs-icons-tv();
+}
+
+@mixin cs-icons-up {
+    content: "\f114";
+}
+
+.cs-icons-up:before {
+    @include cs-icons-up();
+}
+
+@mixin cs-icons-user {
+    content: "\f115";
+}
+
+.cs-icons-user:before {
+    @include cs-icons-user();
+}
+
+@mixin cs-icons-viral {
+    content: "\f116";
+}
+
+.cs-icons-viral:before {
+    @include cs-icons-viral();
+}

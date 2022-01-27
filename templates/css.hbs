@@ -6,8 +6,7 @@
     src: {{{ src }}};
 }
 
-[class^="{{classPrefix}}"],
-[class*=" {{classPrefix}}"] {
+@mixin {{ fontName }}-mixin {
     font-family: {{ fontName }} !important;
     speak: never;
     font-style: normal;
@@ -20,8 +19,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+[class^="{{classPrefix}}"],
+[class*=" {{classPrefix}}"] {
+    @include {{ fontName }}-mixin();
+}
+
 {{# each codepoints }}
-.{{ ../classPrefix }}{{ @key }}:before {
+
+@mixin {{ ../classPrefix }}{{ @key }} {
     content: "\\{{ this }}";
+}
+
+.{{ ../classPrefix }}{{ @key }}:before {
+    @include {{ ../classPrefix }}{{ @key }}();
 }
 {{/ each }}

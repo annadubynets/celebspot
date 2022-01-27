@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Celebspot Markup project",
   "scripts": {
-    "generate-fonts": "icon-font-generator --height=1000 --normalize=true --csstp='./templates/css.hbs' --name cs-icons -p cs-icons --csspath css/cs-icons.css  font-icons/*.svg -o fonts",
+    "generate-fonts": "icon-font-generator --height=1000 --normalize=true --csstp='./templates/css.hbs' --name cs-icons -p cs-icons --csspath css/cs-icons.scss  font-icons/*.svg -o fonts",
     "dev": "sass css/style.scss css/style.css --watch"
   },
   "repository": {
