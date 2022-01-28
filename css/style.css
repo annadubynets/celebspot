@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./owl.carousel.min.css";
 @import "./owl.theme.default.min.css";
 @font-face {
@@ -54,95 +55,95 @@
 }
 
 .cs-icons-back:before {
-  content: "\f101";
+  content: "";
 }
 
 .cs-icons-beauty:before {
-  content: "\f102";
+  content: "";
 }
 
 .cs-icons-close:before {
-  content: "\f103";
+  content: "";
 }
 
 .cs-icons-copy:before {
-  content: "\f104";
+  content: "";
 }
 
 .cs-icons-delete:before {
-  content: "\f105";
+  content: "";
 }
 
 .cs-icons-down:before {
-  content: "\f106";
+  content: "";
 }
 
 .cs-icons-events:before {
-  content: "\f107";
+  content: "";
 }
 
 .cs-icons-fashion:before {
-  content: "\f108";
+  content: "";
 }
 
 .cs-icons-menu:before {
-  content: "\f109";
+  content: "";
 }
 
 .cs-icons-movies:before {
-  content: "\f10a";
+  content: "";
 }
 
 .cs-icons-music:before {
-  content: "\f10b";
+  content: "";
 }
 
 .cs-icons-new-videos:before {
-  content: "\f10c";
+  content: "";
 }
 
 .cs-icons-next:before {
-  content: "\f10d";
+  content: "";
 }
 
 .cs-icons-off-close:before {
-  content: "\f10e";
+  content: "";
 }
 
 .cs-icons-path:before {
-  content: "\f10f";
+  content: "";
 }
 
 .cs-icons-plus:before {
-  content: "\f110";
+  content: "";
 }
 
 .cs-icons-search:before {
-  content: "\f111";
+  content: "";
 }
 
 .cs-icons-showbiz:before {
-  content: "\f112";
+  content: "";
 }
 
 .cs-icons-star:before {
-  content: "\f113";
+  content: "";
 }
 
 .cs-icons-tv:before {
-  content: "\f114";
+  content: "";
 }
 
 .cs-icons-up:before {
-  content: "\f115";
+  content: "";
 }
 
 .cs-icons-user:before {
-  content: "\f116";
+  content: "";
 }
 
 .cs-icons-viral:before {
-  content: "\f117";
+  content: "";
 }
 
 body {
@@ -327,6 +328,14 @@ h4 {
     border-radius: 32px;
   }
 }
+.btn-primary:focus, .btn-primary:active {
+  box-shadow: none;
+  border-color: #FF3038;
+}
+.btn-primary:hover {
+  background-color: #FF4A65;
+  border-color: #FF3038;
+}
 
 .btn-outline-primary {
   font-size: 14px;
@@ -337,6 +346,22 @@ h4 {
   border-radius: 22px;
   padding: 9px 30px;
 }
+.btn-outline-primary:hover {
+  background-color: #FF4A65;
+  border-color: #FF3038;
+}
+.btn-outline-primary:focus, .btn-outline-primary:active {
+  box-shadow: none;
+}
+
+.btn-check:active + .btn-outline-primary:focus,
+.btn-check:checked + .btn-outline-primary:focus,
+.btn-primary:active:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus,
+.btn-outline-primary:active:focus {
+  box-shadow: none;
+}
 
 .btn-secondary {
   font-size: 16px;
@@ -345,7 +370,7 @@ h4 {
   border: 2.05755px solid #9C9C9C;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 13px rgba(0, 0, 0, 0.14);
   border-radius: 23px;
-  padding: 8px 30px;
+  padding: 12px 30px;
 }
 @media (min-width: 1200px) {
   .btn-secondary {
@@ -353,6 +378,13 @@ h4 {
     padding: 18px 30px;
     border-radius: 42px;
   }
+}
+.btn-secondary:hover {
+  background: linear-gradient(90deg, #898989 0%, #A9A9A9 100%);
+  border-color: #9C9C9C;
+}
+.btn-secondary:focus, .btn-secondary:active {
+  box-shadow: none;
 }
 
 .modal .btn {
@@ -464,7 +496,7 @@ h4 {
 }
 .accordion-button::after {
   font-family: cs-icons !important;
-  content: "\f106";
+  content: "";
   color: #FFFFFF;
   font-size: 10px;
   background-image: none;
@@ -685,7 +717,7 @@ h4 {
 .input-group.search .input-group-text::before {
   font-family: "icomoon";
   display: inline-block;
-  content: "\e90b";
+  content: "";
   font-size: 14px;
   color: #2D2942;
 }
@@ -819,12 +851,12 @@ h4 {
 }
 .read-more-link::before, .read-more-link::after {
   font-family: cs-icons !important;
-  content: "\f115";
+  content: "";
   color: #FFFFFF;
   font-size: 0.6rem;
 }
 .read-more-link.collapsed::after, .read-more-link.collapsed::before {
-  content: "\f106";
+  content: "";
 }
 .read-more-link .show-expanded {
   display: none;
@@ -1051,7 +1083,7 @@ textarea {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\f106";
+  content: "";
   color: #FFFFFF;
   position: absolute;
   font-size: 10px;
