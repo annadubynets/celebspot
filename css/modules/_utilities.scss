@@ -111,12 +111,6 @@
 }
 
 @media (min-width: 1200px) {
-    .mb-lg-300px {
-        margin-bottom: 300px;
-    }
-}
-
-@media (min-width: 1200px) {
     .font-size-9px {
         font-size: 12px;
     }
@@ -132,10 +126,22 @@
     .font-size-xl-30px {
         font-size: 30px;
     }
+    .mb-lg-300px {
+        margin-bottom: 300px;
+    }
 }
 
 @media (max-width: 414px) {
     .pb-140px {
         padding-bottom: 90px;
+    }
+}
+
+@media (min-width: 414px) {
+    .w-16 {
+        width: 8%;
+    }
+    .h-16 {
+        height: 8%;
     }
 }
