@@ -59,12 +59,6 @@ h4 {
     color: $white;
 }
 
-.title {
-    font-weight: 500;
-    font-size: 0.75rem;
-    color: $pink;
-}
-
 .subtitle {
     font-weight: 500;
     font-size: 0.875rem;
@@ -77,16 +71,16 @@ h4 {
     color: $white;
 }
 
-.product-description {
-    font-size: 0.75rem;
-}
-
 .text-secondary {
     color: $darkgrey!important;
 }
 
 .text-muted {
     color: $silver!important;
+}
+
+.text-grey {
+    color: $lightgrey;
 }
 
 .text-pink {
@@ -111,6 +105,10 @@ h4 {
 
 .bg-light {
     background: #F7F8F9!important;
+}
+
+.bg-dark {
+    background-color: $darkgrey!important;
 }
 
 @media (min-width: 1200px) {
