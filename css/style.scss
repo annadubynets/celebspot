@@ -140,11 +140,11 @@ textarea {
 }
 
 .hero {
-    background: url("../images/bg.svg");
+    background: url("../images/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     @media (min-width: 1200px) {
-        background: url("../images/bg-desktop.svg");
+        background: url("../images/bg-desktop.png");
         background-repeat: no-repeat;
         background-size: cover;
     }
