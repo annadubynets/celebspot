@@ -413,6 +413,14 @@ h4 {
     font-size: 18px;
   }
 }
+.btn-link.font-size-link {
+  font-size: 12px;
+}
+@media (min-width: 1200px) {
+  .btn-link.font-size-link {
+    font-size: 14px;
+  }
+}
 
 .btn-light {
   font-weight: 400;
@@ -485,7 +493,7 @@ h4 {
 .accordion-button {
   background-color: transparent !important;
   font-weight: 500;
-  font-size: 0.813rem !important;
+  font-size: 0.813rem;
   color: #FFFFFF;
   padding: 24px;
   border-radius: 0.438rem;
@@ -503,6 +511,11 @@ h4 {
   color: #FFFFFF;
   font-size: 10px;
   background-image: none;
+}
+@media (min-width: 1200px) {
+  .accordion-button {
+    font-size: 1.125rem;
+  }
 }
 
 .accordion-button:not(.collapsed) {
@@ -534,8 +547,13 @@ h4 {
 
 .accordion-body {
   color: #FFFFFF;
-  font-size: 0.813rem;
+  font-size: 0.75rem;
   padding: 0 24px 15px 24px;
+}
+@media (min-width: 1200px) {
+  .accordion-body {
+    font-size: 0.875rem;
+  }
 }
 
 .rounded-4 {
@@ -822,50 +840,8 @@ h4 {
   flex-direction: column;
   background-repeat: no-repeat;
 }
-@media (min-width: 1200px) {
-  .landing main {
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-image: url("../images/hero-bg.png");
-    background-size: 726px;
-  }
-}
-@media (min-width: 1200px) and (min-width: 1200px) {
-  .landing main {
-    background-size: 780px;
-  }
-}
-@media (min-width: 1200px) and (min-width: 1400px) {
-  .landing main {
-    background-size: 900px;
-  }
-}
-@media (min-width: 1200px) {
-  .landing main .wifi-registration {
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-}
 .landing main footer {
   margin-top: auto;
-}
-.landing .hero {
-  min-height: calc(100vh - 0px);
-}
-@media (max-width: 575px) {
-  .landing .hero {
-    padding-top: 14vw;
-  }
-}
-@media (min-width: 576px) and (max-width: 991px) {
-  .landing .hero h3 {
-    font-size: 49px;
-  }
-}
-@media (min-width: 1200px) {
-  .landing .hero h3 {
-    font-size: 49px;
-  }
 }
 
 .read-more-link {
@@ -962,7 +938,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .hero {
     background: url("../images/bg-desktop.png");
     background-repeat: no-repeat;

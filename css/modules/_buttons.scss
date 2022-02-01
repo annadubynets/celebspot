@@ -104,6 +104,12 @@
     @media (min-width: 1200px) {
         font-size: 18px;
     }
+    &.font-size-link {
+        font-size: 12px;
+        @media (min-width: 1200px) {
+            font-size: 14px;
+        }
+    }
 }
 
 .btn-light {
