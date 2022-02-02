@@ -21,6 +21,9 @@
             margin-top: auto;
         }
     }
+    .hero {
+        min-height: calc(100vh - 0px);
+    }
 }
 
 .read-more-link {
@@ -179,7 +182,7 @@ textarea {
         li {
             font-size: 0.75rem;
             @media (min-width: 1200px) {
-                font-size: 1.5rem;
+                font-size: 1.125rem;
             }
         }
     }
