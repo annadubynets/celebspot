@@ -96,6 +96,7 @@
     }
     @media (min-width: 1200px) {
         font-size: 2.625rem;
+        padding: 0 23px;
     }
 }
 
@@ -113,7 +114,7 @@ textarea {
 .hero {
     background: url("../images/bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     @media (min-width: 992px) {
         background: url("../images/bg-desktop.png");
         background-repeat: no-repeat;
@@ -182,7 +183,7 @@ textarea {
         li {
             font-size: 0.75rem;
             @media (min-width: 1200px) {
-                font-size: 1.125rem;
+                font-size: 1.5rem;
             }
         }
     }

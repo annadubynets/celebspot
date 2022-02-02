@@ -111,6 +111,15 @@ h4 {
     background-color: $darkgrey!important;
 }
 
+@media (min-width: 992px) {
+    .bg-transparent-lg {
+        background: transparent!important;
+    }
+    .shadow-lg-none {
+        box-shadow: none!important;
+    }
+}
+
 @media (min-width: 1200px) {
     h1 {
         font-size: 3.063rem;
