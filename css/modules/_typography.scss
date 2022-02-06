@@ -111,6 +111,18 @@ h4 {
     background-color: $darkgrey!important;
 }
 
+.bg-fullscreen-half-dark {
+    position: relative;
+    &::before {
+        content:'';
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        left: calc((100% - 100vw) / 2);
+        background: linear-gradient(to bottom, transparent 50%, $darkgrey 50% 100%);
+    }
+}
+
 @media (min-width: 992px) {
     .bg-transparent-lg {
         background: transparent!important;
