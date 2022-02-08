@@ -3,11 +3,11 @@
     font-weight: normal;
     font-style: normal;
     font-display: block;
-    src: url("../fonts/cs-icons.eot?029bc60c0f0ad4ee305e9269329db00a?#iefix") format("embedded-opentype"),
-url("../fonts/cs-icons.woff2?029bc60c0f0ad4ee305e9269329db00a") format("woff2"),
-url("../fonts/cs-icons.woff?029bc60c0f0ad4ee305e9269329db00a") format("woff"),
-url("../fonts/cs-icons.ttf?029bc60c0f0ad4ee305e9269329db00a") format("truetype"),
-url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("svg");
+    src: url("../fonts/cs-icons.eot?75e2baec977be183e33684cb097e6eb1?#iefix") format("embedded-opentype"),
+url("../fonts/cs-icons.woff2?75e2baec977be183e33684cb097e6eb1") format("woff2"),
+url("../fonts/cs-icons.woff?75e2baec977be183e33684cb097e6eb1") format("woff"),
+url("../fonts/cs-icons.ttf?75e2baec977be183e33684cb097e6eb1") format("truetype"),
+url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("svg");
 }
 
 @mixin cs-icons-mixin {
@@ -45,8 +45,16 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
     @include cs-icons-beauty();
 }
 
-@mixin cs-icons-close {
+@mixin cs-icons-celebrities {
     content: "\f103";
+}
+
+.cs-icons-celebrities:before {
+    @include cs-icons-celebrities();
+}
+
+@mixin cs-icons-close {
+    content: "\f104";
 }
 
 .cs-icons-close:before {
@@ -54,15 +62,23 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-copy {
-    content: "\f104";
+    content: "\f105";
 }
 
 .cs-icons-copy:before {
     @include cs-icons-copy();
 }
 
+@mixin cs-icons-culture {
+    content: "\f106";
+}
+
+.cs-icons-culture:before {
+    @include cs-icons-culture();
+}
+
 @mixin cs-icons-delete {
-    content: "\f105";
+    content: "\f107";
 }
 
 .cs-icons-delete:before {
@@ -70,7 +86,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-down {
-    content: "\f106";
+    content: "\f108";
 }
 
 .cs-icons-down:before {
@@ -78,7 +94,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-events {
-    content: "\f107";
+    content: "\f109";
 }
 
 .cs-icons-events:before {
@@ -86,15 +102,23 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-fashion {
-    content: "\f108";
+    content: "\f10a";
 }
 
 .cs-icons-fashion:before {
     @include cs-icons-fashion();
 }
 
+@mixin cs-icons-lifestyle {
+    content: "\f10b";
+}
+
+.cs-icons-lifestyle:before {
+    @include cs-icons-lifestyle();
+}
+
 @mixin cs-icons-menu {
-    content: "\f109";
+    content: "\f10c";
 }
 
 .cs-icons-menu:before {
@@ -102,7 +126,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-movies {
-    content: "\f10a";
+    content: "\f10d";
 }
 
 .cs-icons-movies:before {
@@ -110,7 +134,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-music {
-    content: "\f10b";
+    content: "\f10e";
 }
 
 .cs-icons-music:before {
@@ -118,7 +142,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-new-videos {
-    content: "\f10c";
+    content: "\f10f";
 }
 
 .cs-icons-new-videos:before {
@@ -126,7 +150,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-next {
-    content: "\f10d";
+    content: "\f110";
 }
 
 .cs-icons-next:before {
@@ -134,7 +158,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-off-close {
-    content: "\f10e";
+    content: "\f111";
 }
 
 .cs-icons-off-close:before {
@@ -142,7 +166,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-path {
-    content: "\f10f";
+    content: "\f112";
 }
 
 .cs-icons-path:before {
@@ -150,7 +174,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-plus {
-    content: "\f110";
+    content: "\f113";
 }
 
 .cs-icons-plus:before {
@@ -158,7 +182,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-search {
-    content: "\f111";
+    content: "\f114";
 }
 
 .cs-icons-search:before {
@@ -166,15 +190,23 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-showbiz {
-    content: "\f112";
+    content: "\f115";
 }
 
 .cs-icons-showbiz:before {
     @include cs-icons-showbiz();
 }
 
+@mixin cs-icons-sports {
+    content: "\f116";
+}
+
+.cs-icons-sports:before {
+    @include cs-icons-sports();
+}
+
 @mixin cs-icons-star {
-    content: "\f113";
+    content: "\f117";
 }
 
 .cs-icons-star:before {
@@ -182,7 +214,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-tv {
-    content: "\f114";
+    content: "\f118";
 }
 
 .cs-icons-tv:before {
@@ -190,7 +222,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-up {
-    content: "\f115";
+    content: "\f119";
 }
 
 .cs-icons-up:before {
@@ -198,7 +230,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-user {
-    content: "\f116";
+    content: "\f11a";
 }
 
 .cs-icons-user:before {
@@ -206,7 +238,7 @@ url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("s
 }
 
 @mixin cs-icons-viral {
-    content: "\f117";
+    content: "\f11b";
 }
 
 .cs-icons-viral:before {

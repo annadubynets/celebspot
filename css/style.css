@@ -38,7 +38,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: block;
-  src: url("../fonts/cs-icons.eot?029bc60c0f0ad4ee305e9269329db00a?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?029bc60c0f0ad4ee305e9269329db00a") format("woff2"), url("../fonts/cs-icons.woff?029bc60c0f0ad4ee305e9269329db00a") format("woff"), url("../fonts/cs-icons.ttf?029bc60c0f0ad4ee305e9269329db00a") format("truetype"), url("../fonts/cs-icons.svg?029bc60c0f0ad4ee305e9269329db00a#cs-icons") format("svg");
+  src: url("../fonts/cs-icons.eot?75e2baec977be183e33684cb097e6eb1?#iefix") format("embedded-opentype"), url("../fonts/cs-icons.woff2?75e2baec977be183e33684cb097e6eb1") format("woff2"), url("../fonts/cs-icons.woff?75e2baec977be183e33684cb097e6eb1") format("woff"), url("../fonts/cs-icons.ttf?75e2baec977be183e33684cb097e6eb1") format("truetype"), url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("svg");
 }
 [class^=cs-icons-],
 [class*=" cs-icons-"] {
@@ -62,88 +62,104 @@
   content: "";
 }
 
-.cs-icons-close:before {
+.cs-icons-celebrities:before {
   content: "";
 }
 
-.cs-icons-copy:before {
+.cs-icons-close:before {
   content: "";
 }
 
-.cs-icons-delete:before {
+.cs-icons-copy:before {
   content: "";
 }
 
-.cs-icons-down:before {
+.cs-icons-culture:before {
   content: "";
 }
 
-.cs-icons-events:before {
+.cs-icons-delete:before {
   content: "";
 }
 
-.cs-icons-fashion:before {
+.cs-icons-down:before {
   content: "";
 }
 
-.cs-icons-menu:before {
+.cs-icons-events:before {
   content: "";
 }
 
-.cs-icons-movies:before {
+.cs-icons-fashion:before {
   content: "";
 }
 
-.cs-icons-music:before {
+.cs-icons-lifestyle:before {
   content: "";
 }
 
-.cs-icons-new-videos:before {
+.cs-icons-menu:before {
   content: "";
 }
 
-.cs-icons-next:before {
+.cs-icons-movies:before {
   content: "";
 }
 
-.cs-icons-off-close:before {
+.cs-icons-music:before {
   content: "";
 }
 
-.cs-icons-path:before {
+.cs-icons-new-videos:before {
   content: "";
 }
 
-.cs-icons-plus:before {
+.cs-icons-next:before {
   content: "";
 }
 
-.cs-icons-search:before {
+.cs-icons-off-close:before {
   content: "";
 }
 
-.cs-icons-showbiz:before {
+.cs-icons-path:before {
   content: "";
 }
 
-.cs-icons-star:before {
+.cs-icons-plus:before {
   content: "";
 }
 
-.cs-icons-tv:before {
+.cs-icons-search:before {
   content: "";
 }
 
-.cs-icons-up:before {
+.cs-icons-showbiz:before {
   content: "";
 }
 
-.cs-icons-user:before {
+.cs-icons-sports:before {
   content: "";
 }
 
-.cs-icons-viral:before {
+.cs-icons-star:before {
   content: "";
+}
+
+.cs-icons-tv:before {
+  content: "";
+}
+
+.cs-icons-up:before {
+  content: "";
+}
+
+.cs-icons-user:before {
+  content: "";
+}
+
+.cs-icons-viral:before {
+  content: "";
 }
 
 body {
@@ -1159,7 +1175,7 @@ textarea {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "";
+  content: "";
   color: #FFFFFF;
   position: absolute;
   font-size: 10px;
