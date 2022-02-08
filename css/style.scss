@@ -193,26 +193,6 @@ textarea {
     }
 }
 
-.descr-border-bottom {
-    position: relative;
-    padding-bottom: 20px;
-    @media (min-width: 768px) {
-        padding-bottom: 46px;
-    }
-    &::after {
-        content: "";
-        display: block;
-        width: 243px;
-        color: $white;
-        border-width: 0.7px;
-        border-style: dashed solid;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left: -120px;
-    }
-}
-
 .input-label {
     font-size: 11px;
     @media (max-width: 414px) {
