@@ -187,7 +187,7 @@ $(function() {
         paramName: 'q',
         type: "GET",
         onSelect: function(keyword) {
-            window.location.href = `search-result.html?q=${keyword}`;
+            window.location.href = `search-result.html?q=${keyword.value}`;
         },
         transformResult: function(response) {
             console.log(response);

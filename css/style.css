@@ -1199,11 +1199,11 @@ h4 {
   cursor: default;
   border: none;
   border-top: 0;
-  background: rgba(84, 82, 92, 0.8);
+  background: rgba(84, 82, 92, 0.95);
   color: #FFFFFF;
   box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.1);
   /* core styles should not be changed */
-  padding: 1rem;
+  padding: 1rem 0;
   border-radius: 0.25rem;
   position: absolute;
   display: none;
@@ -1212,11 +1212,17 @@ h4 {
   overflow: hidden;
   overflow-y: auto;
   box-sizing: border-box;
+  transform: translateY(0.5rem);
+}
+@media (max-width: 576px) {
+  .autocomplete-suggestions {
+    min-width: calc(100vw - 2rem);
+  }
 }
 
 .autocomplete-suggestion {
   position: relative;
-  padding: 0 0.6em;
+  padding: 0.2rem 1rem;
   line-height: 23px;
   white-space: nowrap;
   overflow: hidden;
@@ -1225,13 +1231,17 @@ h4 {
   color: #FFFFFF;
 }
 
-.autocomplete-suggestion b {
-  font-weight: normal;
-  color: #1f8dd6;
+.autocomplete-suggestion strong {
+  color: #FF4A65;
 }
 
-.autocomplete-suggestion.selected {
-  background: #f0f0f0;
+.autocomplete-suggestion.autocomplete-selected {
+  background-color: #FF4A65 !important;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.autocomplete-suggestion.autocomplete-selected strong {
+  color: #FFFFFF;
 }
 
 .landing main {

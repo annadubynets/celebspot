@@ -3,11 +3,11 @@
     cursor: default;
     border: none;
     border-top: 0;
-    background: rgba(84, 82, 92, .8);
+    background: rgba(84, 82, 92, .95);
     color: $white;
     box-shadow: -1px 1px 3px rgba(0, 0, 0, .1);
     /* core styles should not be changed */
-    padding: 1rem;
+    padding: 1rem 0;
     border-radius: 0.25rem;
     position: absolute;
     display: none;
@@ -16,11 +16,15 @@
     overflow: hidden;
     overflow-y: auto;
     box-sizing: border-box;
+    transform: translateY(.5rem);
+    @media (max-width: 576px) {
+        min-width: calc(100vw - 2rem);
+    }
 }
 
 .autocomplete-suggestion {
     position: relative;
-    padding: 0 .6em;
+    padding: 0.2rem 1rem;
     line-height: 23px;
     white-space: nowrap;
     overflow: hidden;
@@ -29,11 +33,15 @@
     color: $white;
 }
 
-.autocomplete-suggestion b {
-    font-weight: normal;
-    color: #1f8dd6;
+.autocomplete-suggestion strong {
+    color: $pink;
 }
 
-.autocomplete-suggestion.selected {
-    background: #f0f0f0;
+.autocomplete-suggestion.autocomplete-selected {
+    background-color: $pink !important;
+    color: $white;
+    strong {
+        color: $white;
+    }
+    cursor: pointer;
 }
