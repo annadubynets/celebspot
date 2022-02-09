@@ -1197,11 +1197,14 @@ h4 {
 .autocomplete-suggestions {
   text-align: left;
   cursor: default;
-  border: 1px solid #ccc;
+  border: none;
   border-top: 0;
-  background: #fff;
+  background: rgba(84, 82, 92, 0.8);
+  color: #FFFFFF;
   box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.1);
   /* core styles should not be changed */
+  padding: 1rem;
+  border-radius: 0.25rem;
   position: absolute;
   display: none;
   z-index: 9999;
@@ -1218,8 +1221,8 @@ h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.02em;
-  color: #333;
+  font-size: 0.875rem;
+  color: #FFFFFF;
 }
 
 .autocomplete-suggestion b {
