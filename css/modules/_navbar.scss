@@ -54,9 +54,15 @@ $navbar-height: 56px;
         }
         .dropdown-item {
             color: $white;
+            display: flex;
+            justify-content: start;
             padding: 10px 30px;
             i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 color: $pink;
+                width: 40px;
             }
             &:focus,
             &:hover {

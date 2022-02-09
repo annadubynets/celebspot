@@ -522,10 +522,16 @@ h4 {
 }
 .navbar-expand .navbar-nav .dropdown-menu .dropdown-item {
   color: #FFFFFF;
+  display: flex;
+  justify-content: start;
   padding: 10px 30px;
 }
 .navbar-expand .navbar-nav .dropdown-menu .dropdown-item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #FF4A65;
+  width: 40px;
 }
 .navbar-expand .navbar-nav .dropdown-menu .dropdown-item:focus, .navbar-expand .navbar-nav .dropdown-menu .dropdown-item:hover {
   background-color: #FF4A65;
