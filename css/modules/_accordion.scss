@@ -14,7 +14,7 @@
     }
     &::after {
         font-family: cs-icons !important;
-        content: "\f106";
+        @include cs-icons-down();
         color: $white;
         font-size: 10px;
         background-image: none;

@@ -822,7 +822,7 @@ h4 {
 }
 .accordion-button::after {
   font-family: cs-icons !important;
-  content: "";
+  content: "";
   color: #FFFFFF;
   font-size: 10px;
   background-image: none;
@@ -1258,12 +1258,12 @@ h4 {
 }
 .read-more-link::before, .read-more-link::after {
   font-family: cs-icons !important;
-  content: "";
+  content: "";
   color: #FFFFFF;
   font-size: 0.6rem;
 }
 .read-more-link.collapsed::after, .read-more-link.collapsed::before {
-  content: "";
+  content: "";
 }
 .read-more-link .show-expanded {
   display: none;
