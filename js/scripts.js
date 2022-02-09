@@ -85,185 +85,42 @@ $(function() {
 
 });
 
-if ($('.owl-carousel').length > 0) {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 25,
-        responsiveClass: true,
-        autoplay: false,
-        nav: false,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1,
-                stagePadding: 40
-            },
-            720: {
-                items: 3,
-                stagePadding: 60
-            },
-            1050: {
-                items: 4
-            },
-            1200: {
-                items: 5
-            }
-        }
-    })
-}
-
 /**
- * Build the progress chart
- * @canvasElem instance of HTML5 canvas
- * @labels array of labels
- * @values array of values
+ * carousel setup
  */
-function buildChart(canvasElem, labels, values, goalIndex) {
-    const data = {
-        labels: labels,
-        datasets: [{
-            data: values,
-            fill: true,
-            borderColor: 'rgb(75, 192, 192)',
-            backgroundColor: '#80D7EC',
-            background: '#5A7591',
-            tension: 0.6
-        }]
-    };
-
-    const config = {
-        options: {
-            legend: {
-                display: false
-            },
-            scales: {
-                y: {
-                    display: true,
-                    ticks: {
-                        display: false,
-                    }
+$(function() {
+    if ($('.owl-carousel').length > 0) {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 25,
+            responsiveClass: true,
+            autoplay: false,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    stagePadding: 40
                 },
-                x: {
-                    ticks: {
-                        color: "#ffffff",
-                        // callback: function(val, index) {
-                        //     return index == labels.length - 1 ? '' : (index + 1) + '';
-                        // },
-                    }
-                }
-            },
-            animation: {
-                duration: 1,
-                onComplete: function() {
-                    var chartInstance = this,
-                        ctx = this.ctx;
-                    ctx.textAlign = 'center';
-                    ctx.strokeStyle = '#ffffff';
-                    ctx.textBaseline = 'bottom';
-
-                    const meta = this.getDatasetMeta(0);
-
-                    this.data.datasets.forEach(function(dataset) {
-                        for (var i = 1; i < dataset.data.length - 1; i++) {
-                            var model = meta.data[i];
-                            ctx.font = '12px, "Futura"';
-                            ctx.fillStyle = '#ffffff';
-
-                            if (i == goalIndex) {
-                                const textDimensions = ctx.measureText('GOAL');
-
-                                roundRect(
-                                    ctx,
-                                    model.x - (textDimensions.width / 2) - 2,
-                                    model.y - textDimensions.fontBoundingBoxAscent * 2 - 2,
-                                    textDimensions.width + 4,
-                                    textDimensions.fontBoundingBoxAscent * 2 + 4, // we have two lines 
-                                    10,
-                                    '#ffffff'
-                                );
-
-                                ctx.fillStyle = '#5A7591';
-                                ctx.fillText('GOAL', model.x, model.y - textDimensions.fontBoundingBoxAscent);
-                                ctx.fillText(dataset.data[i], model.x, model.y);
-                            } else {
-                                ctx.fillStyle = '#ffffff';
-                                ctx.fillText(dataset.data[i], model.x, model.y - 5);
-                            }
-
-                            ctx.beginPath();
-                            ctx.strokeStyle = '#ffffff';
-                            ctx.lineWidth = 3;
-                            ctx.moveTo(model.x, model.y);
-                            ctx.lineTo(model.x, chartInstance.scales.y.bottom);
-                            ctx.stroke();
-                        }
-                    });
-                }
-            },
-            plugins: {
-                legend: {
-                    labels: {
-                        generateLabels: function() {
-                            return [];
-                        }
-                    },
-                    title: {
-                        display: true,
-                        color: 'white',
-                        text: 'Cognitive score from 0 to 800',
-                        padding: 20,
-                        font: {
-                            name: 'Futura',
-                            weight: 600,
-                        }
-                    }
+                720: {
+                    items: 3,
+                    stagePadding: 60
+                },
+                1050: {
+                    items: 4
+                },
+                1200: {
+                    items: 5
                 }
             }
-        },
-        type: 'line',
-        data: data,
-    };
-    return new Chart(ctx, config);
-}
+        })
+    }
+});
 
-function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
-    if (typeof stroke === 'undefined') {
-        stroke = true;
-    }
-    if (typeof radius === 'undefined') {
-        radius = 5;
-    }
-    if (typeof radius === 'number') {
-        radius = { tl: radius, tr: radius, br: radius, bl: radius };
-    } else {
-        var defaultRadius = { tl: 0, tr: 0, br: 0, bl: 0 };
-        for (var side in defaultRadius) {
-            radius[side] = radius[side] || defaultRadius[side];
-        }
-    }
-    ctx.beginPath();
-    ctx.moveTo(x + radius.tl, y);
-    ctx.lineTo(x + width - radius.tr, y);
-    ctx.quadraticCurveTo(x + width, y, x + width, y + radius.tr);
-    ctx.lineTo(x + width, y + height - radius.br);
-    ctx.quadraticCurveTo(x + width, y + height, x + width - radius.br, y + height);
-    ctx.lineTo(x + radius.bl, y + height);
-    ctx.quadraticCurveTo(x, y + height, x, y + height - radius.bl);
-    ctx.lineTo(x, y + radius.tl);
-    ctx.quadraticCurveTo(x, y, x + radius.tl, y);
-    ctx.closePath();
-    if (fill) {
-        ctx.fill();
-    }
-    if (stroke) {
-        ctx.stroke();
-    }
-}
 
 /**
  * File picker
  */
-
 $(function() {
     $('#attachment-file-input').on('change', function(e) {
         $('.attachment-file-name').text(this.files[0].name)
@@ -275,40 +132,6 @@ $(function() {
     })
 })
 
-/**
- * Tutorial carousel behavior script.
- */
-$(function() {
-    const carouselSelector = '#tutorialCarousel';
-
-    const modalTutorial = document.getElementById('modal-tutorial');
-    if (!modalTutorial) return;
-
-    const carouselEl = modalTutorial.querySelector(carouselSelector);
-    if (!carouselEl) return;
-
-    const tutorialBackground = modalTutorial.querySelector('.tutorial-background');
-    if (!tutorialBackground) return;
-
-    carouselEl.addEventListener('slide.bs.carousel', function(e) {
-        activateSlideBackground(0);
-    })
-
-    carouselEl.addEventListener('slid.bs.carousel', function(e) {
-        activateSlideBackground(e.to);
-    })
-
-    const activateSlideBackground = function(slideIndex) {
-
-        const slideContents = tutorialBackground.querySelectorAll('.slide-content');
-        slideContents.forEach(function(elem, index) {
-            elem.classList.toggle('active', index == slideIndex);
-        })
-    };
-
-    // activate the first background
-    activateSlideBackground(0);
-})
 
 /*
  DO NOT USER THIS CODE IN THE REAL PROJECT
@@ -331,48 +154,10 @@ $(function() {
     }
 });
 
-$(function() {
-    /**
-     * Initializes the unlock popovers on chose lessons page and badges
-     */
-    var popovers = document.querySelectorAll('.show-simple-popover');
-    popovers.forEach(function(elem) {
-        const htmlPopoverContent = elem.querySelector('.simple-popover-content');
 
-        const options = {
-            trigger: 'focus',
-            template: `<div class="popover simple-popover" role="tooltip"><div class="d-flex justify-content-end"><span class="icon-close cursor-pointer"></span></div><div class="popover-body"></div></div>`,
-        }
-
-        if (htmlPopoverContent) {
-            const contentHtml = htmlPopoverContent.innerHTML;
-            htmlPopoverContent.remove();
-
-            options['html'] = true;
-            options['content'] = contentHtml;
-        }
-
-        new bootstrap.Popover(elem, options);
-    });
-});
-
-
-$(function() {
-    /**
-     * Manages the unlock instructions on articles page
-     */
-    var lockedArticleThumbnails = document.querySelectorAll('.article-thumbnail.disabled');
-    lockedArticleThumbnails.forEach(function(thumbnailElem) {
-
-        const instructionsElem = thumbnailElem.querySelector('.unlock-instruction');
-        if (instructionsElem) {
-            thumbnailElem.addEventListener('click', function(e) {
-                instructionsElem.classList.toggle('show');
-            });
-        }
-    });
-});
-
+/**
+ * Navbar toggler
+ */
 $(function() {
     var menuToggler = document.querySelector('.navbar .dropdown-toggle');
     var navbar = document.querySelector('.navbar');
@@ -385,4 +170,42 @@ $(function() {
     menuToggler.addEventListener('hidden.bs.dropdown', function () {
         navbar.classList.remove('menu-visible')
     });
+});
+
+/**
+ * Search controller
+ */
+ $(function() {
+    var searchForm = $(".search-form");
+    var url = searchForm.attr('data-url');
+    if (!searchForm.length || !url) {
+        return;
+    }
+
+    searchForm.find("#query").autocomplete({
+        serviceUrl: url,
+        paramName: 'q',
+        type: "GET",
+        onSelect: function(keyword) {
+            window.location.href = `search-result.html?q=${keyword}`;
+        },
+        transformResult: function(response) {
+            console.log(response);
+            response = JSON.parse(response);
+            return {
+                suggestions: response
+            }
+        },
+        minChars: 2,
+        showNoSuggestionNotice: true
+    });
+
+    $(".search-form").on("submit",function(a) {
+        a.preventDefault();
+        var query = $(this).find('#query').val().trim()
+        if (query) {
+            window.location.href = `search-result.html?q=${query}`;
+        }
+        return false;
+    })
 });

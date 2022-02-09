@@ -1,5 +1,5 @@
-@import "./owl.carousel.min.css";
-@import "./owl.theme.default.min.css";
+@import "./owl.carousel.min";
+@import "./owl.theme.default.min";
 @import "fonts";
 @import "cs-icons";
 @import "progress";
@@ -13,6 +13,7 @@
 @import "modules/card";
 @import "modules/alerts";
 @import "modules/owl-carousel";
+@import "modules/autocomplete";
 .landing {
     main {
         display: flex;
