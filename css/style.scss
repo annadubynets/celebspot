@@ -40,13 +40,13 @@
     &::before,
     &::after {
         font-family: cs-icons !important;
-        content: "\f115";
+        @include cs-icons-up();
         color: $white;
         font-size: 0.6rem;
     }
     &.collapsed::after,
     &.collapsed::before {
-        content: "\f106";
+        @include cs-icons-down();
     }
     .show-expanded {
         display: none;
