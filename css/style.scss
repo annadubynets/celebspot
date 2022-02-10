@@ -118,6 +118,11 @@ textarea {
     background: url("../images/bg.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    &.short-content {
+        @media (max-height: 915px) and (max-width: 414px) {
+            background: url("../images/bg-sm.png");
+        }
+    }
     @media (min-width: 992px) {
         background: url("../images/bg-desktop.png");
         background-repeat: no-repeat;

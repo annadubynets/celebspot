@@ -1386,6 +1386,11 @@ textarea {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+@media (max-height: 915px) and (max-width: 414px) {
+  .hero.short-content {
+    background: url("../images/bg-sm.png");
+  }
+}
 @media (min-width: 992px) {
   .hero {
     background: url("../images/bg-desktop.png");
