@@ -94,9 +94,11 @@ $(function() {
             loop: true,
             margin: 25,
             responsiveClass: true,
-            autoplay: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
             nav: false,
             dots: false,
+
             responsive: {
                 0: {
                     items: 1,
@@ -163,11 +165,11 @@ $(function() {
     var navbar = document.querySelector('.navbar');
     if (!navbar || !menuToggler) return;
 
-    menuToggler.addEventListener('shown.bs.dropdown', function () {
+    menuToggler.addEventListener('shown.bs.dropdown', function() {
         navbar.classList.add('menu-visible')
     });
 
-    menuToggler.addEventListener('hidden.bs.dropdown', function () {
+    menuToggler.addEventListener('hidden.bs.dropdown', function() {
         navbar.classList.remove('menu-visible')
     });
 });
@@ -175,7 +177,7 @@ $(function() {
 /**
  * Search controller
  */
- $(function() {
+$(function() {
     var searchForm = $(".search-form");
     var url = searchForm.attr('data-url');
     if (!searchForm.length || !url) {
@@ -200,7 +202,7 @@ $(function() {
         showNoSuggestionNotice: true
     });
 
-    $(".search-form").on("submit",function(a) {
+    $(".search-form").on("submit", function(a) {
         a.preventDefault();
         var query = $(this).find('#query').val().trim()
         if (query) {
