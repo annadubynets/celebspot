@@ -102,7 +102,7 @@ $(function() {
             responsive: {
                 0: {
                     items: 1,
-                    stagePadding: 40
+                    stagePadding: 80
                 },
                 720: {
                     items: 3,
