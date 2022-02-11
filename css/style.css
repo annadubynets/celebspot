@@ -986,6 +986,11 @@ h4 {
 .pt-80px {
   padding-top: 80px;
 }
+@media (max-width: 992px) {
+  .pt-80px {
+    padding-top: 60px;
+  }
+}
 
 .pt-140px {
   padding-top: 140px;
@@ -1068,11 +1073,6 @@ h4 {
     margin-bottom: 300px;
   }
 }
-@media (max-width: 414px) {
-  .pb-140px {
-    padding-bottom: 90px;
-  }
-}
 @media (min-width: 414px) {
   .w-16 {
     width: 8%;
@@ -1081,14 +1081,9 @@ h4 {
   .h-16 {
     height: 8%;
   }
-}
-@media (min-width: 414px) {
+
   .pt-64px {
     padding-top: 72px;
-  }
-
-  .pt-80px {
-    padding-top: 95px;
   }
 }
 .form-label {
