@@ -55,8 +55,20 @@
     font-size: 24px;
 }
 
+.font-size-25px {
+    font-size: 25px;
+}
+
 .font-size-36px {
     font-size: 36px;
+}
+
+.font-size-80px {
+    font-size: 80px;
+}
+
+.lh-base {
+    line-height: 80px!important;
 }
 
 .p-12 {
@@ -102,6 +114,14 @@
     cursor: pointer;
 }
 
+.fw-900 {
+    font-weight: 900;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
 .fw-500 {
     font-weight: 500;
 }
@@ -128,6 +148,10 @@
 
 .h-290px {
     height: 290px;
+}
+
+.bg-none {
+    background-color: transparent;
 }
 
 @media (min-width: 1200px) {

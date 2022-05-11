@@ -65,6 +65,14 @@ h4 {
     color: $white;
 }
 
+.subscription-text {
+    font-weight: 500;
+    font-size: 0.813rem;
+    line-height: 19px;
+    letter-spacing: -0.05em;
+    color: $white;
+}
+
 .description {
     font-weight: 500;
     font-size: 0.75rem;
@@ -114,7 +122,7 @@ h4 {
 .bg-fullscreen-half-dark {
     position: relative;
     &::before {
-        content:'';
+        content: '';
         position: absolute;
         width: 100vw;
         height: 100%;

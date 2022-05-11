@@ -3,11 +3,11 @@
     font-weight: normal;
     font-style: normal;
     font-display: block;
-    src: url("../fonts/cs-icons.eot?75e2baec977be183e33684cb097e6eb1?#iefix") format("embedded-opentype"),
-url("../fonts/cs-icons.woff2?75e2baec977be183e33684cb097e6eb1") format("woff2"),
-url("../fonts/cs-icons.woff?75e2baec977be183e33684cb097e6eb1") format("woff"),
-url("../fonts/cs-icons.ttf?75e2baec977be183e33684cb097e6eb1") format("truetype"),
-url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("svg");
+    src: url("../fonts/cs-icons.eot?43ede94b1c04d21f1aebd75d91324f0b?#iefix") format("embedded-opentype"),
+url("../fonts/cs-icons.woff2?43ede94b1c04d21f1aebd75d91324f0b") format("woff2"),
+url("../fonts/cs-icons.woff?43ede94b1c04d21f1aebd75d91324f0b") format("woff"),
+url("../fonts/cs-icons.ttf?43ede94b1c04d21f1aebd75d91324f0b") format("truetype"),
+url("../fonts/cs-icons.svg?43ede94b1c04d21f1aebd75d91324f0b#cs-icons") format("svg");
 }
 
 @mixin cs-icons-mixin {
@@ -181,8 +181,16 @@ url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("s
     @include cs-icons-plus();
 }
 
-@mixin cs-icons-search {
+@mixin cs-icons-prev {
     content: "\f114";
+}
+
+.cs-icons-prev:before {
+    @include cs-icons-prev();
+}
+
+@mixin cs-icons-search {
+    content: "\f115";
 }
 
 .cs-icons-search:before {
@@ -190,7 +198,7 @@ url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("s
 }
 
 @mixin cs-icons-showbiz {
-    content: "\f115";
+    content: "\f116";
 }
 
 .cs-icons-showbiz:before {
@@ -198,7 +206,7 @@ url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("s
 }
 
 @mixin cs-icons-sports {
-    content: "\f116";
+    content: "\f117";
 }
 
 .cs-icons-sports:before {
@@ -206,7 +214,7 @@ url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("s
 }
 
 @mixin cs-icons-star {
-    content: "\f117";
+    content: "\f118";
 }
 
 .cs-icons-star:before {
@@ -214,7 +222,7 @@ url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("s
 }
 
 @mixin cs-icons-tv {
-    content: "\f118";
+    content: "\f119";
 }
 
 .cs-icons-tv:before {
@@ -222,7 +230,7 @@ url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("s
 }
 
 @mixin cs-icons-up {
-    content: "\f119";
+    content: "\f11a";
 }
 
 .cs-icons-up:before {
@@ -230,7 +238,7 @@ url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("s
 }
 
 @mixin cs-icons-user {
-    content: "\f11a";
+    content: "\f11b";
 }
 
 .cs-icons-user:before {
@@ -238,7 +246,7 @@ url("../fonts/cs-icons.svg?75e2baec977be183e33684cb097e6eb1#cs-icons") format("s
 }
 
 @mixin cs-icons-viral {
-    content: "\f11b";
+    content: "\f11c";
 }
 
 .cs-icons-viral:before {
