@@ -1,4 +1,13 @@
+$navbar-height: 66px;
+$navbar-height-sm: 46px;
+
 .navbar {
+    --navbar-height: #{$navbar-height};
+
+    @media (max-width: 992px) {
+        --navbar-height: #{$navbar-height-sm};
+    }
+
     background: $darkgrey;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
@@ -7,109 +16,108 @@
     &.menu-visible {
         background: #0D0D1C;
     }
-    @media (min-width: 992px) {
-        min-height: 66px;
-    }
-}
+    
+    min-height: var(--navbar-height);
 
-$navbar-height: 56px;
-.navbar-expand .navbar-nav {
-    .dropdown-toggle {
-        .dropdown-icon-open {
-            display: none;
-        }
-        .dropdown-icon-close {
-            display: inline-block;
-        }
-        &.show {
+    &.navbar-expand .navbar-nav {
+        
+        .dropdown-toggle {
             .dropdown-icon-open {
-                display: inline-block;
-            }
-            .dropdown-icon-close {
                 display: none;
             }
-            &:before {
-                position: fixed;
-                top: $navbar-height;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background: rgba(25, 22, 38, 0.8);
-                content: '';
-                z-index: 1;
+            .dropdown-icon-close {
+                display: inline-block;
+            }
+            &.show {
+                .dropdown-icon-open {
+                    display: inline-block;
+                }
+                .dropdown-icon-close {
+                    display: none;
+                }
+                &:before {
+                    position: fixed;
+                    top: var(--navbar-height);
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(25, 22, 38, 0.8);
+                    content: '';
+                    z-index: 1;
+                }
             }
         }
-    }
-    .dropdown-menu {
-        position: fixed;
-        left: 0;
-        top: $navbar-height;
-        margin-top: 0;
-        max-height: calc(100vh - #{$navbar-height});
-        overflow-y: scroll;
-        border-top: 0;
-        background: $darkgrey;
-        &.show {
-            background: #0D0D1C;
-            
-            animation-name: slidenavAnimation;
-            animation-duration:.2s;
-            animation-iteration-count: 1;
-            animation-timing-function: ease;
-            animation-fill-mode: forwards;
-            
-            -webkit-animation-name: slidenavAnimation;
-            -webkit-animation-duration:.5s;
-            -webkit-animation-iteration-count: 1;
-            -webkit-animation-timing-function: ease;
-            -webkit-animation-fill-mode: forwards;
-            
-            -moz-animation-name: slidenavAnimation;
-            -moz-animation-duration:.5s;
-            -moz-animation-iteration-count: 1;
-            -moz-animation-timing-function: ease;
-            -moz-animation-fill-mode: forwards;
-        }
+        .dropdown-menu {
+            position: fixed;
+            left: 0;
+            top: var(--navbar-height);
+            margin-top: 0;
+            max-height: calc(100vh - var(--navbar-height));
+            overflow-y: scroll;
+            border-top: 0;
+            background: $darkgrey;
+            &.show {
+                background: #0D0D1C;
+                
+                animation-name: slidenavAnimation;
+                animation-duration:.2s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease;
+                animation-fill-mode: forwards;
+                
+                -webkit-animation-name: slidenavAnimation;
+                -webkit-animation-duration:.5s;
+                -webkit-animation-iteration-count: 1;
+                -webkit-animation-timing-function: ease;
+                -webkit-animation-fill-mode: forwards;
+                
+                -moz-animation-name: slidenavAnimation;
+                -moz-animation-duration:.5s;
+                -moz-animation-iteration-count: 1;
+                -moz-animation-timing-function: ease;
+                -moz-animation-fill-mode: forwards;
+            }
 
-        @keyframes slidenavAnimation {
-            from {
-                opacity: 0;
-                margin-left: -100px;
+            @keyframes slidenavAnimation {
+                from {
+                    opacity: 0;
+                    margin-left: -100px;
+                }
+                to {
+                    opacity: 1;
+                    margin-left: initial;
+                }
             }
-            to {
-                opacity: 1;
-                margin-left: initial;
-            }
-        }
-        
-        @-webkit-keyframes slidenavAnimation {
-            from {
-                opacity: 0;
-                margin-left: -100px;
-            }
-            to {
-                opacity: 1;
-                margin-left: initial;
-            }
-        }
 
-        .dropdown-item {
-            color: $white;
-            display: flex;
-            justify-content: start;
-            padding: 10px 30px;
-            i {
+            @-webkit-keyframes slidenavAnimation {
+                from {
+                    opacity: 0;
+                    margin-left: -100px;
+                }
+                to {
+                    opacity: 1;
+                    margin-left: initial;
+                }
+            }
+
+            .dropdown-item {
+                color: $white;
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                color: $pink;
-                width: 40px;
-            }
-            &:focus,
-            &:hover {
-                background-color: $pink;
+                justify-content: start;
+                padding: 10px 30px;
                 i {
-                    color: $white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $pink;
+                    width: 40px;
+                }
+                &:focus,
+                &:hover {
+                    background-color: $pink;
+                    i {
+                        color: $white;
+                    }
                 }
             }
         }
